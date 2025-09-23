@@ -98,5 +98,32 @@ Expected coefficients:
 3. Generate policy recommendations
 4. Extend to other chronic conditions
 
+## 📊 Available Analyses
+
+### Basic Analysis
+```bash
+python3 scripts/wrangle.py
+```
+
+### Age Band Analysis
+```bash
+python3 scripts/wrangle.py --age-band 58 78 --age-iqr
+```
+
+### Weighted Privacy Comparisons
+```bash
+python3 scripts/wrangle.py --privacy-dummies
+```
+
+### Privacy Index Construction
+```bash
+python3 scripts/build_privacy_index.py
+```
+
+### Generate Visualizations
+```bash
+python3 scripts/plot_privacy_index.py
+```
+
 ---
-*Last updated: 2024-09-17*
+*Last updated: 2024-09-23*

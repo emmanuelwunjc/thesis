@@ -1,7 +1,7 @@
 # HINTS 7 糖尿病与隐私关注分析项目日志
 
 ## 项目概述
-- **数据源**: HINTS 7 Public Dataset (`hints7_public copy.rda`)
+- **数据源**: HINTS 7 Public Dataset (`data/hints7_public copy.rda`)
 - **样本规模**: 7,278 行 × 470 列
 - **主要目标**: 分析糖尿病患者的隐私关注、数据分享意愿和数字健康行为差异
 - **分析日期**: 2024-09-17
@@ -64,30 +64,32 @@
 ## 文件结构
 
 ### 核心分析脚本
-- `wrangle.py`: 主分析脚本，支持多种分析模式
-- `build_privacy_index.py`: 隐私谨慎指数构建脚本
-- `plot_privacy_index.py`: 指数可视化脚本
+- `scripts/wrangle.py`: 主分析脚本，支持多种分析模式
+- `scripts/build_privacy_index.py`: 隐私谨慎指数构建脚本
+- `scripts/plot_privacy_index.py`: 指数可视化脚本
 
 ### 数据输出文件
-- `diabetes_summary.json`: 基础统计汇总
-- `diabetes_demographics_crosstabs.json`: 人口学交叉表
-- `diabetes_privacy_analysis.json`: 隐私变量分析
-- `privacy_dummies_compare.json`: 加权隐私变量对比
-- `privacy_caution_index.json`: 隐私谨慎指数汇总
-- `privacy_caution_index_individual.csv`: 个体指数数据
+- `analysis/diabetes_summary.json`: 基础统计汇总
+- `analysis/diabetes_demographics_crosstabs.json`: 人口学交叉表
+- `analysis/diabetes_privacy_analysis.json`: 隐私变量分析
+- `analysis/privacy_dummies_compare.json`: 加权隐私变量对比
+- `analysis/privacy_caution_index.json`: 隐私谨慎指数汇总
+- `analysis/privacy_caution_index_individual.csv`: 个体指数数据
 
 ### 年龄带分析
-- `age_band_analyses.json`: 58-78岁和IQR年龄带分析
+- `analysis/age_band_analyses.json`: 58-78岁和IQR年龄带分析
 
 ### 可视化文件
-- `privacy_top10_diffs.png`: Top-10隐私差异图
-- `privacy_shared_device.png`: 设备数据分享对比
-- `privacy_use_computer.png`: 电脑使用对比
-- `privacy_use_watch.png`: 智能手表使用对比
-- `privacy_trust_hcsystem.png`: 医疗系统信任对比
-- `privacy_trust_scientists.png`: 科学家信任对比
-- `privacy_portal_pharmacy.png`: 药房门户使用对比
-- `privacy_caution_index_analysis.png`: 隐私谨慎指数综合分析
+- `figures/privacy_top10_diffs.png`: Top-10隐私差异图
+- `figures/privacy_shared_device.png`: 设备数据分享对比
+- `figures/privacy_use_computer.png`: 电脑使用对比
+- `figures/privacy_use_watch.png`: 智能手表使用对比
+- `figures/privacy_trust_hcsystem.png`: 医疗系统信任对比
+- `figures/privacy_trust_scientists.png`: 科学家信任对比
+- `figures/privacy_portal_pharmacy.png`: 药房门户使用对比
+- `figures/privacy_caution_index_analysis.png`: 隐私谨慎指数综合分析
+- `figures/privacy_index_construction_diagram_optimized.png`: 指数构建图
+- `figures/privacy_index_detailed_table_optimized.png`: 指数详细表
 
 ## 分析方法
 
@@ -128,27 +130,27 @@ WillingShareData_HCP2 = β₀ + β₁×diabetic + β₂×privacy_caution_index +
 
 ### 基础分析
 ```bash
-python3 wrangle.py
+python3 scripts/wrangle.py
 ```
 
 ### 年龄带分析
 ```bash
-python3 wrangle.py --age-band 58 78 --age-iqr
+python3 scripts/wrangle.py --age-band 58 78 --age-iqr
 ```
 
 ### 隐私变量加权对比
 ```bash
-python3 wrangle.py --privacy-dummies
+python3 scripts/wrangle.py --privacy-dummies
 ```
 
 ### 重新生成隐私指数
 ```bash
-python3 build_privacy_index.py
+python3 scripts/build_privacy_index.py
 ```
 
 ### 生成可视化
 ```bash
-python3 plot_privacy_index.py
+python3 scripts/plot_privacy_index.py
 ```
 
 ## 下一步建议
@@ -176,6 +178,7 @@ python3 plot_privacy_index.py
 - 分布接近正态
 
 ---
-*最后更新: 2024-09-17*
+*最后更新: 2024-09-23*
 *分析工具: Python + pandas + matplotlib*
 *数据来源: HINTS 7 Public Dataset*
+*项目结构: 已重新组织为专业目录结构*
