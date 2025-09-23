@@ -1,0 +1,1582 @@
+{
+  "weights": {
+    "main": "Weight",
+    "replicates": []
+  },
+  "variables": [
+    "CancerTrustDoctor",
+    "CancerTrustFamily",
+    "CancerTrustGov",
+    "CancerTrustCharities",
+    "CancerTrustReligiousOrgs",
+    "CancerTrustScientists",
+    "UseDevice_Computer",
+    "UseDevice_SmPhone",
+    "UseDevice_Tablet",
+    "UseDevice_SmWatch",
+    "WillingShareData_HCP2",
+    "SharedHealthDeviceInfo2",
+    "SocMed_SharedPers",
+    "SocMed_SharedGen",
+    "MisleadingHealthInfo",
+    "ConfidentMedForms",
+    "TrustHCSystem",
+    "WillingUseTelehealth",
+    "HCPEncourageOnlineRec2",
+    "AccessOnlineRecord3",
+    "HowAccessOnlineRecord2",
+    "RecordsOnline2_ViewResults",
+    "RecordsOnline2_ViewNotes",
+    "UnderstandOnlineMedRec2",
+    "OnlinePortal_PCP",
+    "OnlinePortal_OthHCP",
+    "OnlinePortal_Insurer",
+    "OnlinePortal_Lab",
+    "OnlinePortal_Pharmacy",
+    "OnlinePortal_Hospital",
+    "OnlinePortal_NoRec",
+    "OnlinePortal_Cat",
+    "UsedPortalOrganizerApp",
+    "ConfidentTestAccurate",
+    "LabShare2_HCP",
+    "LabShare2_ScientificRes",
+    "LabShare2_ForProfitCo2",
+    "LabShare2_LEAgencies",
+    "LabShare2_HealthIns",
+    "LabShare2_OthIns",
+    "LabShare2_NotSure",
+    "LabShare2_NotShared",
+    "LabShare2_Cat",
+    "ClinTrials2_NotWilling",
+    "TobMessages_Trusted",
+    "CervCaTest_Privacy"
+  ],
+  "comparison": {
+    "CancerTrustDoctor": {
+      "A lot": {
+        "mean_diabetic": 0.6825051878789518,
+        "mean_non_diabetic": 0.7057788288936118,
+        "diff": -0.023273641014660007,
+        "se_jackknife": null
+      },
+      "Some": {
+        "mean_diabetic": 0.23814899182782326,
+        "mean_non_diabetic": 0.23060984249242292,
+        "diff": 0.007539149335400341,
+        "se_jackknife": null
+      },
+      "A little": {
+        "mean_diabetic": 0.0470288831358447,
+        "mean_non_diabetic": 0.04159542338484156,
+        "diff": 0.005433459751003136,
+        "se_jackknife": null
+      },
+      "Not at all": {
+        "mean_diabetic": 0.015837394637051257,
+        "mean_non_diabetic": 0.012822192748366065,
+        "diff": 0.0030152018886851917,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.01647954252032905,
+        "mean_non_diabetic": 0.00820189946574197,
+        "diff": 0.00827764305458708,
+        "se_jackknife": null
+      },
+      "Multiple responses selected in error": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": 0.0009918130150156869,
+        "diff": -0.0009918130150156869,
+        "se_jackknife": null
+      }
+    },
+    "CancerTrustFamily": {
+      "Some": {
+        "mean_diabetic": 0.43679236993125636,
+        "mean_non_diabetic": 0.4615318237747487,
+        "diff": -0.024739453843492354,
+        "se_jackknife": null
+      },
+      "A little": {
+        "mean_diabetic": 0.36223224123130165,
+        "mean_non_diabetic": 0.3726127508163015,
+        "diff": -0.010380509584999864,
+        "se_jackknife": null
+      },
+      "Not at all": {
+        "mean_diabetic": 0.07615873895674627,
+        "mean_non_diabetic": 0.07692143796907376,
+        "diff": -0.0007626990123274918,
+        "se_jackknife": null
+      },
+      "A lot": {
+        "mean_diabetic": 0.07609790389411995,
+        "mean_non_diabetic": 0.06459461906816451,
+        "diff": 0.011503284825955445,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.04871874598657573,
+        "mean_non_diabetic": 0.02380138172017237,
+        "diff": 0.024917364266403362,
+        "se_jackknife": null
+      },
+      "Multiple responses selected in error": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": 0.0005379866515391212,
+        "diff": -0.0005379866515391212,
+        "se_jackknife": null
+      }
+    },
+    "CancerTrustGov": {
+      "Some": {
+        "mean_diabetic": 0.4082607255595136,
+        "mean_non_diabetic": 0.4473023431715645,
+        "diff": -0.03904161761205088,
+        "se_jackknife": null
+      },
+      "A lot": {
+        "mean_diabetic": 0.2370945174089671,
+        "mean_non_diabetic": 0.26622455882431273,
+        "diff": -0.029130041415345642,
+        "se_jackknife": null
+      },
+      "A little": {
+        "mean_diabetic": 0.20769428353194855,
+        "mean_non_diabetic": 0.18215482297043203,
+        "diff": 0.025539460561516514,
+        "se_jackknife": null
+      },
+      "Not at all": {
+        "mean_diabetic": 0.09913073454958396,
+        "mean_non_diabetic": 0.07932053883890762,
+        "diff": 0.01981019571067634,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.046870036027875976,
+        "mean_non_diabetic": 0.024834742219168305,
+        "diff": 0.02203529380870767,
+        "se_jackknife": null
+      },
+      "Multiple responses selected in error": {
+        "mean_diabetic": 0.0009497029221108415,
+        "mean_non_diabetic": 0.00016299397561482287,
+        "diff": 0.0007867089464960186,
+        "se_jackknife": null
+      }
+    },
+    "CancerTrustCharities": {
+      "Some": {
+        "mean_diabetic": 0.37767420796128187,
+        "mean_non_diabetic": 0.4102462487415906,
+        "diff": -0.03257204078030873,
+        "se_jackknife": null
+      },
+      "A little": {
+        "mean_diabetic": 0.3126415260137487,
+        "mean_non_diabetic": 0.32839557466029606,
+        "diff": -0.015754048646547336,
+        "se_jackknife": null
+      },
+      "Not at all": {
+        "mean_diabetic": 0.17728351167019285,
+        "mean_non_diabetic": 0.14830853800795793,
+        "diff": 0.02897497366223492,
+        "se_jackknife": null
+      },
+      "A lot": {
+        "mean_diabetic": 0.08109651820658235,
+        "mean_non_diabetic": 0.0853758182990034,
+        "diff": -0.004279300092421043,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.05130423614819421,
+        "mean_non_diabetic": 0.02736594278165732,
+        "diff": 0.02393829336653689,
+        "se_jackknife": null
+      },
+      "Multiple responses selected in error": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": 0.0003078775094946654,
+        "diff": -0.0003078775094946654,
+        "se_jackknife": null
+      }
+    },
+    "CancerTrustReligiousOrgs": {
+      "Not at all": {
+        "mean_diabetic": 0.3093091164721071,
+        "mean_non_diabetic": 0.4025226780016726,
+        "diff": -0.09321356152956545,
+        "se_jackknife": null
+      },
+      "A little": {
+        "mean_diabetic": 0.3341095436694358,
+        "mean_non_diabetic": 0.30319436232601993,
+        "diff": 0.030915181343415865,
+        "se_jackknife": null
+      },
+      "Some": {
+        "mean_diabetic": 0.24507742951582048,
+        "mean_non_diabetic": 0.22463233139977734,
+        "diff": 0.020445098116043142,
+        "se_jackknife": null
+      },
+      "A lot": {
+        "mean_diabetic": 0.059124921421377444,
+        "mean_non_diabetic": 0.04357159217415853,
+        "diff": 0.015553329247218917,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.051713182958071126,
+        "mean_non_diabetic": 0.025903258281532143,
+        "diff": 0.025809924676538983,
+        "se_jackknife": null
+      },
+      "Multiple responses selected in error": {
+        "mean_diabetic": 0.0006658059631880277,
+        "mean_non_diabetic": 0.00017577781683951485,
+        "diff": 0.0004900281463485128,
+        "se_jackknife": null
+      }
+    },
+    "CancerTrustScientists": {
+      "A lot": {
+        "mean_diabetic": 0.4404627520430442,
+        "mean_non_diabetic": 0.5234322483048094,
+        "diff": -0.0829694962617652,
+        "se_jackknife": null
+      },
+      "Some": {
+        "mean_diabetic": 0.32544392697088703,
+        "mean_non_diabetic": 0.31230391451871503,
+        "diff": 0.013140012452172,
+        "se_jackknife": null
+      },
+      "A little": {
+        "mean_diabetic": 0.12793613670314516,
+        "mean_non_diabetic": 0.10743433633220942,
+        "diff": 0.02050180037093574,
+        "se_jackknife": null
+      },
+      "Not at all": {
+        "mean_diabetic": 0.05982452464158009,
+        "mean_non_diabetic": 0.03708698871293352,
+        "diff": 0.022737535928646573,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.04633265964134351,
+        "mean_non_diabetic": 0.01957525687530961,
+        "diff": 0.026757402766033903,
+        "se_jackknife": null
+      },
+      "Multiple responses selected in error": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": 0.00016725525602305353,
+        "diff": -0.00016725525602305353,
+        "se_jackknife": null
+      }
+    },
+    "UseDevice_Computer": {
+      "Yes": {
+        "mean_diabetic": 0.6938475473330584,
+        "mean_non_diabetic": 0.822520866957499,
+        "diff": -0.12867331962444062,
+        "se_jackknife": null
+      },
+      "No": {
+        "mean_diabetic": 0.29067330895424526,
+        "mean_non_diabetic": 0.17185424290363646,
+        "diff": 0.1188190660506088,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.015479143712696278,
+        "mean_non_diabetic": 0.005624890138864475,
+        "diff": 0.009854253573831802,
+        "se_jackknife": null
+      }
+    },
+    "UseDevice_SmPhone": {
+      "Yes": {
+        "mean_diabetic": 0.8578352180936996,
+        "mean_non_diabetic": 0.9250792331825906,
+        "diff": -0.067244015088891,
+        "se_jackknife": null
+      },
+      "No": {
+        "mean_diabetic": 0.1341784900737456,
+        "mean_non_diabetic": 0.07042831194703228,
+        "diff": 0.06375017812671332,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.00798629183255487,
+        "mean_non_diabetic": 0.0044924548703771765,
+        "diff": 0.0034938369621776936,
+        "se_jackknife": null
+      }
+    },
+    "UseDevice_Tablet": {
+      "Yes": {
+        "mean_diabetic": 0.4841017703003224,
+        "mean_non_diabetic": 0.5337488081731359,
+        "diff": -0.04964703787281344,
+        "se_jackknife": null
+      },
+      "No": {
+        "mean_diabetic": 0.4975125218837239,
+        "mean_non_diabetic": 0.45661963278416084,
+        "diff": 0.04089288909956307,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.018385707815953656,
+        "mean_non_diabetic": 0.009631559042703356,
+        "diff": 0.0087541487732503,
+        "se_jackknife": null
+      }
+    },
+    "UseDevice_SmWatch": {
+      "No": {
+        "mean_diabetic": 0.7307237344617111,
+        "mean_non_diabetic": 0.6326041217234749,
+        "diff": 0.09811961273823622,
+        "se_jackknife": null
+      },
+      "Yes": {
+        "mean_diabetic": 0.2583158150884474,
+        "mean_non_diabetic": 0.3628970314855356,
+        "diff": -0.10458121639708817,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.01096045044984149,
+        "mean_non_diabetic": 0.004498846790989523,
+        "diff": 0.0064616036588519676,
+        "se_jackknife": null
+      }
+    },
+    "WillingShareData_HCP2": {
+      "Inapplicable, coded 2 in WearableDevTrackHealth2": {
+        "mean_diabetic": 0.5448354411555958,
+        "mean_non_diabetic": 0.5207242046053788,
+        "diff": 0.024111236550216963,
+        "se_jackknife": null
+      },
+      "Yes": {
+        "mean_diabetic": 0.2555106427562339,
+        "mean_non_diabetic": 0.2941679051012853,
+        "diff": -0.0386572623450514,
+        "se_jackknife": null
+      },
+      "Question answered in error (Commission Error)": {
+        "mean_diabetic": 0.12924747027531244,
+        "mean_non_diabetic": 0.07867495485706068,
+        "diff": 0.050572515418251765,
+        "se_jackknife": null
+      },
+      "No": {
+        "mean_diabetic": 0.05396746000094632,
+        "mean_non_diabetic": 0.09453011393598491,
+        "diff": -0.04056265393503859,
+        "se_jackknife": null
+      },
+      "Missing data (Filter Missing)": {
+        "mean_diabetic": 0.014722085155568774,
+        "mean_non_diabetic": 0.010241987461182399,
+        "diff": 0.004480097694386375,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.0017169006563427312,
+        "mean_non_diabetic": 0.0017428636869663411,
+        "diff": -2.5963030623609926e-05,
+        "se_jackknife": null
+      }
+    },
+    "SharedHealthDeviceInfo2": {
+      "No": {
+        "mean_diabetic": 0.48468984257237685,
+        "mean_non_diabetic": 0.6643304196828542,
+        "diff": -0.17964057711047737,
+        "se_jackknife": null
+      },
+      "Yes": {
+        "mean_diabetic": 0.3408892734265687,
+        "mean_non_diabetic": 0.16575954659976455,
+        "diff": 0.17512972682680417,
+        "se_jackknife": null
+      },
+      "I do not use a smartphone or electronic monitoring device": {
+        "mean_diabetic": 0.14919799109104306,
+        "mean_non_diabetic": 0.15183687818597294,
+        "diff": -0.002638887094929876,
+        "se_jackknife": null
+      },
+      "Multiple responses selected in error": {
+        "mean_diabetic": 0.013691268816622843,
+        "mean_non_diabetic": 0.010293122826081167,
+        "diff": 0.0033981459905416764,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.01153162409338858,
+        "mean_non_diabetic": 0.007862062353185574,
+        "diff": 0.0036695617402030065,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -8.202964785844026e-05,
+        "diff": 8.202964785844026e-05,
+        "se_jackknife": null
+      }
+    },
+    "SocMed_SharedPers": {
+      "Never": {
+        "mean_diabetic": 0.8131822821259826,
+        "mean_non_diabetic": 0.8282735955086105,
+        "diff": -0.015091313382627813,
+        "se_jackknife": null
+      },
+      "Less than once a month": {
+        "mean_diabetic": 0.09199613359379753,
+        "mean_non_diabetic": 0.10148771952252353,
+        "diff": -0.009491585928725996,
+        "se_jackknife": null
+      },
+      "A few times a month": {
+        "mean_diabetic": 0.03607519213740613,
+        "mean_non_diabetic": 0.027491650553700123,
+        "diff": 0.008583541583706004,
+        "se_jackknife": null
+      },
+      "At least once a week": {
+        "mean_diabetic": 0.023898040435038292,
+        "mean_non_diabetic": 0.01752238503864449,
+        "diff": 0.006375655396393804,
+        "se_jackknife": null
+      },
+      "Almost every day": {
+        "mean_diabetic": 0.01756105474479691,
+        "mean_non_diabetic": 0.013811875123177636,
+        "diff": 0.003749179621619275,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.016847932621788415,
+        "mean_non_diabetic": 0.011397859771914966,
+        "diff": 0.00545007284987345,
+        "se_jackknife": null
+      }
+    },
+    "SocMed_SharedGen": {
+      "Never": {
+        "mean_diabetic": 0.6935399922942254,
+        "mean_non_diabetic": 0.6930088368302466,
+        "diff": 0.0005311554639787497,
+        "se_jackknife": null
+      },
+      "Less than once a month": {
+        "mean_diabetic": 0.18038947958983648,
+        "mean_non_diabetic": 0.19308607253764576,
+        "diff": -0.012696592947809282,
+        "se_jackknife": null
+      },
+      "A few times a month": {
+        "mean_diabetic": 0.0583442047843397,
+        "mean_non_diabetic": 0.06038766998513879,
+        "diff": -0.002043465200799087,
+        "se_jackknife": null
+      },
+      "At least once a week": {
+        "mean_diabetic": 0.031989103764338486,
+        "mean_non_diabetic": 0.024983887033456376,
+        "diff": 0.00700521673088211,
+        "se_jackknife": null
+      },
+      "Almost every day": {
+        "mean_diabetic": 0.015103994159833987,
+        "mean_non_diabetic": 0.016842710813531697,
+        "diff": -0.00173871665369771,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.020180342163430016,
+        "mean_non_diabetic": 0.011564049707835962,
+        "diff": 0.008616292455594055,
+        "se_jackknife": null
+      }
+    },
+    "MisleadingHealthInfo": {
+      "Some": {
+        "mean_diabetic": 0.3536274595953792,
+        "mean_non_diabetic": 0.3826491314977868,
+        "diff": -0.029021671902407564,
+        "se_jackknife": null
+      },
+      "A lot": {
+        "mean_diabetic": 0.2790876092496333,
+        "mean_non_diabetic": 0.3172640449138955,
+        "diff": -0.03817643566426221,
+        "se_jackknife": null
+      },
+      "I do not use social media": {
+        "mean_diabetic": 0.22574539850345746,
+        "mean_non_diabetic": 0.14551846466066892,
+        "diff": 0.08022693384278853,
+        "se_jackknife": null
+      },
+      "A little": {
+        "mean_diabetic": 0.11080768684813541,
+        "mean_non_diabetic": 0.13580487597010713,
+        "diff": -0.024997189121971713,
+        "se_jackknife": null
+      },
+      "NA": {
+        "mean_diabetic": 0.02616583638071934,
+        "mean_non_diabetic": 0.016367578048013975,
+        "diff": 0.009798258332705364,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.004566009422675255,
+        "mean_non_diabetic": 0.0025897931681021853,
+        "diff": 0.00197621625457307,
+        "se_jackknife": null
+      }
+    },
+    "ConfidentMedForms": {
+      "Very": {
+        "mean_diabetic": 0.6290548259103291,
+        "mean_non_diabetic": 0.6768095793583577,
+        "diff": -0.0477547534480286,
+        "se_jackknife": null
+      },
+      "Somewhat": {
+        "mean_diabetic": 0.22490722652949485,
+        "mean_non_diabetic": 0.219877807784294,
+        "diff": 0.005029418745200853,
+        "se_jackknife": null
+      },
+      "A little": {
+        "mean_diabetic": 0.08595994349098628,
+        "mean_non_diabetic": 0.06753809851014984,
+        "diff": 0.018421844980836433,
+        "se_jackknife": null
+      },
+      "Not at all": {
+        "mean_diabetic": 0.048908010625857604,
+        "mean_non_diabetic": 0.029437990380159477,
+        "diff": 0.019470020245698126,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0006562371828675221,
+        "diff": 0.0006562371828675221,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.01116999344333214,
+        "mean_non_diabetic": 0.006811656732556715,
+        "diff": 0.004358336710775425,
+        "se_jackknife": null
+      }
+    },
+    "TrustHCSystem": {
+      "Some": {
+        "mean_diabetic": 0.42304026605200723,
+        "mean_non_diabetic": 0.4682763653408758,
+        "diff": -0.04523609928886857,
+        "se_jackknife": null
+      },
+      "A lot": {
+        "mean_diabetic": 0.4089468098769104,
+        "mean_non_diabetic": 0.35372569072692117,
+        "diff": 0.05522111914998923,
+        "se_jackknife": null
+      },
+      "A little": {
+        "mean_diabetic": 0.1334755071278415,
+        "mean_non_diabetic": 0.1312559591343209,
+        "diff": 0.0022195479935206153,
+        "se_jackknife": null
+      },
+      "Not at all": {
+        "mean_diabetic": 0.029210969237736667,
+        "mean_non_diabetic": 0.04391782120732727,
+        "diff": -0.014706851969590602,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0006711516642963295,
+        "diff": 0.0006711516642963295,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.005326447705504222,
+        "mean_non_diabetic": 0.003330190639032263,
+        "diff": 0.0019962570664719586,
+        "se_jackknife": null
+      }
+    },
+    "WillingUseTelehealth": {
+      "Very willing": {
+        "mean_diabetic": 0.3416294333551889,
+        "mean_non_diabetic": 0.3779510698477125,
+        "diff": -0.03632163649252357,
+        "se_jackknife": null
+      },
+      "Somewhat willing": {
+        "mean_diabetic": 0.3580413813614887,
+        "mean_non_diabetic": 0.3606278996681528,
+        "diff": -0.002586518306664065,
+        "se_jackknife": null
+      },
+      "Somewhat unwilling": {
+        "mean_diabetic": 0.12146734171054677,
+        "mean_non_diabetic": 0.12723331042895114,
+        "diff": -0.005765968718404374,
+        "se_jackknife": null
+      },
+      "Very unwilling": {
+        "mean_diabetic": 0.1417558350964236,
+        "mean_non_diabetic": 0.11116402200951331,
+        "diff": 0.03059181308691028,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.03654497400990936,
+        "mean_non_diabetic": 0.023883411368030807,
+        "diff": 0.012661562641878552,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0011782440328757784,
+        "diff": 0.0011782440328757784,
+        "se_jackknife": null
+      }
+    },
+    "HCPEncourageOnlineRec2": {
+      "Yes": {
+        "mean_diabetic": 0.6876761682021887,
+        "mean_non_diabetic": 0.7307105152420673,
+        "diff": -0.04303434703987863,
+        "se_jackknife": null
+      },
+      "No": {
+        "mean_diabetic": 0.3028842579136277,
+        "mean_non_diabetic": 0.2635932181722303,
+        "diff": 0.039291039741397416,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0012901026435918333,
+        "diff": 0.0012901026435918333,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.00943957388418356,
+        "mean_non_diabetic": 0.006986369229294172,
+        "diff": 0.002453204654889387,
+        "se_jackknife": null
+      }
+    },
+    "AccessOnlineRecord3": {
+      "_binary": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": 0.0,
+        "diff": 0.0,
+        "se_jackknife": null
+      }
+    },
+    "HowAccessOnlineRecord2": {
+      "Inapplicable, coded 0 in AccessOnlineRecord3": {
+        "mean_diabetic": 0.2787631555822929,
+        "mean_non_diabetic": 0.2910603663635831,
+        "diff": -0.012297210781290202,
+        "se_jackknife": null
+      },
+      "Website": {
+        "mean_diabetic": 0.24753786982648487,
+        "mean_non_diabetic": 0.30674400890607606,
+        "diff": -0.059206139079591186,
+        "se_jackknife": null
+      },
+      "Both app and website": {
+        "mean_diabetic": 0.2344279138305135,
+        "mean_non_diabetic": 0.2305448579661974,
+        "diff": 0.003883055864316115,
+        "se_jackknife": null
+      },
+      "App": {
+        "mean_diabetic": 0.1567854752908254,
+        "mean_non_diabetic": 0.13481732423549966,
+        "diff": 0.021968151055325735,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0013497605693070626,
+        "diff": 0.0013497605693070626,
+        "se_jackknife": null
+      },
+      "Question answered in error (Commission Error)": {
+        "mean_diabetic": 0.04035392487545711,
+        "mean_non_diabetic": 0.018548288296926018,
+        "diff": 0.02180563657853109,
+        "se_jackknife": null
+      }
+    },
+    "RecordsOnline2_ViewResults": {
+      "Yes": {
+        "mean_diabetic": 0.6174792653828215,
+        "mean_non_diabetic": 0.6238642356061938,
+        "diff": -0.006384970223372255,
+        "se_jackknife": null
+      },
+      "Inapplicable, coded 0 in AccessOnlineRecord3": {
+        "mean_diabetic": 0.2679243752577041,
+        "mean_non_diabetic": 0.2869439694892323,
+        "diff": -0.019019594231528214,
+        "se_jackknife": null
+      },
+      "No": {
+        "mean_diabetic": 0.060466672524857885,
+        "mean_non_diabetic": 0.0663513319164576,
+        "diff": -0.005884659391599718,
+        "se_jackknife": null
+      },
+      "Question answered in error (Commission Error)": {
+        "mean_diabetic": 0.051192705200045964,
+        "mean_non_diabetic": 0.02266468517127684,
+        "diff": 0.028528020028769124,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0013497605693070626,
+        "diff": 0.0013497605693070626,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.0029369816345705384,
+        "mean_non_diabetic": 0.0015255383861465775,
+        "diff": 0.001411443248423961,
+        "se_jackknife": null
+      }
+    },
+    "RecordsOnline2_ViewNotes": {
+      "Yes": {
+        "mean_diabetic": 0.5349125664961032,
+        "mean_non_diabetic": 0.5476214065421308,
+        "diff": -0.01270884004602757,
+        "se_jackknife": null
+      },
+      "Inapplicable, coded 0 in AccessOnlineRecord3": {
+        "mean_diabetic": 0.26941821401775035,
+        "mean_non_diabetic": 0.28930365351529,
+        "diff": -0.01988543949753968,
+        "se_jackknife": null
+      },
+      "No": {
+        "mean_diabetic": 0.13961984845309955,
+        "mean_non_diabetic": 0.1418953109935708,
+        "diff": -0.002275462540471257,
+        "se_jackknife": null
+      },
+      "Question answered in error (Commission Error)": {
+        "mean_diabetic": 0.04969886643999973,
+        "mean_non_diabetic": 0.02030500114521911,
+        "diff": 0.02939386529478062,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0013497605693070626,
+        "diff": 0.0013497605693070626,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.006350504593047228,
+        "mean_non_diabetic": 0.002224388373096406,
+        "diff": 0.004126116219950822,
+        "se_jackknife": null
+      }
+    },
+    "UnderstandOnlineMedRec2": {
+      "Very easy": {
+        "mean_diabetic": 0.3148721449767137,
+        "mean_non_diabetic": 0.3199124306876109,
+        "diff": -0.005040285710897208,
+        "se_jackknife": null
+      },
+      "Inapplicable, coded 0 in AccessOnlineRecord3": {
+        "mean_diabetic": 0.28631008307365774,
+        "mean_non_diabetic": 0.29465688702812975,
+        "diff": -0.008346803954472015,
+        "se_jackknife": null
+      },
+      "Somewhat easy": {
+        "mean_diabetic": 0.26842795438722195,
+        "mean_non_diabetic": 0.2926785875986087,
+        "diff": -0.024250633211386763,
+        "se_jackknife": null
+      },
+      "Somewhat difficult": {
+        "mean_diabetic": 0.07501977139535355,
+        "mean_non_diabetic": 0.06494084810133324,
+        "diff": 0.010078923294020312,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.001387046772879081,
+        "diff": 0.001387046772879081,
+        "se_jackknife": null
+      },
+      "Question answered in error (Commission Error)": {
+        "mean_diabetic": 0.032806997384092304,
+        "mean_non_diabetic": 0.01495176763237934,
+        "diff": 0.017855229751712963,
+        "se_jackknife": null
+      }
+    },
+    "OnlinePortal_PCP": {
+      "Selected": {
+        "mean_diabetic": 0.6637882669442549,
+        "mean_non_diabetic": 0.6806223600036221,
+        "diff": -0.016834093059367228,
+        "se_jackknife": null
+      },
+      "Not selected": {
+        "mean_diabetic": 0.32110097944450827,
+        "mean_non_diabetic": 0.31005608910337334,
+        "diff": 0.011044890341134928,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0014168757357366955,
+        "diff": 0.0014168757357366955,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.015110753611236913,
+        "mean_non_diabetic": 0.010738426628741271,
+        "diff": 0.004372326982495641,
+        "se_jackknife": null
+      }
+    },
+    "OnlinePortal_OthHCP": {
+      "Not selected": {
+        "mean_diabetic": 0.6057380982959423,
+        "mean_non_diabetic": 0.5933417493621396,
+        "diff": 0.012396348933802703,
+        "se_jackknife": null
+      },
+      "Selected": {
+        "mean_diabetic": 0.3791511480928208,
+        "mean_non_diabetic": 0.39733669974485586,
+        "diff": -0.01818555165203506,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0014168757357366955,
+        "diff": 0.0014168757357366955,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.015110753611236913,
+        "mean_non_diabetic": 0.010738426628741271,
+        "diff": 0.004372326982495641,
+        "se_jackknife": null
+      }
+    },
+    "OnlinePortal_Insurer": {
+      "Not selected": {
+        "mean_diabetic": 0.7185905191934623,
+        "mean_non_diabetic": 0.6824334041771202,
+        "diff": 0.03615711501634211,
+        "se_jackknife": null
+      },
+      "Selected": {
+        "mean_diabetic": 0.26629872719530084,
+        "mean_non_diabetic": 0.3082450449298753,
+        "diff": -0.04194631773457447,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0014168757357366955,
+        "diff": 0.0014168757357366955,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.015110753611236913,
+        "mean_non_diabetic": 0.010738426628741271,
+        "diff": 0.004372326982495641,
+        "se_jackknife": null
+      }
+    },
+    "OnlinePortal_Lab": {
+      "Not selected": {
+        "mean_diabetic": 0.64803536544974,
+        "mean_non_diabetic": 0.6823812034921193,
+        "diff": -0.03434583804237923,
+        "se_jackknife": null
+      },
+      "Selected": {
+        "mean_diabetic": 0.33685388093902296,
+        "mean_non_diabetic": 0.30829724561487615,
+        "diff": 0.028556635324146817,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0014168757357366955,
+        "diff": 0.0014168757357366955,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.015110753611236913,
+        "mean_non_diabetic": 0.010738426628741271,
+        "diff": 0.004372326982495641,
+        "se_jackknife": null
+      }
+    },
+    "OnlinePortal_Pharmacy": {
+      "Not selected": {
+        "mean_diabetic": 0.6779053811992619,
+        "mean_non_diabetic": 0.7439375296292153,
+        "diff": -0.06603214842995342,
+        "se_jackknife": null
+      },
+      "Selected": {
+        "mean_diabetic": 0.3069838651895012,
+        "mean_non_diabetic": 0.2467409194777801,
+        "diff": 0.06024294571172112,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0014168757357366955,
+        "diff": 0.0014168757357366955,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.015110753611236913,
+        "mean_non_diabetic": 0.010738426628741271,
+        "diff": 0.004372326982495641,
+        "se_jackknife": null
+      }
+    },
+    "OnlinePortal_Hospital": {
+      "Not selected": {
+        "mean_diabetic": 0.7225008618300539,
+        "mean_non_diabetic": 0.7735427752653978,
+        "diff": -0.05104191343534392,
+        "se_jackknife": null
+      },
+      "Selected": {
+        "mean_diabetic": 0.2623883845587092,
+        "mean_non_diabetic": 0.21713567384159754,
+        "diff": 0.04525271071711168,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0014168757357366955,
+        "diff": 0.0014168757357366955,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.015110753611236913,
+        "mean_non_diabetic": 0.010738426628741271,
+        "diff": 0.004372326982495641,
+        "se_jackknife": null
+      }
+    },
+    "OnlinePortal_NoRec": {
+      "Not selected": {
+        "mean_diabetic": 0.8081735286364159,
+        "mean_non_diabetic": 0.8358608052754651,
+        "diff": -0.02768727663904924,
+        "se_jackknife": null
+      },
+      "Selected": {
+        "mean_diabetic": 0.1767157177523472,
+        "mean_non_diabetic": 0.15481764383153027,
+        "diff": 0.02189807392081694,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0014168757357366955,
+        "diff": 0.0014168757357366955,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.015110753611236913,
+        "mean_non_diabetic": 0.010738426628741271,
+        "diff": 0.004372326982495641,
+        "se_jackknife": null
+      }
+    },
+    "OnlinePortal_Cat": {
+      "Multiple providers selected": {
+        "mean_diabetic": 0.5925132316261212,
+        "mean_non_diabetic": 0.5899774684798414,
+        "diff": 0.0025357631462797903,
+        "se_jackknife": null
+      },
+      "I do not have any online medical records or patient portals only": {
+        "mean_diabetic": 0.1767157177523472,
+        "mean_non_diabetic": 0.15481764383153027,
+        "diff": 0.02189807392081694,
+        "se_jackknife": null
+      },
+      "My primary care provider's office only": {
+        "mean_diabetic": 0.13790632752245827,
+        "mean_non_diabetic": 0.16410403916116695,
+        "diff": -0.02619771163870868,
+        "se_jackknife": null
+      },
+      "Other health care provider(s) such as a specialty provider, counselor, or dentis": {
+        "mean_diabetic": 0.024878160888462293,
+        "mean_non_diabetic": 0.03363215562196051,
+        "diff": -0.008753994733498215,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0014168757357366955,
+        "diff": 0.0014168757357366955,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.015110753611236913,
+        "mean_non_diabetic": 0.010738426628741271,
+        "diff": 0.004372326982495641,
+        "se_jackknife": null
+      }
+    },
+    "UsedPortalOrganizerApp": {
+      "No": {
+        "mean_diabetic": 0.9346699021907382,
+        "mean_non_diabetic": 0.9361809339661334,
+        "diff": -0.001511031775395244,
+        "se_jackknife": null
+      },
+      "Yes": {
+        "mean_diabetic": 0.05262570889746588,
+        "mean_non_diabetic": 0.05955885094573792,
+        "diff": -0.006933142048272042,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0015660205500247688,
+        "diff": 0.0015660205500247688,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.012704388911795919,
+        "mean_non_diabetic": 0.005826235638153374,
+        "diff": 0.006878153273642545,
+        "se_jackknife": null
+      }
+    },
+    "ConfidentTestAccurate": {
+      "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3 _None": {
+        "mean_diabetic": 0.6792268539485335,
+        "mean_non_diabetic": 0.6907407703329658,
+        "diff": -0.011513916384432221,
+        "se_jackknife": null
+      },
+      "Very confident": {
+        "mean_diabetic": 0.0847905583982804,
+        "mean_non_diabetic": 0.10430975247287429,
+        "diff": -0.01951919407459389,
+        "se_jackknife": null
+      },
+      "Somewhat confident": {
+        "mean_diabetic": 0.10154047897472641,
+        "mean_non_diabetic": 0.09809787095777604,
+        "diff": 0.0034426080169503714,
+        "se_jackknife": null
+      },
+      "Completely confident": {
+        "mean_diabetic": 0.04492331402383382,
+        "mean_non_diabetic": 0.05409162818197798,
+        "diff": -0.009168314158144154,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0018717674193153187,
+        "diff": 0.0018717674193153187,
+        "se_jackknife": null
+      },
+      "A little confident": {
+        "mean_diabetic": 0.021126665359839394,
+        "mean_non_diabetic": 0.02152905394248337,
+        "diff": -0.0004023885826439748,
+        "se_jackknife": null
+      }
+    },
+    "LabShare2_HCP": {
+      "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+        "mean_diabetic": 0.6976666373757106,
+        "mean_non_diabetic": 0.6989575842801365,
+        "diff": -0.0012909469044259936,
+        "se_jackknife": null
+      },
+      "Not selected": {
+        "mean_diabetic": 0.13762581028923693,
+        "mean_non_diabetic": 0.16191906763184669,
+        "diff": -0.02429325734260976,
+        "se_jackknife": null
+      },
+      "Selected": {
+        "mean_diabetic": 0.12420491952873104,
+        "mean_non_diabetic": 0.12102995147466936,
+        "diff": 0.003174968054061686,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0018717674193153187,
+        "diff": 0.0018717674193153187,
+        "se_jackknife": null
+      },
+      "Missing data (Filter Missing)": {
+        "mean_diabetic": 0.015114133336938375,
+        "mean_non_diabetic": 0.007709721578591327,
+        "diff": 0.007404411758347048,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.00943957388418356,
+        "mean_non_diabetic": 0.006757325407351774,
+        "diff": 0.002682248476831786,
+        "se_jackknife": null
+      }
+    },
+    "LabShare2_ScientificRes": {
+      "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+        "mean_diabetic": 0.7122670524060267,
+        "mean_non_diabetic": 0.7031442922812232,
+        "diff": 0.009122760124803508,
+        "se_jackknife": null
+      },
+      "Not selected": {
+        "mean_diabetic": 0.20153980302958613,
+        "mean_non_diabetic": 0.2064622317390818,
+        "diff": -0.004922428709495663,
+        "se_jackknife": null
+      },
+      "Selected": {
+        "mean_diabetic": 0.060290926788381854,
+        "mean_non_diabetic": 0.07648678736743424,
+        "diff": -0.016195860579052382,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0018717674193153187,
+        "diff": 0.0018717674193153187,
+        "se_jackknife": null
+      },
+      "Missing data (Filter Missing)": {
+        "mean_diabetic": 0.015114133336938375,
+        "mean_non_diabetic": 0.007709721578591327,
+        "diff": 0.007404411758347048,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.00943957388418356,
+        "mean_non_diabetic": 0.006757325407351774,
+        "diff": 0.002682248476831786,
+        "se_jackknife": null
+      }
+    },
+    "LabShare2_ForProfitCo2": {
+      "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+        "mean_diabetic": 0.7132066161510332,
+        "mean_non_diabetic": 0.7035853348034751,
+        "diff": 0.00962128134755813,
+        "se_jackknife": null
+      },
+      "Not selected": {
+        "mean_diabetic": 0.2361312955840504,
+        "mean_non_diabetic": 0.2506240112497803,
+        "diff": -0.014492715665729877,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0018717674193153187,
+        "diff": 0.0018717674193153187,
+        "se_jackknife": null
+      },
+      "Selected": {
+        "mean_diabetic": 0.025699434233917576,
+        "mean_non_diabetic": 0.032325007856735755,
+        "diff": -0.006625573622818178,
+        "se_jackknife": null
+      },
+      "Missing data (Filter Missing)": {
+        "mean_diabetic": 0.015114133336938375,
+        "mean_non_diabetic": 0.007709721578591327,
+        "diff": 0.007404411758347048,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.00943957388418356,
+        "mean_non_diabetic": 0.006757325407351774,
+        "diff": 0.002682248476831786,
+        "se_jackknife": null
+      }
+    },
+    "LabShare2_LEAgencies": {
+      "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+        "mean_diabetic": 0.7121251039265654,
+        "mean_non_diabetic": 0.7036833442528644,
+        "diff": 0.008441759673700977,
+        "se_jackknife": null
+      },
+      "Not selected": {
+        "mean_diabetic": 0.24237364895465083,
+        "mean_non_diabetic": 0.2625513351124179,
+        "diff": -0.020177686157767077,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0018717674193153187,
+        "diff": 0.0018717674193153187,
+        "se_jackknife": null
+      },
+      "Selected": {
+        "mean_diabetic": 0.019457080863317135,
+        "mean_non_diabetic": 0.020397683994098127,
+        "diff": -0.0009406031307809919,
+        "se_jackknife": null
+      },
+      "Missing data (Filter Missing)": {
+        "mean_diabetic": 0.015114133336938375,
+        "mean_non_diabetic": 0.007709721578591327,
+        "diff": 0.007404411758347048,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.00943957388418356,
+        "mean_non_diabetic": 0.006757325407351774,
+        "diff": 0.002682248476831786,
+        "se_jackknife": null
+      }
+    },
+    "LabShare2_HealthIns": {
+      "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+        "mean_diabetic": 0.7088028335620281,
+        "mean_non_diabetic": 0.7021013439013087,
+        "diff": 0.006701489660719373,
+        "se_jackknife": null
+      },
+      "Not selected": {
+        "mean_diabetic": 0.22639768556383963,
+        "mean_non_diabetic": 0.2504844543164107,
+        "diff": -0.02408676875257107,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0018717674193153187,
+        "diff": 0.0018717674193153187,
+        "se_jackknife": null
+      },
+      "Selected": {
+        "mean_diabetic": 0.03543304425412833,
+        "mean_non_diabetic": 0.03246456479010531,
+        "diff": 0.0029684794640230244,
+        "se_jackknife": null
+      },
+      "Missing data (Filter Missing)": {
+        "mean_diabetic": 0.015114133336938375,
+        "mean_non_diabetic": 0.007709721578591327,
+        "diff": 0.007404411758347048,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.00943957388418356,
+        "mean_non_diabetic": 0.006757325407351774,
+        "diff": 0.002682248476831786,
+        "se_jackknife": null
+      }
+    },
+    "LabShare2_OthIns": {
+      "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+        "mean_diabetic": 0.7113781845465422,
+        "mean_non_diabetic": 0.7026691595157055,
+        "diff": 0.008709025030836703,
+        "se_jackknife": null
+      },
+      "Not selected": {
+        "mean_diabetic": 0.24527683333220676,
+        "mean_non_diabetic": 0.26246184822384505,
+        "diff": -0.01718501489163829,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0018717674193153187,
+        "diff": 0.0018717674193153187,
+        "se_jackknife": null
+      },
+      "Selected": {
+        "mean_diabetic": 0.016553896485761214,
+        "mean_non_diabetic": 0.02048717088267097,
+        "diff": -0.0039332743969097556,
+        "se_jackknife": null
+      },
+      "Missing data (Filter Missing)": {
+        "mean_diabetic": 0.015114133336938375,
+        "mean_non_diabetic": 0.007709721578591327,
+        "diff": 0.007404411758347048,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.00943957388418356,
+        "mean_non_diabetic": 0.006757325407351774,
+        "diff": 0.002682248476831786,
+        "se_jackknife": null
+      }
+    },
+    "LabShare2_NotSure": {
+      "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+        "mean_diabetic": 0.7054602848432822,
+        "mean_non_diabetic": 0.7004639469044461,
+        "diff": 0.004996337938836026,
+        "se_jackknife": null
+      },
+      "Not selected": {
+        "mean_diabetic": 0.20185749724552354,
+        "mean_non_diabetic": 0.2181029844942659,
+        "diff": -0.016245487248742363,
+        "se_jackknife": null
+      },
+      "Selected": {
+        "mean_diabetic": 0.05997323257244442,
+        "mean_non_diabetic": 0.06484603461225012,
+        "diff": -0.004872802039805703,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0018717674193153187,
+        "diff": 0.0018717674193153187,
+        "se_jackknife": null
+      },
+      "Missing data (Filter Missing)": {
+        "mean_diabetic": 0.015114133336938375,
+        "mean_non_diabetic": 0.007709721578591327,
+        "diff": 0.007404411758347048,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.00943957388418356,
+        "mean_non_diabetic": 0.006757325407351774,
+        "diff": 0.002682248476831786,
+        "se_jackknife": null
+      }
+    },
+    "LabShare2_NotShared": {
+      "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+        "mean_diabetic": 0.7003501395826714,
+        "mean_non_diabetic": 0.6991429499778946,
+        "diff": 0.0012071896047768371,
+        "se_jackknife": null
+      },
+      "Not selected": {
+        "mean_diabetic": 0.19742329712520532,
+        "mean_non_diabetic": 0.2113744227296697,
+        "diff": -0.013951125604464376,
+        "se_jackknife": null
+      },
+      "Selected": {
+        "mean_diabetic": 0.06440743269276265,
+        "mean_non_diabetic": 0.07157459637684634,
+        "diff": -0.007167163684083683,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0018717674193153187,
+        "diff": 0.0018717674193153187,
+        "se_jackknife": null
+      },
+      "Missing data (Filter Missing)": {
+        "mean_diabetic": 0.015114133336938375,
+        "mean_non_diabetic": 0.007709721578591327,
+        "diff": 0.007404411758347048,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.00943957388418356,
+        "mean_non_diabetic": 0.006757325407351774,
+        "diff": 0.002682248476831786,
+        "se_jackknife": null
+      }
+    },
+    "LabShare2_Cat": {
+      "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+        "mean_diabetic": 0.6912451585429327,
+        "mean_non_diabetic": 0.6957424482121265,
+        "diff": -0.004497289669193827,
+        "se_jackknife": null
+      },
+      "Multiple lab result share purposes selected": {
+        "mean_diabetic": 0.0794438323385674,
+        "mean_non_diabetic": 0.08452462753745932,
+        "diff": -0.005080795198891916,
+        "se_jackknife": null
+      },
+      "I did not think...would be shared only": {
+        "mean_diabetic": 0.0637619050837834,
+        "mean_non_diabetic": 0.07139349195949653,
+        "diff": -0.007631586875713123,
+        "se_jackknife": null
+      },
+      "My healthcare provider only": {
+        "mean_diabetic": 0.059740031499043535,
+        "mean_non_diabetic": 0.06411629034234062,
+        "diff": -0.004376258843297086,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0018717674193153187,
+        "diff": 0.0018717674193153187,
+        "se_jackknife": null
+      },
+      "I was not sure... only": {
+        "mean_diabetic": 0.03387161098005286,
+        "mean_non_diabetic": 0.03401780149890538,
+        "diff": -0.00014619051885252088,
+        "se_jackknife": null
+      }
+    },
+    "ClinTrials2_NotWilling": {
+      "Not selected": {
+        "mean_diabetic": 0.7891591918399903,
+        "mean_non_diabetic": 0.813910949892669,
+        "diff": -0.024751758052678707,
+        "se_jackknife": null
+      },
+      "Selected": {
+        "mean_diabetic": 0.19770719408412812,
+        "mean_non_diabetic": 0.1778626482792417,
+        "diff": 0.019844545804886426,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.0,
+        "mean_non_diabetic": -0.0019761687893169702,
+        "diff": 0.0019761687893169702,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.013133614075881601,
+        "mean_non_diabetic": 0.010202570617406264,
+        "diff": 0.002931043458475337,
+        "se_jackknife": null
+      }
+    },
+    "TobMessages_Trusted": {
+      "Inapplicable, coded 2 in SeenFedCourtTobMessages": {
+        "mean_diabetic": 0.6281963755821578,
+        "mean_non_diabetic": 0.6419160847355609,
+        "diff": -0.013719709153403148,
+        "se_jackknife": null
+      },
+      "Selected": {
+        "mean_diabetic": 0.1565286161375143,
+        "mean_non_diabetic": 0.16625811640752755,
+        "diff": -0.009729500270013264,
+        "se_jackknife": null
+      },
+      "Not selected": {
+        "mean_diabetic": 0.18762209259096532,
+        "mean_non_diabetic": 0.15483362363306113,
+        "diff": 0.03278846895790419,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.009399017175766015,
+        "mean_non_diabetic": 0.016134272945663348,
+        "diff": -0.006735255769897332,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.007617901731095504,
+        "mean_non_diabetic": 0.012565450603770168,
+        "diff": -0.004947548872674664,
+        "se_jackknife": null
+      },
+      "Missing data (Filter Missing)": {
+        "mean_diabetic": 0.006850703996863615,
+        "mean_non_diabetic": 0.00584647672009247,
+        "diff": 0.001004227276771145,
+        "se_jackknife": null
+      }
+    },
+    "CervCaTest_Privacy": {
+      "Inapplicable, coded 1 or 2 in PrefCervCaTest": {
+        "mean_diabetic": 0.7075050188926667,
+        "mean_non_diabetic": 0.6856016661606397,
+        "diff": 0.021903352732027037,
+        "se_jackknife": null
+      },
+      "Not selected": {
+        "mean_diabetic": 0.11909815399382186,
+        "mean_non_diabetic": 0.13221261658596867,
+        "diff": -0.013114462592146811,
+        "se_jackknife": null
+      },
+      "Selected": {
+        "mean_diabetic": 0.11602598333119284,
+        "mean_non_diabetic": 0.12820594768212978,
+        "diff": -0.012179964350936948,
+        "se_jackknife": null
+      },
+      "Missing data (Web partial - Question Never Seen)": {
+        "mean_diabetic": 0.012633414672065215,
+        "mean_non_diabetic": 0.022470796912702345,
+        "diff": -0.00983738224063713,
+        "se_jackknife": null
+      },
+      "Missing data (Filter Missing)": {
+        "mean_diabetic": 0.025503410143232774,
+        "mean_non_diabetic": 0.016331357164544015,
+        "diff": 0.009172052978688758,
+        "se_jackknife": null
+      },
+      "Missing data (Not Ascertained)": {
+        "mean_diabetic": 0.007330625046471228,
+        "mean_non_diabetic": 0.009030718505142832,
+        "diff": -0.001700093458671604,
+        "se_jackknife": null
+      }
+    }
+  }
+}

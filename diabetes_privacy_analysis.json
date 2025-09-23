@@ -1,0 +1,2624 @@
+{
+  "privacy_columns": [
+    "CancerTrustDoctor",
+    "CancerTrustFamily",
+    "CancerTrustGov",
+    "CancerTrustCharities",
+    "CancerTrustReligiousOrgs",
+    "CancerTrustScientists",
+    "UseDevice_Computer",
+    "UseDevice_SmPhone",
+    "UseDevice_Tablet",
+    "UseDevice_SmWatch",
+    "WillingShareData_HCP2",
+    "SharedHealthDeviceInfo2",
+    "SocMed_SharedPers",
+    "SocMed_SharedGen",
+    "MisleadingHealthInfo",
+    "ConfidentMedForms",
+    "TrustHCSystem",
+    "WillingUseTelehealth",
+    "HCPEncourageOnlineRec2",
+    "AccessOnlineRecord3",
+    "HowAccessOnlineRecord2",
+    "RecordsOnline2_ViewResults",
+    "RecordsOnline2_ViewNotes",
+    "UnderstandOnlineMedRec2",
+    "OnlinePortal_PCP",
+    "OnlinePortal_OthHCP",
+    "OnlinePortal_Insurer",
+    "OnlinePortal_Lab",
+    "OnlinePortal_Pharmacy",
+    "OnlinePortal_Hospital",
+    "OnlinePortal_NoRec",
+    "OnlinePortal_Cat",
+    "UsedPortalOrganizerApp",
+    "ConfidentTestAccurate",
+    "LabShare2_HCP",
+    "LabShare2_ScientificRes",
+    "LabShare2_ForProfitCo2",
+    "LabShare2_LEAgencies",
+    "LabShare2_HealthIns",
+    "LabShare2_OthIns",
+    "LabShare2_NotSure",
+    "LabShare2_NotShared",
+    "LabShare2_Cat",
+    "ClinTrials2_NotWilling",
+    "TobMessages_Trusted",
+    "CervCaTest_Privacy"
+  ],
+  "analysis": {
+    "CancerTrustDoctor": {
+      "count": {
+        "A little": {
+          "Diabetic": 74,
+          "Non-Diabetic": 263
+        },
+        "A lot": {
+          "Diabetic": 1042,
+          "Non-Diabetic": 3987
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 29,
+          "Non-Diabetic": 49
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0,
+          "Non-Diabetic": 6
+        },
+        "Not at all": {
+          "Diabetic": 29,
+          "Non-Diabetic": 86
+        },
+        "Some": {
+          "Diabetic": 360,
+          "Non-Diabetic": 1353
+        }
+      },
+      "percent_by_col": {
+        "A little": {
+          "Diabetic": 0.2196,
+          "Non-Diabetic": 0.7804
+        },
+        "A lot": {
+          "Diabetic": 0.2072,
+          "Non-Diabetic": 0.7928
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.3718,
+          "Non-Diabetic": 0.6282
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not at all": {
+          "Diabetic": 0.2522,
+          "Non-Diabetic": 0.7478
+        },
+        "Some": {
+          "Diabetic": 0.2102,
+          "Non-Diabetic": 0.7898
+        }
+      }
+    },
+    "CancerTrustFamily": {
+      "count": {
+        "A little": {
+          "Diabetic": 545,
+          "Non-Diabetic": 2122
+        },
+        "A lot": {
+          "Diabetic": 121,
+          "Non-Diabetic": 365
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 91,
+          "Non-Diabetic": 145
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0,
+          "Non-Diabetic": 3
+        },
+        "Not at all": {
+          "Diabetic": 123,
+          "Non-Diabetic": 458
+        },
+        "Some": {
+          "Diabetic": 654,
+          "Non-Diabetic": 2651
+        }
+      },
+      "percent_by_col": {
+        "A little": {
+          "Diabetic": 0.2043,
+          "Non-Diabetic": 0.7957
+        },
+        "A lot": {
+          "Diabetic": 0.249,
+          "Non-Diabetic": 0.751
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.3856,
+          "Non-Diabetic": 0.6144
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not at all": {
+          "Diabetic": 0.2117,
+          "Non-Diabetic": 0.7883
+        },
+        "Some": {
+          "Diabetic": 0.1979,
+          "Non-Diabetic": 0.8021
+        }
+      }
+    },
+    "CancerTrustGov": {
+      "count": {
+        "A little": {
+          "Diabetic": 307,
+          "Non-Diabetic": 1053
+        },
+        "A lot": {
+          "Diabetic": 365,
+          "Non-Diabetic": 1496
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 86,
+          "Non-Diabetic": 148
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 2,
+          "Non-Diabetic": 3
+        },
+        "Not at all": {
+          "Diabetic": 156,
+          "Non-Diabetic": 474
+        },
+        "Some": {
+          "Diabetic": 618,
+          "Non-Diabetic": 2570
+        }
+      },
+      "percent_by_col": {
+        "A little": {
+          "Diabetic": 0.2257,
+          "Non-Diabetic": 0.7743
+        },
+        "A lot": {
+          "Diabetic": 0.1961,
+          "Non-Diabetic": 0.8039
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.3675,
+          "Non-Diabetic": 0.6325
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0.4,
+          "Non-Diabetic": 0.6
+        },
+        "Not at all": {
+          "Diabetic": 0.2476,
+          "Non-Diabetic": 0.7524
+        },
+        "Some": {
+          "Diabetic": 0.1939,
+          "Non-Diabetic": 0.8061
+        }
+      }
+    },
+    "CancerTrustCharities": {
+      "count": {
+        "A little": {
+          "Diabetic": 473,
+          "Non-Diabetic": 1869
+        },
+        "A lot": {
+          "Diabetic": 126,
+          "Non-Diabetic": 487
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 96,
+          "Non-Diabetic": 164
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0,
+          "Non-Diabetic": 2
+        },
+        "Not at all": {
+          "Diabetic": 273,
+          "Non-Diabetic": 869
+        },
+        "Some": {
+          "Diabetic": 566,
+          "Non-Diabetic": 2353
+        }
+      },
+      "percent_by_col": {
+        "A little": {
+          "Diabetic": 0.202,
+          "Non-Diabetic": 0.798
+        },
+        "A lot": {
+          "Diabetic": 0.2055,
+          "Non-Diabetic": 0.7945
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.3692,
+          "Non-Diabetic": 0.6308
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not at all": {
+          "Diabetic": 0.2391,
+          "Non-Diabetic": 0.7609
+        },
+        "Some": {
+          "Diabetic": 0.1939,
+          "Non-Diabetic": 0.8061
+        }
+      }
+    },
+    "CancerTrustReligiousOrgs": {
+      "count": {
+        "A little": {
+          "Diabetic": 494,
+          "Non-Diabetic": 1745
+        },
+        "A lot": {
+          "Diabetic": 96,
+          "Non-Diabetic": 255
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 98,
+          "Non-Diabetic": 154
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 1,
+          "Non-Diabetic": 1
+        },
+        "Not at all": {
+          "Diabetic": 478,
+          "Non-Diabetic": 2304
+        },
+        "Some": {
+          "Diabetic": 367,
+          "Non-Diabetic": 1285
+        }
+      },
+      "percent_by_col": {
+        "A little": {
+          "Diabetic": 0.2206,
+          "Non-Diabetic": 0.7794
+        },
+        "A lot": {
+          "Diabetic": 0.2735,
+          "Non-Diabetic": 0.7265
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.3889,
+          "Non-Diabetic": 0.6111
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0.5,
+          "Non-Diabetic": 0.5
+        },
+        "Not at all": {
+          "Diabetic": 0.1718,
+          "Non-Diabetic": 0.8282
+        },
+        "Some": {
+          "Diabetic": 0.2222,
+          "Non-Diabetic": 0.7778
+        }
+      }
+    },
+    "CancerTrustScientists": {
+      "count": {
+        "A little": {
+          "Diabetic": 190,
+          "Non-Diabetic": 627
+        },
+        "A lot": {
+          "Diabetic": 679,
+          "Non-Diabetic": 2978
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 86,
+          "Non-Diabetic": 121
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0,
+          "Non-Diabetic": 1
+        },
+        "Not at all": {
+          "Diabetic": 95,
+          "Non-Diabetic": 230
+        },
+        "Some": {
+          "Diabetic": 484,
+          "Non-Diabetic": 1787
+        }
+      },
+      "percent_by_col": {
+        "A little": {
+          "Diabetic": 0.2326,
+          "Non-Diabetic": 0.7674
+        },
+        "A lot": {
+          "Diabetic": 0.1857,
+          "Non-Diabetic": 0.8143
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.4155,
+          "Non-Diabetic": 0.5845
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not at all": {
+          "Diabetic": 0.2923,
+          "Non-Diabetic": 0.7077
+        },
+        "Some": {
+          "Diabetic": 0.2131,
+          "Non-Diabetic": 0.7869
+        }
+      }
+    },
+    "UseDevice_Computer": {
+      "count": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 27,
+          "Non-Diabetic": 45
+        },
+        "No": {
+          "Diabetic": 460,
+          "Non-Diabetic": 1046
+        },
+        "Yes": {
+          "Diabetic": 1047,
+          "Non-Diabetic": 4653
+        }
+      },
+      "percent_by_col": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.375,
+          "Non-Diabetic": 0.625
+        },
+        "No": {
+          "Diabetic": 0.3054,
+          "Non-Diabetic": 0.6946
+        },
+        "Yes": {
+          "Diabetic": 0.1837,
+          "Non-Diabetic": 0.8163
+        }
+      }
+    },
+    "UseDevice_SmPhone": {
+      "count": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 15,
+          "Non-Diabetic": 41
+        },
+        "No": {
+          "Diabetic": 220,
+          "Non-Diabetic": 426
+        },
+        "Yes": {
+          "Diabetic": 1299,
+          "Non-Diabetic": 5277
+        }
+      },
+      "percent_by_col": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2679,
+          "Non-Diabetic": 0.7321
+        },
+        "No": {
+          "Diabetic": 0.3406,
+          "Non-Diabetic": 0.6594
+        },
+        "Yes": {
+          "Diabetic": 0.1975,
+          "Non-Diabetic": 0.8025
+        }
+      }
+    },
+    "UseDevice_Tablet": {
+      "count": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 34,
+          "Non-Diabetic": 70
+        },
+        "No": {
+          "Diabetic": 780,
+          "Non-Diabetic": 2666
+        },
+        "Yes": {
+          "Diabetic": 720,
+          "Non-Diabetic": 3008
+        }
+      },
+      "percent_by_col": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.3269,
+          "Non-Diabetic": 0.6731
+        },
+        "No": {
+          "Diabetic": 0.2263,
+          "Non-Diabetic": 0.7737
+        },
+        "Yes": {
+          "Diabetic": 0.1931,
+          "Non-Diabetic": 0.8069
+        }
+      }
+    },
+    "UseDevice_SmWatch": {
+      "count": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 18,
+          "Non-Diabetic": 40
+        },
+        "No": {
+          "Diabetic": 1124,
+          "Non-Diabetic": 3654
+        },
+        "Yes": {
+          "Diabetic": 392,
+          "Non-Diabetic": 2050
+        }
+      },
+      "percent_by_col": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.3103,
+          "Non-Diabetic": 0.6897
+        },
+        "No": {
+          "Diabetic": 0.2352,
+          "Non-Diabetic": 0.7648
+        },
+        "Yes": {
+          "Diabetic": 0.1605,
+          "Non-Diabetic": 0.8395
+        }
+      }
+    },
+    "WillingShareData_HCP2": {
+      "count": {
+        "Inapplicable, coded 2 in WearableDevTrackHealth2": {
+          "Diabetic": 825,
+          "Non-Diabetic": 3024
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 26,
+          "Non-Diabetic": 65
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 3,
+          "Non-Diabetic": 10
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 11
+        },
+        "No": {
+          "Diabetic": 85,
+          "Non-Diabetic": 551
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 208,
+          "Non-Diabetic": 444
+        },
+        "Yes": {
+          "Diabetic": 387,
+          "Non-Diabetic": 1639
+        }
+      },
+      "percent_by_col": {
+        "Inapplicable, coded 2 in WearableDevTrackHealth2": {
+          "Diabetic": 0.2143,
+          "Non-Diabetic": 0.7857
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 0.2857,
+          "Non-Diabetic": 0.7143
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2308,
+          "Non-Diabetic": 0.7692
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "No": {
+          "Diabetic": 0.1336,
+          "Non-Diabetic": 0.8664
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 0.319,
+          "Non-Diabetic": 0.681
+        },
+        "Yes": {
+          "Diabetic": 0.191,
+          "Non-Diabetic": 0.809
+        }
+      }
+    },
+    "SharedHealthDeviceInfo2": {
+      "count": {
+        "I do not use a smartphone or electronic monitoring device": {
+          "Diabetic": 228,
+          "Non-Diabetic": 874
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 18,
+          "Non-Diabetic": 56
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 11
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 23,
+          "Non-Diabetic": 59
+        },
+        "No": {
+          "Diabetic": 755,
+          "Non-Diabetic": 3796
+        },
+        "Yes": {
+          "Diabetic": 510,
+          "Non-Diabetic": 948
+        }
+      },
+      "percent_by_col": {
+        "I do not use a smartphone or electronic monitoring device": {
+          "Diabetic": 0.2069,
+          "Non-Diabetic": 0.7931
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2432,
+          "Non-Diabetic": 0.7568
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0.2805,
+          "Non-Diabetic": 0.7195
+        },
+        "No": {
+          "Diabetic": 0.1659,
+          "Non-Diabetic": 0.8341
+        },
+        "Yes": {
+          "Diabetic": 0.3498,
+          "Non-Diabetic": 0.6502
+        }
+      }
+    },
+    "SocMed_SharedPers": {
+      "count": {
+        "A few times a month": {
+          "Diabetic": 55,
+          "Non-Diabetic": 171
+        },
+        "Almost every day": {
+          "Diabetic": 27,
+          "Non-Diabetic": 80
+        },
+        "At least once a week": {
+          "Diabetic": 37,
+          "Non-Diabetic": 114
+        },
+        "Less than once a month": {
+          "Diabetic": 136,
+          "Non-Diabetic": 565
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 28,
+          "Non-Diabetic": 75
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 18
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 1,
+          "Non-Diabetic": 1
+        },
+        "Never": {
+          "Diabetic": 1250,
+          "Non-Diabetic": 4720
+        }
+      },
+      "percent_by_col": {
+        "A few times a month": {
+          "Diabetic": 0.2434,
+          "Non-Diabetic": 0.7566
+        },
+        "Almost every day": {
+          "Diabetic": 0.2523,
+          "Non-Diabetic": 0.7477
+        },
+        "At least once a week": {
+          "Diabetic": 0.245,
+          "Non-Diabetic": 0.755
+        },
+        "Less than once a month": {
+          "Diabetic": 0.194,
+          "Non-Diabetic": 0.806
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2718,
+          "Non-Diabetic": 0.7282
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0.5,
+          "Non-Diabetic": 0.5
+        },
+        "Never": {
+          "Diabetic": 0.2094,
+          "Non-Diabetic": 0.7906
+        }
+      }
+    },
+    "SocMed_SharedGen": {
+      "count": {
+        "A few times a month": {
+          "Diabetic": 89,
+          "Non-Diabetic": 362
+        },
+        "Almost every day": {
+          "Diabetic": 23,
+          "Non-Diabetic": 93
+        },
+        "At least once a week": {
+          "Diabetic": 49,
+          "Non-Diabetic": 154
+        },
+        "Less than once a month": {
+          "Diabetic": 264,
+          "Non-Diabetic": 1087
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 33,
+          "Non-Diabetic": 73
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 18
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 1,
+          "Non-Diabetic": 1
+        },
+        "Never": {
+          "Diabetic": 1075,
+          "Non-Diabetic": 3956
+        }
+      },
+      "percent_by_col": {
+        "A few times a month": {
+          "Diabetic": 0.1973,
+          "Non-Diabetic": 0.8027
+        },
+        "Almost every day": {
+          "Diabetic": 0.1983,
+          "Non-Diabetic": 0.8017
+        },
+        "At least once a week": {
+          "Diabetic": 0.2414,
+          "Non-Diabetic": 0.7586
+        },
+        "Less than once a month": {
+          "Diabetic": 0.1954,
+          "Non-Diabetic": 0.8046
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.3113,
+          "Non-Diabetic": 0.6887
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0.5,
+          "Non-Diabetic": 0.5
+        },
+        "Never": {
+          "Diabetic": 0.2137,
+          "Non-Diabetic": 0.7863
+        }
+      }
+    },
+    "MisleadingHealthInfo": {
+      "count": {
+        "A little": {
+          "Diabetic": 174,
+          "Non-Diabetic": 800
+        },
+        "A lot": {
+          "Diabetic": 407,
+          "Non-Diabetic": 1772
+        },
+        "I do not use social media": {
+          "Diabetic": 373,
+          "Non-Diabetic": 862
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 8,
+          "Non-Diabetic": 19
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 26
+        },
+        "Some": {
+          "Diabetic": 530,
+          "Non-Diabetic": 2170
+        },
+        "nan": {
+          "Diabetic": 42,
+          "Non-Diabetic": 95
+        }
+      },
+      "percent_by_col": {
+        "A little": {
+          "Diabetic": 0.1786,
+          "Non-Diabetic": 0.8214
+        },
+        "A lot": {
+          "Diabetic": 0.1868,
+          "Non-Diabetic": 0.8132
+        },
+        "I do not use social media": {
+          "Diabetic": 0.302,
+          "Non-Diabetic": 0.698
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2963,
+          "Non-Diabetic": 0.7037
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Some": {
+          "Diabetic": 0.1963,
+          "Non-Diabetic": 0.8037
+        },
+        "nan": {
+          "Diabetic": 0.3066,
+          "Non-Diabetic": 0.6934
+        }
+      }
+    },
+    "ConfidentMedForms": {
+      "count": {
+        "A little": {
+          "Diabetic": 138,
+          "Non-Diabetic": 399
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 17,
+          "Non-Diabetic": 58
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 88
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0,
+          "Non-Diabetic": 1
+        },
+        "Not at all": {
+          "Diabetic": 84,
+          "Non-Diabetic": 175
+        },
+        "Somewhat": {
+          "Diabetic": 349,
+          "Non-Diabetic": 1244
+        },
+        "Very": {
+          "Diabetic": 946,
+          "Non-Diabetic": 3779
+        }
+      },
+      "percent_by_col": {
+        "A little": {
+          "Diabetic": 0.257,
+          "Non-Diabetic": 0.743
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2267,
+          "Non-Diabetic": 0.7733
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not at all": {
+          "Diabetic": 0.3243,
+          "Non-Diabetic": 0.6757
+        },
+        "Somewhat": {
+          "Diabetic": 0.2191,
+          "Non-Diabetic": 0.7809
+        },
+        "Very": {
+          "Diabetic": 0.2002,
+          "Non-Diabetic": 0.7998
+        }
+      }
+    },
+    "TrustHCSystem": {
+      "count": {
+        "A little": {
+          "Diabetic": 207,
+          "Non-Diabetic": 751
+        },
+        "A lot": {
+          "Diabetic": 629,
+          "Non-Diabetic": 1969
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 9,
+          "Non-Diabetic": 36
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 90
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0,
+          "Non-Diabetic": 1
+        },
+        "Not at all": {
+          "Diabetic": 47,
+          "Non-Diabetic": 255
+        },
+        "Some": {
+          "Diabetic": 642,
+          "Non-Diabetic": 2642
+        }
+      },
+      "percent_by_col": {
+        "A little": {
+          "Diabetic": 0.2161,
+          "Non-Diabetic": 0.7839
+        },
+        "A lot": {
+          "Diabetic": 0.2421,
+          "Non-Diabetic": 0.7579
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2,
+          "Non-Diabetic": 0.8
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not at all": {
+          "Diabetic": 0.1556,
+          "Non-Diabetic": 0.8444
+        },
+        "Some": {
+          "Diabetic": 0.1955,
+          "Non-Diabetic": 0.8045
+        }
+      }
+    },
+    "WillingUseTelehealth": {
+      "count": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 62,
+          "Non-Diabetic": 160
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 158
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 1,
+          "Non-Diabetic": 1
+        },
+        "Somewhat unwilling": {
+          "Diabetic": 194,
+          "Non-Diabetic": 730
+        },
+        "Somewhat willing": {
+          "Diabetic": 537,
+          "Non-Diabetic": 2009
+        },
+        "Very unwilling": {
+          "Diabetic": 228,
+          "Non-Diabetic": 634
+        },
+        "Very willing": {
+          "Diabetic": 512,
+          "Non-Diabetic": 2052
+        }
+      },
+      "percent_by_col": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2793,
+          "Non-Diabetic": 0.7207
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0.5,
+          "Non-Diabetic": 0.5
+        },
+        "Somewhat unwilling": {
+          "Diabetic": 0.21,
+          "Non-Diabetic": 0.79
+        },
+        "Somewhat willing": {
+          "Diabetic": 0.2109,
+          "Non-Diabetic": 0.7891
+        },
+        "Very unwilling": {
+          "Diabetic": 0.2645,
+          "Non-Diabetic": 0.7355
+        },
+        "Very willing": {
+          "Diabetic": 0.1997,
+          "Non-Diabetic": 0.8003
+        }
+      }
+    },
+    "HCPEncourageOnlineRec2": {
+      "count": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 16,
+          "Non-Diabetic": 61
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 173
+        },
+        "No": {
+          "Diabetic": 494,
+          "Non-Diabetic": 1511
+        },
+        "Yes": {
+          "Diabetic": 1024,
+          "Non-Diabetic": 3999
+        }
+      },
+      "percent_by_col": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2078,
+          "Non-Diabetic": 0.7922
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "No": {
+          "Diabetic": 0.2464,
+          "Non-Diabetic": 0.7536
+        },
+        "Yes": {
+          "Diabetic": 0.2039,
+          "Non-Diabetic": 0.7961
+        }
+      }
+    },
+    "AccessOnlineRecord3": {
+      "count": {
+        "0": {
+          "Diabetic": 520,
+          "Non-Diabetic": 1744
+        },
+        "1 to 2 times": {
+          "Diabetic": 252,
+          "Non-Diabetic": 1163
+        },
+        "10 or more times": {
+          "Diabetic": 253,
+          "Non-Diabetic": 818
+        },
+        "3 to 5 times": {
+          "Diabetic": 307,
+          "Non-Diabetic": 1191
+        },
+        "6 to 9 times": {
+          "Diabetic": 187,
+          "Non-Diabetic": 622
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 15,
+          "Non-Diabetic": 25
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 181
+        }
+      },
+      "percent_by_col": {
+        "0": {
+          "Diabetic": 0.2297,
+          "Non-Diabetic": 0.7703
+        },
+        "1 to 2 times": {
+          "Diabetic": 0.1781,
+          "Non-Diabetic": 0.8219
+        },
+        "10 or more times": {
+          "Diabetic": 0.2362,
+          "Non-Diabetic": 0.7638
+        },
+        "3 to 5 times": {
+          "Diabetic": 0.2049,
+          "Non-Diabetic": 0.7951
+        },
+        "6 to 9 times": {
+          "Diabetic": 0.2311,
+          "Non-Diabetic": 0.7689
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.375,
+          "Non-Diabetic": 0.625
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        }
+      }
+    },
+    "HowAccessOnlineRecord2": {
+      "count": {
+        "App": {
+          "Diabetic": 229,
+          "Non-Diabetic": 741
+        },
+        "Both app and website": {
+          "Diabetic": 344,
+          "Non-Diabetic": 1249
+        },
+        "Don't know": {
+          "Diabetic": 47,
+          "Non-Diabetic": 76
+        },
+        "Inapplicable, coded 0 in AccessOnlineRecord3": {
+          "Diabetic": 455,
+          "Non-Diabetic": 1636
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 8,
+          "Non-Diabetic": 24
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 181
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 13,
+          "Non-Diabetic": 26
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 65,
+          "Non-Diabetic": 108
+        },
+        "Website": {
+          "Diabetic": 373,
+          "Non-Diabetic": 1703
+        }
+      },
+      "percent_by_col": {
+        "App": {
+          "Diabetic": 0.2361,
+          "Non-Diabetic": 0.7639
+        },
+        "Both app and website": {
+          "Diabetic": 0.2159,
+          "Non-Diabetic": 0.7841
+        },
+        "Don't know": {
+          "Diabetic": 0.3821,
+          "Non-Diabetic": 0.6179
+        },
+        "Inapplicable, coded 0 in AccessOnlineRecord3": {
+          "Diabetic": 0.2176,
+          "Non-Diabetic": 0.7824
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.25,
+          "Non-Diabetic": 0.75
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0.3333,
+          "Non-Diabetic": 0.6667
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 0.3757,
+          "Non-Diabetic": 0.6243
+        },
+        "Website": {
+          "Diabetic": 0.1797,
+          "Non-Diabetic": 0.8203
+        }
+      }
+    },
+    "RecordsOnline2_ViewResults": {
+      "count": {
+        "Inapplicable, coded 0 in AccessOnlineRecord3": {
+          "Diabetic": 437,
+          "Non-Diabetic": 1610
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 4,
+          "Non-Diabetic": 14
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 181
+        },
+        "No": {
+          "Diabetic": 92,
+          "Non-Diabetic": 383
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 83,
+          "Non-Diabetic": 134
+        },
+        "Yes": {
+          "Diabetic": 918,
+          "Non-Diabetic": 3422
+        }
+      },
+      "percent_by_col": {
+        "Inapplicable, coded 0 in AccessOnlineRecord3": {
+          "Diabetic": 0.2135,
+          "Non-Diabetic": 0.7865
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2222,
+          "Non-Diabetic": 0.7778
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "No": {
+          "Diabetic": 0.1937,
+          "Non-Diabetic": 0.8063
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 0.3825,
+          "Non-Diabetic": 0.6175
+        },
+        "Yes": {
+          "Diabetic": 0.2115,
+          "Non-Diabetic": 0.7885
+        }
+      }
+    },
+    "RecordsOnline2_ViewNotes": {
+      "count": {
+        "Inapplicable, coded 0 in AccessOnlineRecord3": {
+          "Diabetic": 442,
+          "Non-Diabetic": 1623
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 11,
+          "Non-Diabetic": 24
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 181
+        },
+        "No": {
+          "Diabetic": 210,
+          "Non-Diabetic": 807
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 78,
+          "Non-Diabetic": 121
+        },
+        "Yes": {
+          "Diabetic": 793,
+          "Non-Diabetic": 2988
+        }
+      },
+      "percent_by_col": {
+        "Inapplicable, coded 0 in AccessOnlineRecord3": {
+          "Diabetic": 0.214,
+          "Non-Diabetic": 0.786
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.3143,
+          "Non-Diabetic": 0.6857
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "No": {
+          "Diabetic": 0.2065,
+          "Non-Diabetic": 0.7935
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 0.392,
+          "Non-Diabetic": 0.608
+        },
+        "Yes": {
+          "Diabetic": 0.2097,
+          "Non-Diabetic": 0.7903
+        }
+      }
+    },
+    "UnderstandOnlineMedRec2": {
+      "count": {
+        "Inapplicable, coded 0 in AccessOnlineRecord3": {
+          "Diabetic": 467,
+          "Non-Diabetic": 1654
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 18,
+          "Non-Diabetic": 31
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 186
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0,
+          "Non-Diabetic": 2
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 53,
+          "Non-Diabetic": 90
+        },
+        "Somewhat difficult": {
+          "Diabetic": 111,
+          "Non-Diabetic": 369
+        },
+        "Somewhat easy": {
+          "Diabetic": 409,
+          "Non-Diabetic": 1616
+        },
+        "Very difficult": {
+          "Diabetic": 16,
+          "Non-Diabetic": 60
+        },
+        "Very easy": {
+          "Diabetic": 460,
+          "Non-Diabetic": 1736
+        }
+      },
+      "percent_by_col": {
+        "Inapplicable, coded 0 in AccessOnlineRecord3": {
+          "Diabetic": 0.2202,
+          "Non-Diabetic": 0.7798
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.3673,
+          "Non-Diabetic": 0.6327
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 0.3706,
+          "Non-Diabetic": 0.6294
+        },
+        "Somewhat difficult": {
+          "Diabetic": 0.2312,
+          "Non-Diabetic": 0.7688
+        },
+        "Somewhat easy": {
+          "Diabetic": 0.202,
+          "Non-Diabetic": 0.798
+        },
+        "Very difficult": {
+          "Diabetic": 0.2105,
+          "Non-Diabetic": 0.7895
+        },
+        "Very easy": {
+          "Diabetic": 0.2095,
+          "Non-Diabetic": 0.7905
+        }
+      }
+    },
+    "OnlinePortal_PCP": {
+      "count": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 26,
+          "Non-Diabetic": 105
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 190
+        },
+        "Not selected": {
+          "Diabetic": 512,
+          "Non-Diabetic": 1740
+        },
+        "Selected": {
+          "Diabetic": 996,
+          "Non-Diabetic": 3709
+        }
+      },
+      "percent_by_col": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.1985,
+          "Non-Diabetic": 0.8015
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not selected": {
+          "Diabetic": 0.2274,
+          "Non-Diabetic": 0.7726
+        },
+        "Selected": {
+          "Diabetic": 0.2117,
+          "Non-Diabetic": 0.7883
+        }
+      }
+    },
+    "OnlinePortal_OthHCP": {
+      "count": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 26,
+          "Non-Diabetic": 105
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 190
+        },
+        "Not selected": {
+          "Diabetic": 954,
+          "Non-Diabetic": 3278
+        },
+        "Selected": {
+          "Diabetic": 554,
+          "Non-Diabetic": 2171
+        }
+      },
+      "percent_by_col": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.1985,
+          "Non-Diabetic": 0.8015
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not selected": {
+          "Diabetic": 0.2254,
+          "Non-Diabetic": 0.7746
+        },
+        "Selected": {
+          "Diabetic": 0.2033,
+          "Non-Diabetic": 0.7967
+        }
+      }
+    },
+    "OnlinePortal_Insurer": {
+      "count": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 26,
+          "Non-Diabetic": 105
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 190
+        },
+        "Not selected": {
+          "Diabetic": 1116,
+          "Non-Diabetic": 3793
+        },
+        "Selected": {
+          "Diabetic": 392,
+          "Non-Diabetic": 1656
+        }
+      },
+      "percent_by_col": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.1985,
+          "Non-Diabetic": 0.8015
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not selected": {
+          "Diabetic": 0.2273,
+          "Non-Diabetic": 0.7727
+        },
+        "Selected": {
+          "Diabetic": 0.1914,
+          "Non-Diabetic": 0.8086
+        }
+      }
+    },
+    "OnlinePortal_Lab": {
+      "count": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 26,
+          "Non-Diabetic": 105
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 190
+        },
+        "Not selected": {
+          "Diabetic": 1007,
+          "Non-Diabetic": 3769
+        },
+        "Selected": {
+          "Diabetic": 501,
+          "Non-Diabetic": 1680
+        }
+      },
+      "percent_by_col": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.1985,
+          "Non-Diabetic": 0.8015
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not selected": {
+          "Diabetic": 0.2108,
+          "Non-Diabetic": 0.7892
+        },
+        "Selected": {
+          "Diabetic": 0.2297,
+          "Non-Diabetic": 0.7703
+        }
+      }
+    },
+    "OnlinePortal_Pharmacy": {
+      "count": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 26,
+          "Non-Diabetic": 105
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 190
+        },
+        "Not selected": {
+          "Diabetic": 1055,
+          "Non-Diabetic": 4142
+        },
+        "Selected": {
+          "Diabetic": 453,
+          "Non-Diabetic": 1307
+        }
+      },
+      "percent_by_col": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.1985,
+          "Non-Diabetic": 0.8015
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not selected": {
+          "Diabetic": 0.203,
+          "Non-Diabetic": 0.797
+        },
+        "Selected": {
+          "Diabetic": 0.2574,
+          "Non-Diabetic": 0.7426
+        }
+      }
+    },
+    "OnlinePortal_Hospital": {
+      "count": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 26,
+          "Non-Diabetic": 105
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 190
+        },
+        "Not selected": {
+          "Diabetic": 1122,
+          "Non-Diabetic": 4287
+        },
+        "Selected": {
+          "Diabetic": 386,
+          "Non-Diabetic": 1162
+        }
+      },
+      "percent_by_col": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.1985,
+          "Non-Diabetic": 0.8015
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not selected": {
+          "Diabetic": 0.2074,
+          "Non-Diabetic": 0.7926
+        },
+        "Selected": {
+          "Diabetic": 0.2494,
+          "Non-Diabetic": 0.7506
+        }
+      }
+    },
+    "OnlinePortal_NoRec": {
+      "count": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 26,
+          "Non-Diabetic": 105
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 190
+        },
+        "Not selected": {
+          "Diabetic": 1223,
+          "Non-Diabetic": 4574
+        },
+        "Selected": {
+          "Diabetic": 285,
+          "Non-Diabetic": 875
+        }
+      },
+      "percent_by_col": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.1985,
+          "Non-Diabetic": 0.8015
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not selected": {
+          "Diabetic": 0.211,
+          "Non-Diabetic": 0.789
+        },
+        "Selected": {
+          "Diabetic": 0.2457,
+          "Non-Diabetic": 0.7543
+        }
+      }
+    },
+    "OnlinePortal_Cat": {
+      "count": {
+        "Clinical laboratory that performs lab tests only": {
+          "Diabetic": 22,
+          "Non-Diabetic": 64
+        },
+        "Hospital only": {
+          "Diabetic": 28,
+          "Non-Diabetic": 80
+        },
+        "I do not have any online medical records or patient portals only": {
+          "Diabetic": 285,
+          "Non-Diabetic": 875
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 26,
+          "Non-Diabetic": 105
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 190
+        },
+        "Multiple providers selected": {
+          "Diabetic": 876,
+          "Non-Diabetic": 3205
+        },
+        "My insurer(s) only": {
+          "Diabetic": 22,
+          "Non-Diabetic": 101
+        },
+        "My primary care provider's office only": {
+          "Diabetic": 220,
+          "Non-Diabetic": 918
+        },
+        "Other health care provider(s) such as a specialty provider, counselor, or dentis": {
+          "Diabetic": 42,
+          "Non-Diabetic": 181
+        },
+        "Pharmacy only": {
+          "Diabetic": 13,
+          "Non-Diabetic": 25
+        }
+      },
+      "percent_by_col": {
+        "Clinical laboratory that performs lab tests only": {
+          "Diabetic": 0.2558,
+          "Non-Diabetic": 0.7442
+        },
+        "Hospital only": {
+          "Diabetic": 0.2593,
+          "Non-Diabetic": 0.7407
+        },
+        "I do not have any online medical records or patient portals only": {
+          "Diabetic": 0.2457,
+          "Non-Diabetic": 0.7543
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.1985,
+          "Non-Diabetic": 0.8015
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Multiple providers selected": {
+          "Diabetic": 0.2147,
+          "Non-Diabetic": 0.7853
+        },
+        "My insurer(s) only": {
+          "Diabetic": 0.1789,
+          "Non-Diabetic": 0.8211
+        },
+        "My primary care provider's office only": {
+          "Diabetic": 0.1933,
+          "Non-Diabetic": 0.8067
+        },
+        "Other health care provider(s) such as a specialty provider, counselor, or dentis": {
+          "Diabetic": 0.1883,
+          "Non-Diabetic": 0.8117
+        },
+        "Pharmacy only": {
+          "Diabetic": 0.3421,
+          "Non-Diabetic": 0.6579
+        }
+      }
+    },
+    "UsedPortalOrganizerApp": {
+      "count": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 21,
+          "Non-Diabetic": 58
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 210
+        },
+        "No": {
+          "Diabetic": 1426,
+          "Non-Diabetic": 5163
+        },
+        "Yes": {
+          "Diabetic": 87,
+          "Non-Diabetic": 313
+        }
+      },
+      "percent_by_col": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2658,
+          "Non-Diabetic": 0.7342
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "No": {
+          "Diabetic": 0.2164,
+          "Non-Diabetic": 0.7836
+        },
+        "Yes": {
+          "Diabetic": 0.2175,
+          "Non-Diabetic": 0.7825
+        }
+      }
+    },
+    "ConfidentTestAccurate": {
+      "count": {
+        "A little confident": {
+          "Diabetic": 32,
+          "Non-Diabetic": 122
+        },
+        "Completely confident": {
+          "Diabetic": 65,
+          "Non-Diabetic": 294
+        },
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3 _None": {
+          "Diabetic": 1039,
+          "Non-Diabetic": 3736
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 29,
+          "Non-Diabetic": 66
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 12,
+          "Non-Diabetic": 36
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 251
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 1,
+          "Non-Diabetic": 1
+        },
+        "Not confident at all": {
+          "Diabetic": 19,
+          "Non-Diabetic": 33
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 56,
+          "Non-Diabetic": 87
+        },
+        "Somewhat confident": {
+          "Diabetic": 153,
+          "Non-Diabetic": 540
+        },
+        "Very confident": {
+          "Diabetic": 128,
+          "Non-Diabetic": 578
+        }
+      },
+      "percent_by_col": {
+        "A little confident": {
+          "Diabetic": 0.2078,
+          "Non-Diabetic": 0.7922
+        },
+        "Completely confident": {
+          "Diabetic": 0.1811,
+          "Non-Diabetic": 0.8189
+        },
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3 _None": {
+          "Diabetic": 0.2176,
+          "Non-Diabetic": 0.7824
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 0.3053,
+          "Non-Diabetic": 0.6947
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.25,
+          "Non-Diabetic": 0.75
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Multiple responses selected in error": {
+          "Diabetic": 0.5,
+          "Non-Diabetic": 0.5
+        },
+        "Not confident at all": {
+          "Diabetic": 0.3654,
+          "Non-Diabetic": 0.6346
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 0.3916,
+          "Non-Diabetic": 0.6084
+        },
+        "Somewhat confident": {
+          "Diabetic": 0.2208,
+          "Non-Diabetic": 0.7792
+        },
+        "Very confident": {
+          "Diabetic": 0.1813,
+          "Non-Diabetic": 0.8187
+        }
+      }
+    },
+    "LabShare2_HCP": {
+      "count": {
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+          "Diabetic": 1069,
+          "Non-Diabetic": 3788
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 28,
+          "Non-Diabetic": 66
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 17,
+          "Non-Diabetic": 46
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 251
+        },
+        "Not selected": {
+          "Diabetic": 204,
+          "Non-Diabetic": 883
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 26,
+          "Non-Diabetic": 35
+        },
+        "Selected": {
+          "Diabetic": 190,
+          "Non-Diabetic": 675
+        }
+      },
+      "percent_by_col": {
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+          "Diabetic": 0.2201,
+          "Non-Diabetic": 0.7799
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 0.2979,
+          "Non-Diabetic": 0.7021
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2698,
+          "Non-Diabetic": 0.7302
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not selected": {
+          "Diabetic": 0.1877,
+          "Non-Diabetic": 0.8123
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 0.4262,
+          "Non-Diabetic": 0.5738
+        },
+        "Selected": {
+          "Diabetic": 0.2197,
+          "Non-Diabetic": 0.7803
+        }
+      }
+    },
+    "LabShare2_ScientificRes": {
+      "count": {
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+          "Diabetic": 1092,
+          "Non-Diabetic": 3813
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 28,
+          "Non-Diabetic": 66
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 17,
+          "Non-Diabetic": 46
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 251
+        },
+        "Not selected": {
+          "Diabetic": 302,
+          "Non-Diabetic": 1142
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 3,
+          "Non-Diabetic": 10
+        },
+        "Selected": {
+          "Diabetic": 92,
+          "Non-Diabetic": 416
+        }
+      },
+      "percent_by_col": {
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+          "Diabetic": 0.2226,
+          "Non-Diabetic": 0.7774
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 0.2979,
+          "Non-Diabetic": 0.7021
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2698,
+          "Non-Diabetic": 0.7302
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not selected": {
+          "Diabetic": 0.2091,
+          "Non-Diabetic": 0.7909
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 0.2308,
+          "Non-Diabetic": 0.7692
+        },
+        "Selected": {
+          "Diabetic": 0.1811,
+          "Non-Diabetic": 0.8189
+        }
+      }
+    },
+    "LabShare2_ForProfitCo2": {
+      "count": {
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+          "Diabetic": 1093,
+          "Non-Diabetic": 3819
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 28,
+          "Non-Diabetic": 66
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 17,
+          "Non-Diabetic": 46
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 251
+        },
+        "Not selected": {
+          "Diabetic": 354,
+          "Non-Diabetic": 1377
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 2,
+          "Non-Diabetic": 4
+        },
+        "Selected": {
+          "Diabetic": 40,
+          "Non-Diabetic": 181
+        }
+      },
+      "percent_by_col": {
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+          "Diabetic": 0.2225,
+          "Non-Diabetic": 0.7775
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 0.2979,
+          "Non-Diabetic": 0.7021
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2698,
+          "Non-Diabetic": 0.7302
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not selected": {
+          "Diabetic": 0.2045,
+          "Non-Diabetic": 0.7955
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 0.3333,
+          "Non-Diabetic": 0.6667
+        },
+        "Selected": {
+          "Diabetic": 0.181,
+          "Non-Diabetic": 0.819
+        }
+      }
+    },
+    "LabShare2_LEAgencies": {
+      "count": {
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+          "Diabetic": 1092,
+          "Non-Diabetic": 3819
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 28,
+          "Non-Diabetic": 66
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 17,
+          "Non-Diabetic": 46
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 251
+        },
+        "Not selected": {
+          "Diabetic": 365,
+          "Non-Diabetic": 1447
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 3,
+          "Non-Diabetic": 4
+        },
+        "Selected": {
+          "Diabetic": 29,
+          "Non-Diabetic": 111
+        }
+      },
+      "percent_by_col": {
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+          "Diabetic": 0.2224,
+          "Non-Diabetic": 0.7776
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 0.2979,
+          "Non-Diabetic": 0.7021
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2698,
+          "Non-Diabetic": 0.7302
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not selected": {
+          "Diabetic": 0.2014,
+          "Non-Diabetic": 0.7986
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 0.4286,
+          "Non-Diabetic": 0.5714
+        },
+        "Selected": {
+          "Diabetic": 0.2071,
+          "Non-Diabetic": 0.7929
+        }
+      }
+    },
+    "LabShare2_HealthIns": {
+      "count": {
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+          "Diabetic": 1086,
+          "Non-Diabetic": 3809
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 28,
+          "Non-Diabetic": 66
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 17,
+          "Non-Diabetic": 46
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 251
+        },
+        "Not selected": {
+          "Diabetic": 340,
+          "Non-Diabetic": 1369
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 9,
+          "Non-Diabetic": 14
+        },
+        "Selected": {
+          "Diabetic": 54,
+          "Non-Diabetic": 189
+        }
+      },
+      "percent_by_col": {
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+          "Diabetic": 0.2219,
+          "Non-Diabetic": 0.7781
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 0.2979,
+          "Non-Diabetic": 0.7021
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2698,
+          "Non-Diabetic": 0.7302
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not selected": {
+          "Diabetic": 0.1989,
+          "Non-Diabetic": 0.8011
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 0.3913,
+          "Non-Diabetic": 0.6087
+        },
+        "Selected": {
+          "Diabetic": 0.2222,
+          "Non-Diabetic": 0.7778
+        }
+      }
+    },
+    "LabShare2_OthIns": {
+      "count": {
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+          "Diabetic": 1091,
+          "Non-Diabetic": 3813
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 28,
+          "Non-Diabetic": 66
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 17,
+          "Non-Diabetic": 46
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 251
+        },
+        "Not selected": {
+          "Diabetic": 367,
+          "Non-Diabetic": 1441
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 4,
+          "Non-Diabetic": 10
+        },
+        "Selected": {
+          "Diabetic": 27,
+          "Non-Diabetic": 117
+        }
+      },
+      "percent_by_col": {
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+          "Diabetic": 0.2225,
+          "Non-Diabetic": 0.7775
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 0.2979,
+          "Non-Diabetic": 0.7021
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2698,
+          "Non-Diabetic": 0.7302
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not selected": {
+          "Diabetic": 0.203,
+          "Non-Diabetic": 0.797
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 0.2857,
+          "Non-Diabetic": 0.7143
+        },
+        "Selected": {
+          "Diabetic": 0.1875,
+          "Non-Diabetic": 0.8125
+        }
+      }
+    },
+    "LabShare2_NotSure": {
+      "count": {
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+          "Diabetic": 1082,
+          "Non-Diabetic": 3800
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 28,
+          "Non-Diabetic": 66
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 17,
+          "Non-Diabetic": 46
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 251
+        },
+        "Not selected": {
+          "Diabetic": 302,
+          "Non-Diabetic": 1200
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 13,
+          "Non-Diabetic": 23
+        },
+        "Selected": {
+          "Diabetic": 92,
+          "Non-Diabetic": 358
+        }
+      },
+      "percent_by_col": {
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+          "Diabetic": 0.2216,
+          "Non-Diabetic": 0.7784
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 0.2979,
+          "Non-Diabetic": 0.7021
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2698,
+          "Non-Diabetic": 0.7302
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not selected": {
+          "Diabetic": 0.2011,
+          "Non-Diabetic": 0.7989
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 0.3611,
+          "Non-Diabetic": 0.6389
+        },
+        "Selected": {
+          "Diabetic": 0.2044,
+          "Non-Diabetic": 0.7956
+        }
+      }
+    },
+    "LabShare2_NotShared": {
+      "count": {
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+          "Diabetic": 1076,
+          "Non-Diabetic": 3790
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 28,
+          "Non-Diabetic": 66
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 17,
+          "Non-Diabetic": 46
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 251
+        },
+        "Not selected": {
+          "Diabetic": 300,
+          "Non-Diabetic": 1167
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 19,
+          "Non-Diabetic": 33
+        },
+        "Selected": {
+          "Diabetic": 94,
+          "Non-Diabetic": 391
+        }
+      },
+      "percent_by_col": {
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+          "Diabetic": 0.2211,
+          "Non-Diabetic": 0.7789
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 0.2979,
+          "Non-Diabetic": 0.7021
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2698,
+          "Non-Diabetic": 0.7302
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not selected": {
+          "Diabetic": 0.2045,
+          "Non-Diabetic": 0.7955
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 0.3654,
+          "Non-Diabetic": 0.6346
+        },
+        "Selected": {
+          "Diabetic": 0.1938,
+          "Non-Diabetic": 0.8062
+        }
+      }
+    },
+    "LabShare2_Cat": {
+      "count": {
+        "Health insurance companies only": {
+          "Diabetic": 2,
+          "Non-Diabetic": 12
+        },
+        "I did not think...would be shared only": {
+          "Diabetic": 92,
+          "Non-Diabetic": 390
+        },
+        "I was not sure... only": {
+          "Diabetic": 50,
+          "Non-Diabetic": 189
+        },
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+          "Diabetic": 1059,
+          "Non-Diabetic": 3768
+        },
+        "Law enforcement agencies": {
+          "Diabetic": 7,
+          "Non-Diabetic": 13
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 28,
+          "Non-Diabetic": 66
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 17,
+          "Non-Diabetic": 46
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 251
+        },
+        "Multiple lab result share purposes selected": {
+          "Diabetic": 122,
+          "Non-Diabetic": 466
+        },
+        "My healthcare provider only": {
+          "Diabetic": 92,
+          "Non-Diabetic": 354
+        },
+        "Other (Life/Disability/LTC) insurance companies only": {
+          "Diabetic": 3,
+          "Non-Diabetic": 6
+        },
+        "Other for-profit companies for commercial purposes... only": {
+          "Diabetic": 8,
+          "Non-Diabetic": 37
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 36,
+          "Non-Diabetic": 55
+        },
+        "Scientific researchers for research purposes only": {
+          "Diabetic": 18,
+          "Non-Diabetic": 91
+        }
+      },
+      "percent_by_col": {
+        "Health insurance companies only": {
+          "Diabetic": 0.1429,
+          "Non-Diabetic": 0.8571
+        },
+        "I did not think...would be shared only": {
+          "Diabetic": 0.1909,
+          "Non-Diabetic": 0.8091
+        },
+        "I was not sure... only": {
+          "Diabetic": 0.2092,
+          "Non-Diabetic": 0.7908
+        },
+        "Inapplicable, coded 1 in HadTest3_NotSure or coded 1 in HadTest3_None": {
+          "Diabetic": 0.2194,
+          "Non-Diabetic": 0.7806
+        },
+        "Law enforcement agencies": {
+          "Diabetic": 0.35,
+          "Non-Diabetic": 0.65
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 0.2979,
+          "Non-Diabetic": 0.7021
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2698,
+          "Non-Diabetic": 0.7302
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Multiple lab result share purposes selected": {
+          "Diabetic": 0.2075,
+          "Non-Diabetic": 0.7925
+        },
+        "My healthcare provider only": {
+          "Diabetic": 0.2063,
+          "Non-Diabetic": 0.7937
+        },
+        "Other (Life/Disability/LTC) insurance companies only": {
+          "Diabetic": 0.3333,
+          "Non-Diabetic": 0.6667
+        },
+        "Other for-profit companies for commercial purposes... only": {
+          "Diabetic": 0.1778,
+          "Non-Diabetic": 0.8222
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 0.3956,
+          "Non-Diabetic": 0.6044
+        },
+        "Scientific researchers for research purposes only": {
+          "Diabetic": 0.1651,
+          "Non-Diabetic": 0.8349
+        }
+      }
+    },
+    "ClinTrials2_NotWilling": {
+      "count": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 26,
+          "Non-Diabetic": 104
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0,
+          "Non-Diabetic": 265
+        },
+        "Not selected": {
+          "Diabetic": 1191,
+          "Non-Diabetic": 4379
+        },
+        "Selected": {
+          "Diabetic": 317,
+          "Non-Diabetic": 996
+        }
+      },
+      "percent_by_col": {
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.2,
+          "Non-Diabetic": 0.8
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "Not selected": {
+          "Diabetic": 0.2138,
+          "Non-Diabetic": 0.7862
+        },
+        "Selected": {
+          "Diabetic": 0.2414,
+          "Non-Diabetic": 0.7586
+        }
+      }
+    },
+    "TobMessages_Trusted": {
+      "count": {
+        "Inapplicable, coded 2 in SeenFedCourtTobMessages": {
+          "Diabetic": 968,
+          "Non-Diabetic": 3485
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 15,
+          "Non-Diabetic": 57
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 12,
+          "Non-Diabetic": 60
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 15,
+          "Non-Diabetic": 399
+        },
+        "Not selected": {
+          "Diabetic": 289,
+          "Non-Diabetic": 831
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 6,
+          "Non-Diabetic": 13
+        },
+        "Selected": {
+          "Diabetic": 229,
+          "Non-Diabetic": 899
+        }
+      },
+      "percent_by_col": {
+        "Inapplicable, coded 2 in SeenFedCourtTobMessages": {
+          "Diabetic": 0.2174,
+          "Non-Diabetic": 0.7826
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 0.2083,
+          "Non-Diabetic": 0.7917
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.1667,
+          "Non-Diabetic": 0.8333
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0362,
+          "Non-Diabetic": 0.9638
+        },
+        "Not selected": {
+          "Diabetic": 0.258,
+          "Non-Diabetic": 0.742
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 0.3158,
+          "Non-Diabetic": 0.6842
+        },
+        "Selected": {
+          "Diabetic": 0.203,
+          "Non-Diabetic": 0.797
+        }
+      }
+    },
+    "CervCaTest_Privacy": {
+      "count": {
+        "Inapplicable, coded 1 or 2 in PrefCervCaTest": {
+          "Diabetic": 1069,
+          "Non-Diabetic": 3651
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 47,
+          "Non-Diabetic": 119
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 14,
+          "Non-Diabetic": 53
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 19,
+          "Non-Diabetic": 437
+        },
+        "Not selected": {
+          "Diabetic": 189,
+          "Non-Diabetic": 733
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 20,
+          "Non-Diabetic": 32
+        },
+        "Selected": {
+          "Diabetic": 176,
+          "Non-Diabetic": 719
+        }
+      },
+      "percent_by_col": {
+        "Inapplicable, coded 1 or 2 in PrefCervCaTest": {
+          "Diabetic": 0.2265,
+          "Non-Diabetic": 0.7735
+        },
+        "Missing data (Filter Missing)": {
+          "Diabetic": 0.2831,
+          "Non-Diabetic": 0.7169
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.209,
+          "Non-Diabetic": 0.791
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0417,
+          "Non-Diabetic": 0.9583
+        },
+        "Not selected": {
+          "Diabetic": 0.205,
+          "Non-Diabetic": 0.795
+        },
+        "Question answered in error (Commission Error)": {
+          "Diabetic": 0.3846,
+          "Non-Diabetic": 0.6154
+        },
+        "Selected": {
+          "Diabetic": 0.1966,
+          "Non-Diabetic": 0.8034
+        }
+      }
+    }
+  }
+}
