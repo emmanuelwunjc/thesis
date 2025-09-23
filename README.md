@@ -104,6 +104,7 @@ Expected coefficients:
 - `docs/PROJECT_LOG.md` - Complete project documentation
 - `docs/QUICK_START.md` - Quick recovery guide
 - `docs/HINTS 7*.pdf` - Original HINTS documentation
+- `FILE_DIRECTORY.md` - **Complete file directory and usage guide** ⭐
 
 ## 🎯 Project Status
 
