@@ -1,0 +1,32 @@
+{
+  "propensity_score_matching": {
+    "method": "Propensity Score Matching",
+    "n_treated": 1482,
+    "n_control": 1482,
+    "treatment_effect": 0.0025155035023455286,
+    "standard_error": 0.003340362348142805,
+    "t_statistic": 0.7530630632763878,
+    "p_value": 0.4514120190267157,
+    "interpretation": "PSM estimate: 0.0025 (SE: 0.0033)"
+  },
+  "instrumental_variables": {
+    "method": "Instrumental Variables",
+    "instrument": "Age > 65",
+    "n_observations": 6695,
+    "iv_estimate": 0.2850273948308992,
+    "standard_error": 0.0009832122753706482,
+    "t_statistic": 289.894056421794,
+    "first_stage_f_stat": 58.40209125534318,
+    "first_stage_r2": 0.04182925353079303,
+    "interpretation": "IV estimate: 0.2850 (SE: 0.0010)"
+  },
+  "regression_discontinuity": {
+    "method": "Regression Discontinuity Design",
+    "discontinuity": "Age 65 (Medicare eligibility)",
+    "n_observations": 1650,
+    "rd_estimate": -0.008351112021654152,
+    "standard_error": 0.002265750890779562,
+    "t_statistic": -3.6858032609140183,
+    "interpretation": "RDD estimate: -0.0084 (SE: 0.0023)"
+  }
+}

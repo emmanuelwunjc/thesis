@@ -1,0 +1,112 @@
+{
+  "model1_age_did": {
+    "model_name": "Diabetes × Age Group",
+    "n_observations": 6664,
+    "treatment_var": "diabetic",
+    "time_var": "age_group",
+    "outcome_var": "privacy_caution_index",
+    "coefficients": {
+      "treatment": -0.02775292678994107,
+      "time": 0.013484064548436535,
+      "treatment_time_interaction": 0.014070430044915361,
+      "intercept": 0.4452524722647965
+    },
+    "standard_errors": {
+      "treatment": 0.001060537750390426,
+      "time": 0.001060537750390426,
+      "treatment_time_interaction": 0.001060537750390426,
+      "intercept": 0.001060537750390426
+    },
+    "r_squared": 0.04323185071666258,
+    "treatment_effect": 0.014070430044915361,
+    "interpretation": "DiD estimate: 0.0141"
+  },
+  "model2_education_did": {
+    "model_name": "Diabetes × Education",
+    "n_observations": 6695,
+    "treatment_var": "diabetic",
+    "time_var": "education_group",
+    "outcome_var": "privacy_caution_index",
+    "coefficients": {
+      "treatment": 0.006827007476988916,
+      "time": 0.022853319179084803,
+      "treatment_time_interaction": 0.000446795225500829,
+      "intercept": 0.4467502827925559
+    },
+    "standard_errors": {
+      "treatment": 0.0010490247253856489,
+      "time": 0.0010490247253856489,
+      "treatment_time_interaction": 0.0010490247253856489,
+      "intercept": 0.0010490247253856489
+    },
+    "r_squared": 0.06510830702649806,
+    "treatment_effect": 0.000446795225500829,
+    "interpretation": "DiD estimate: 0.0004"
+  },
+  "model3_region_did": {
+    "model_name": "Diabetes × Region",
+    "n_observations": 7278,
+    "treatment_var": "diabetic",
+    "time_var": "region",
+    "outcome_var": "privacy_caution_index",
+    "coefficients": {
+      "treatment": 0.014856832375214613,
+      "time": 0.0002104007892117828,
+      "treatment_time_interaction": -0.0016198193302967819,
+      "intercept": 0.4687240893853372
+    },
+    "standard_errors": {
+      "treatment": 0.0010337119562398302,
+      "time": 0.0010337119562398302,
+      "treatment_time_interaction": 0.0010337119562398302,
+      "intercept": 0.0010337119562398302
+    },
+    "r_squared": 0.003127430043273538,
+    "treatment_effect": -0.0016198193302967819,
+    "interpretation": "DiD estimate: -0.0016"
+  },
+  "model4_insurance_did": {
+    "model_name": "Diabetes × Insurance",
+    "n_observations": 7278,
+    "treatment_var": "diabetic",
+    "time_var": "has_insurance",
+    "outcome_var": "privacy_caution_index",
+    "coefficients": {
+      "treatment": 0.006355545787134315,
+      "time": -0.03564225743117067,
+      "treatment_time_interaction": 0.007773467065301893,
+      "intercept": 0.5006440132957584
+    },
+    "standard_errors": {
+      "treatment": 0.0010262304633907426,
+      "time": 0.0010262304633907426,
+      "treatment_time_interaction": 0.0010262304633907426,
+      "intercept": 0.0010262304633907426
+    },
+    "r_squared": 0.01750494781923828,
+    "treatment_effect": 0.007773467065301893,
+    "interpretation": "DiD estimate: 0.0078"
+  },
+  "model5_treatment_did": {
+    "model_name": "Treatment × Diabetes",
+    "n_observations": 7278,
+    "treatment_var": "received_treatment",
+    "time_var": "diabetic",
+    "outcome_var": "privacy_caution_index",
+    "coefficients": {
+      "treatment": 0.0,
+      "time": 0.012001912361240801,
+      "treatment_time_interaction": 0.0,
+      "intercept": 0.469090935468895
+    },
+    "standard_errors": {
+      "treatment": 0.0010337403174732987,
+      "time": 0.0010337403174732987,
+      "treatment_time_interaction": 0.0010337403174732987,
+      "intercept": 0.0010337403174732987
+    },
+    "r_squared": 0.0030727282989991833,
+    "treatment_effect": 0.0,
+    "interpretation": "DiD estimate: 0.0000"
+  }
+}
