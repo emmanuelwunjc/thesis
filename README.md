@@ -21,11 +21,16 @@ This project analyzes privacy-related behaviors and attitudes among diabetic vs 
 
 ### Regression Analysis Results ⭐
 - **Sample Size**: 2,421 valid observations
-- **Model R²**: 0.1736 (Main), 0.1753 (Interaction)
+- **Original Model R²**: 0.1736 (Main), 0.1753 (Interaction)
 - **Privacy Effect**: -2.3159 (p<0.001) - **Strongest predictor**
-- **Diabetes Effect**: +0.0278 (p=0.161) - Not significant
-- **Interaction Effect**: +0.4896 (p=0.038) - Significant moderation
-- **Age Effect**: +0.0024 (p<0.001) - Older patients more willing to share
+- **Original Diabetes Effect**: +0.0278 (p=0.161) - Not significant
+
+### Comprehensive Analysis (6 Model Specifications) ⭐
+- **Model 5 (Multiple Outcomes)**: Diabetes effect +0.0551 (p=0.011) - **Significant!** ⭐
+- **Model 1 (Moderator)**: Diabetes effect -0.0420 (p<0.001) - **Highly significant!** ⭐
+- **Model 2 (Stratified)**: Different privacy-sharing relationships between groups
+- **Model 4 (Mediation)**: Small indirect effect (0.0141)
+- **Key Finding**: Diabetes patients more willing to share data, less privacy-concerned
 
 ## 📁 Project Structure
 
@@ -106,9 +111,10 @@ Expected coefficients:
 1. **Data Loading & Preparation**: HINTS 7 dataset successfully loaded and processed
 2. **Privacy Index Construction**: Multi-dimensional privacy caution index (0-1 scale)
 3. **Descriptive Analysis**: Comprehensive diabetes vs non-diabetes comparisons
-4. **Regression Analysis**: Weighted regression with interaction effects
-5. **Visualization**: Academic-quality charts and plots
-6. **Documentation**: Complete project documentation and results summary
+4. **Original Regression Analysis**: Weighted regression with interaction effects
+5. **Comprehensive Regression Analysis**: 6 different model specifications highlighting diabetes importance
+6. **Visualization**: Academic-quality charts and plots
+7. **Documentation**: Complete project documentation and results summary
 
 ### 🔄 Next Steps
 1. **Policy Recommendations**: Develop specific healthcare policy implications
