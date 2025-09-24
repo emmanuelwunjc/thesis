@@ -1,352 +1,166 @@
-# File Directory and Usage Guide
-## HINTS 7 Diabetes Privacy Study
+# 📁 Complete File Directory & Navigation Guide
+## For Supervisors and Researchers
 
 **Last Updated**: 2024-09-23  
-**Purpose**: Comprehensive guide to all project files, their origins, and usage instructions  
+**Purpose**: Complete navigation guide for all project files  
+**Target Audience**: Supervisors, researchers, and collaborators  
 
 ---
 
-## 📁 Project Structure Overview
+## 🎯 **Quick Start for Supervisors**
 
+### **5-Minute Overview**
+1. **[📊 Executive Summary](analysis/BEST_MODEL_EXECUTIVE_SUMMARY.md)** - Key findings and implications
+2. **[📈 Project Status](PROJECT_STATUS_SUMMARY.md)** - Complete project overview
+3. **[🔬 Detailed Report](analysis/BEST_ML_MODEL_DETAILED_REPORT.md)** - Full technical analysis
+4. **[📊 Main Visualizations](figures/best_ml_model_detailed_analysis.png)** - Core results charts
+
+### **10-Minute Deep Dive**
+1. **[📋 File Directory](FILE_DIRECTORY.md)** (this file) - Complete file navigation
+2. **[📝 Project Log](docs/PROJECT_LOG.md)** - Development methodology
+3. **[🚀 Quick Start](docs/QUICK_START.md)** - Technical setup guide
+4. **[📊 All Visualizations](figures/)** - Complete chart gallery
+
+---
+
+## 📊 **Analysis Reports** ([`analysis/`](analysis/))
+
+### **🎯 Priority Documents (Start Here)**
+| File | Purpose | Reading Time | Key Content |
+|------|---------|--------------|-------------|
+| **[BEST_MODEL_EXECUTIVE_SUMMARY.md](analysis/BEST_MODEL_EXECUTIVE_SUMMARY.md)** | 🎯 **Executive Brief** | 2 minutes | Key findings, policy implications, technical achievements |
+| **[BEST_ML_MODEL_DETAILED_REPORT.md](analysis/BEST_ML_MODEL_DETAILED_REPORT.md)** | 📋 **Full Technical Report** | 15 minutes | Complete methodology, results, interpretation, policy recommendations |
+| **[PROJECT_STATUS_SUMMARY.md](PROJECT_STATUS_SUMMARY.md)** | 📈 **Project Overview** | 5 minutes | Project achievements, technical implementation, deliverables |
+
+### **🔬 Technical Analysis Reports**
+| File | Purpose | Reading Time | Key Content |
+|------|---------|--------------|-------------|
+| **[SIMPLIFIED_ML_MODEL_SELECTION_SUMMARY.md](analysis/SIMPLIFIED_ML_MODEL_SELECTION_SUMMARY.md)** | 🤖 **ML Model Selection** | 8 minutes | Automated model selection, 1,020 configurations, best model identification |
+| **[REGRESSION_RESULTS_SUMMARY.md](analysis/REGRESSION_RESULTS_SUMMARY.md)** | 📈 **Regression Analysis** | 10 minutes | 6 regression models, statistical significance, diabetes importance |
+| **[CAUSAL_INFERENCE_SUMMARY.md](analysis/CAUSAL_INFERENCE_SUMMARY.md)** | 🔍 **Causal Analysis** | 8 minutes | PSM, IV, RDD results, causal effect estimation |
+| **[DIFFERENCE_IN_DIFFERENCES_SUMMARY.md](analysis/DIFFERENCE_IN_DIFFERENCES_SUMMARY.md)** | 📊 **DiD Analysis** | 6 minutes | Treatment effects, policy impact assessment |
+| **[MODEL_LOGIC_SUMMARY.md](analysis/MODEL_LOGIC_SUMMARY.md)** | 🧠 **Model Logic** | 5 minutes | Variable relationships, causal flow, model specifications |
+
+---
+
+## 📈 **Visualizations** ([`figures/`](figures/))
+
+### **🎯 Priority Visualizations (Start Here)**
+| File | Purpose | Content | Usage |
+|------|---------|---------|-------|
+| **[best_ml_model_detailed_analysis.png](figures/best_ml_model_detailed_analysis.png)** | 🎯 **Main Results** | 9 professional charts, feature importance, performance metrics | **Primary results presentation** |
+| **[best_model_architecture.png](figures/best_model_architecture.png)** | 🏗️ **Model Architecture** | Random Forest workflow, data flow, performance metrics | **Technical architecture explanation** |
+| **[data_quality_analysis.png](figures/data_quality_analysis.png)** | 📊 **Data Quality** | Missing values, outliers, data distribution analysis | **Data validation and quality assessment** |
+
+### **🔬 Technical Analysis Charts**
+| File | Purpose | Content | Usage |
+|------|---------|---------|-------|
+| **[simplified_ml_model_selection_results.png](figures/simplified_ml_model_selection_results.png)** | 🤖 **ML Selection** | Algorithm comparison, feature analysis, performance trends | **ML methodology validation** |
+| **[regression_analysis_results.png](figures/regression_analysis_results.png)** | 📈 **Regression** | Scatter plots, coefficient plots, residuals analysis | **Regression results presentation** |
+| **[causal_inference_analysis.png](figures/causal_inference_analysis.png)** | 🔍 **Causal Inference** | PSM, IV, RDD results, robustness checks | **Causal effect presentation** |
+| **[difference_in_differences_analysis.png](figures/difference_in_differences_analysis.png)** | 📊 **DiD Analysis** | Treatment effects, policy impact assessment | **Policy impact assessment** |
+| **[model_logic_diagram.png](figures/model_logic_diagram.png)** | 🧠 **Model Logic** | Causal flow, variable interactions, model specifications | **Methodology explanation** |
+
+---
+
+## 🔧 **Code Scripts** ([`scripts/`](scripts/))
+
+### **🎯 Priority Scripts (Start Here)**
+| File | Purpose | Function | Usage |
+|------|---------|----------|-------|
+| **[data_cleaning_for_ml.py](scripts/data_cleaning_for_ml.py)** | 🧹 **Data Preprocessing** | Missing values, outliers, feature engineering | `python3 scripts/data_cleaning_for_ml.py` |
+| **[simplified_ml_model_selection.py](scripts/simplified_ml_model_selection.py)** | 🤖 **ML Model Selection** | Automated model selection, 1,020 configurations | `python3 scripts/simplified_ml_model_selection.py` |
+| **[create_best_model_visualizations.py](scripts/create_best_model_visualizations.py)** | 📊 **Visualizations** | Generate professional charts and diagrams | `python3 scripts/create_best_model_visualizations.py` |
+
+### **📈 Analysis Scripts**
+| File | Purpose | Function | Usage |
+|------|---------|----------|-------|
+| **[regression_analysis.py](scripts/regression_analysis.py)** | 📈 **Main Regression** | Weighted regression, interaction effects, subgroup analysis | `python3 scripts/regression_analysis.py` |
+| **[comprehensive_regression_analysis.py](scripts/comprehensive_regression_analysis.py)** | 🔬 **6 Regression Models** | Multiple regression specifications, diabetes importance | `python3 scripts/comprehensive_regression_analysis.py` |
+| **[causal_inference_analysis.py](scripts/causal_inference_analysis.py)** | 🔍 **Causal Methods** | PSM, IV, RDD implementation | `python3 scripts/causal_inference_analysis.py` |
+| **[difference_in_differences_analysis.py](scripts/difference_in_differences_analysis.py)** | 📊 **DiD Analysis** | Treatment effects estimation | `python3 scripts/difference_in_differences_analysis.py` |
+
+---
+
+## 📚 **Documentation** ([`docs/`](docs/))
+
+### **📝 Development Documentation**
+| File | Purpose | Reading Time | Key Content |
+|------|---------|--------------|-------------|
+| **[PROJECT_LOG.md](docs/PROJECT_LOG.md)** | 📝 **Development Log** | 10 minutes | Complete methodology, development history, technical decisions |
+| **[QUICK_START.md](docs/QUICK_START.md)** | 🚀 **Quick Start** | 5 minutes | 5-minute setup, analysis commands, troubleshooting |
+
+---
+
+## 💾 **Data Files** ([`data/`](data/) & [`analysis/`](analysis/))
+
+### **📊 Raw Data**
+| File | Purpose | Content | Usage |
+|------|---------|---------|-------|
+| **[hints7_public copy.rda](data/hints7_public%20copy.rda)** | 📊 **Original Dataset** | HINTS 7 Public Dataset (7,278 × 48) | Source data for all analyses |
+
+### **🧹 Processed Data**
+| File | Purpose | Content | Usage |
+|------|---------|---------|-------|
+| **[ml_cleaned_data.csv](analysis/ml_cleaned_data.csv)** | 🧹 **Clean ML Data** | ML-ready dataset (1,261 × 14) | Input for machine learning analysis |
+| **[privacy_caution_index_individual.csv](analysis/privacy_caution_index_individual.csv)** | 🔒 **Privacy Index** | Individual privacy scores | Privacy analysis and regression input |
+| **[regression_dataset.csv](analysis/regression_dataset.csv)** | 📈 **Regression Data** | Final regression dataset | Regression analysis input |
+
+---
+
+## 🎯 **Navigation by Use Case**
+
+### **👨‍🏫 For Supervisors**
+1. **[📊 Executive Summary](analysis/BEST_MODEL_EXECUTIVE_SUMMARY.md)** - 2-minute overview
+2. **[📈 Project Status](PROJECT_STATUS_SUMMARY.md)** - Complete project overview
+3. **[📊 Main Visualizations](figures/best_ml_model_detailed_analysis.png)** - Core results
+4. **[🔬 Detailed Report](analysis/BEST_ML_MODEL_DETAILED_REPORT.md)** - Full technical analysis
+
+### **🔬 For Researchers**
+1. **[📝 Project Log](docs/PROJECT_LOG.md)** - Complete methodology
+2. **[🤖 ML Selection Summary](analysis/SIMPLIFIED_ML_MODEL_SELECTION_SUMMARY.md)** - ML methodology
+3. **[📈 Regression Results](analysis/REGRESSION_RESULTS_SUMMARY.md)** - Statistical analysis
+4. **[🔍 Causal Analysis](analysis/CAUSAL_INFERENCE_SUMMARY.md)** - Causal inference methods
+
+### **💻 For Technical Reviewers**
+1. **[🔧 Code Scripts](scripts/)** - All analysis code
+2. **[📊 Data Files](analysis/)** - Processed datasets
+3. **[📈 Visualizations](figures/)** - All charts and diagrams
+4. **[📝 Documentation](docs/)** - Technical documentation
+
+---
+
+## 🚀 **Quick Commands**
+
+### **Setup and Run Analysis**
+```bash
+# Clone repository
+git clone https://github.com/emmanuelwunjc/thesis.git
+cd thesis
+
+# Install dependencies
+pip install pandas numpy matplotlib scikit-learn
+
+# Run complete analysis pipeline
+python3 scripts/data_cleaning_for_ml.py
+python3 scripts/simplified_ml_model_selection.py
+python3 scripts/create_best_model_visualizations.py
 ```
-thesis/
-├── data/                           # Raw data files
-├── scripts/                        # Analysis scripts
-├── analysis/                       # Analysis results and reports
-├── figures/                        # Visualization outputs
-├── docs/                          # Documentation files
-└── README.md                      # Project overview
+
+### **View Specific Results**
+```bash
+# View main results
+open analysis/BEST_MODEL_EXECUTIVE_SUMMARY.md
+open figures/best_ml_model_detailed_analysis.png
+
+# View technical details
+open analysis/BEST_ML_MODEL_DETAILED_REPORT.md
+open docs/PROJECT_LOG.md
 ```
 
 ---
 
-## 📊 Data Files
-
-### Raw Data
-- **`data/hints7_public copy.rda`**
-  - **Purpose**: Original HINTS 7 dataset
-  - **Origin**: HINTS 7 Public Dataset
-  - **Size**: 7,278 observations × 48 variables
-  - **Usage**: Source data for all analyses
-  - **Format**: R data file (.rda)
-
-### Processed Data
-- **`analysis/ml_cleaned_data.csv`**
-  - **Purpose**: ML-ready cleaned dataset
-  - **Origin**: Generated by `scripts/data_cleaning_for_ml.py`
-  - **Size**: 1,261 observations × 14 features
-  - **Usage**: Input for machine learning analysis
-  - **Format**: CSV
-
-- **`analysis/privacy_caution_index_individual.csv`**
-  - **Purpose**: Individual-level privacy index scores
-  - **Origin**: Generated by `scripts/build_privacy_index.py`
-  - **Size**: 7,278 observations × privacy metrics
-  - **Usage**: Privacy analysis and regression input
-  - **Format**: CSV
-
----
-
-## 🔬 Analysis Scripts
-
-### Data Processing Scripts
-- **`scripts/wrangle.py`**
-  - **Purpose**: Main data wrangling and analysis
-  - **Functions**: Data loading, diabetes detection, demographic analysis
-  - **Outputs**: JSON files with analysis results
-  - **Usage**: `python3 scripts/wrangle.py [options]`
-
-- **`scripts/data_cleaning_for_ml.py`**
-  - **Purpose**: Comprehensive data cleaning for ML
-  - **Functions**: Missing value handling, outlier treatment, feature engineering
-  - **Outputs**: Cleaned dataset, quality reports, visualizations
-  - **Usage**: `python3 scripts/data_cleaning_for_ml.py`
-
-- **`scripts/build_privacy_index.py`**
-  - **Purpose**: Privacy caution index construction
-  - **Functions**: Multi-dimensional privacy measurement, sub-index creation
-  - **Outputs**: Privacy index data, construction diagrams
-  - **Usage**: `python3 scripts/build_privacy_index.py`
-
-### Machine Learning Scripts
-- **`scripts/simplified_ml_model_selection.py`**
-  - **Purpose**: Automated ML model selection
-  - **Functions**: Exhaustive search, multi-algorithm testing, performance evaluation
-  - **Outputs**: Best model identification, performance metrics
-  - **Usage**: `python3 scripts/simplified_ml_model_selection.py`
-
-- **`scripts/ml_model_selection.py`**
-  - **Purpose**: Comprehensive ML model selection (original version)
-  - **Functions**: Extended algorithm testing, detailed evaluation
-  - **Outputs**: Complete model comparison results
-  - **Usage**: `python3 scripts/ml_model_selection.py`
-
-### Regression Analysis Scripts
-- **`scripts/regression_analysis.py`**
-  - **Purpose**: Main regression analysis
-  - **Functions**: Weighted regression, interaction effects, subgroup analysis
-  - **Outputs**: Regression results, LaTeX tables, visualizations
-  - **Usage**: `python3 scripts/regression_analysis.py`
-
-- **`scripts/prepare_regression_data.py`**
-  - **Purpose**: Regression dataset preparation
-  - **Functions**: Variable recoding, feature engineering, data merging
-  - **Outputs**: Final regression dataset
-  - **Usage**: `python3 scripts/prepare_regression_data.py`
-
-- **`scripts/comprehensive_regression_analysis.py`**
-  - **Purpose**: Multiple regression model specifications
-  - **Functions**: 6 different model approaches, diabetes importance highlighting
-  - **Outputs**: Comprehensive regression results
-  - **Usage**: `python3 scripts/comprehensive_regression_analysis.py`
-
-### Causal Inference Scripts
-- **`scripts/difference_in_differences_analysis.py`**
-  - **Purpose**: Difference-in-differences analysis
-  - **Functions**: DiD estimation, visualization, robustness checks
-  - **Outputs**: DiD results, policy impact assessment
-  - **Usage**: `python3 scripts/difference_in_differences_analysis.py`
-
-- **`scripts/causal_inference_analysis.py`**
-  - **Purpose**: Advanced causal inference methods
-  - **Functions**: PSM, IV regression, RDD analysis
-  - **Outputs**: Causal effect estimates, robustness tests
-  - **Usage**: `python3 scripts/causal_inference_analysis.py`
-
-### Visualization Scripts
-- **`scripts/create_best_model_visualizations.py`**
-  - **Purpose**: Best model detailed visualizations
-  - **Functions**: 9 professional charts, model architecture diagram
-  - **Outputs**: High-resolution PNG/PDF files
-  - **Usage**: `python3 scripts/create_best_model_visualizations.py`
-
-- **`scripts/visualize_data.py`**
-  - **Purpose**: General data visualization
-  - **Functions**: Privacy difference charts, comparison plots
-  - **Outputs**: Various analysis charts
-  - **Usage**: `python3 scripts/visualize_data.py`
-
-- **`scripts/age_distribution_plot.py`**
-  - **Purpose**: Age distribution analysis
-  - **Functions**: Diabetes vs non-diabetes age comparison
-  - **Outputs**: Age distribution charts
-  - **Usage**: `python3 scripts/age_distribution_plot.py`
-
-### Utility Scripts
-- **`scripts/display_regression_results.py`**
-  - **Purpose**: Regression results formatting
-  - **Functions**: Human-readable output, academic formatting
-  - **Outputs**: Console-formatted results
-  - **Usage**: `python3 scripts/display_regression_results.py`
-
-- **`scripts/generate_latex_tables.py`**
-  - **Purpose**: LaTeX table generation
-  - **Functions**: Academic table formatting, publication-ready output
-  - **Outputs**: LaTeX table files
-  - **Usage**: `python3 scripts/generate_latex_tables.py`
-
-- **`scripts/create_model_logic_diagram.py`**
-  - **Purpose**: Model logic visualization
-  - **Functions**: Variable relationship diagrams, causal flow charts
-  - **Outputs**: Model logic diagrams
-  - **Usage**: `python3 scripts/create_model_logic_diagram.py`
-
----
-
-## 📋 Analysis Results
-
-### Summary Reports
-- **`analysis/diabetes_summary.json`**
-  - **Purpose**: Basic diabetes analysis results
-  - **Content**: Diabetes counts, categories, detection reasons
-  - **Usage**: Quick reference for diabetes statistics
-
-- **`analysis/diabetes_demographics_crosstabs.json`**
-  - **Purpose**: Demographic cross-tabulation results
-  - **Content**: Diabetes vs demographics analysis
-  - **Usage**: Demographic pattern identification
-
-- **`analysis/diabetes_privacy_analysis.json`**
-  - **Purpose**: Privacy concerns analysis by diabetes status
-  - **Content**: Privacy variable comparisons, statistical tests
-  - **Usage**: Privacy pattern analysis
-
-### Advanced Analysis Results
-- **`analysis/comprehensive_regression_results.json`**
-  - **Purpose**: Multiple regression model results
-  - **Content**: 6 model specifications, performance metrics
-  - **Usage**: Comprehensive regression analysis
-
-- **`analysis/ml_model_selection_results.json`**
-  - **Purpose**: ML model selection results
-  - **Content**: Algorithm comparison, feature importance
-  - **Usage**: ML model evaluation
-
-- **`analysis/causal_inference_results.json`**
-  - **Purpose**: Causal inference analysis results
-  - **Content**: PSM, IV, RDD results
-  - **Usage**: Causal effect estimation
-
-### Privacy Analysis Results
-- **`analysis/privacy_caution_index.json`**
-  - **Purpose**: Privacy index statistics
-  - **Content**: Index distribution, sub-dimension analysis
-  - **Usage**: Privacy measurement validation
-
-- **`analysis/privacy_dummies_compare.json`**
-  - **Purpose**: Privacy dummy variable comparisons
-  - **Content**: Weighted comparisons, statistical significance
-  - **Usage**: Privacy pattern identification
-
-### Age-Specific Analysis
-- **`analysis/age_band_analyses.json`**
-  - **Purpose**: Age-specific analysis results
-  - **Content**: Focused analysis on specific age groups
-  - **Usage**: Age-targeted policy insights
-
----
-
-## 📊 Visualization Files
-
-### Main Analysis Charts
-- **`figures/best_ml_model_detailed_analysis.png/pdf`**
-  - **Purpose**: Best model comprehensive analysis
-  - **Content**: 9 professional charts, feature importance, performance metrics
-  - **Usage**: Main results presentation
-
-- **`figures/regression_analysis_results.png/pdf`**
-  - **Purpose**: Regression analysis visualization
-  - **Content**: Scatter plots, coefficient plots, residuals analysis
-  - **Usage**: Regression results presentation
-
-- **`figures/simplified_ml_model_selection_results.png/pdf`**
-  - **Purpose**: ML model selection results
-  - **Content**: Algorithm comparison, feature analysis, performance trends
-  - **Usage**: ML selection results presentation
-
-### Specialized Charts
-- **`figures/best_model_architecture.png/pdf`**
-  - **Purpose**: Model architecture diagram
-  - **Content**: Random Forest workflow, data flow, performance metrics
-  - **Usage**: Technical architecture explanation
-
-- **`figures/data_quality_analysis.png/pdf`**
-  - **Purpose**: Data quality assessment
-  - **Content**: Missing values, outliers, data distribution analysis
-  - **Usage**: Data quality validation
-
-- **`figures/privacy_index_construction_diagram_optimized.png`**
-  - **Purpose**: Privacy index construction explanation
-  - **Content**: Hierarchical structure, sub-dimensions, scoring logic
-  - **Usage**: Privacy index methodology explanation
-
-### Causal Inference Visualizations
-- **`figures/difference_in_differences_analysis.png/pdf`**
-  - **Purpose**: DiD analysis visualization
-  - **Content**: Treatment effects, policy impact assessment
-  - **Usage**: Causal effect presentation
-
-- **`figures/causal_inference_analysis.png/pdf`**
-  - **Purpose**: Advanced causal inference visualization
-  - **Content**: PSM, IV, RDD results, robustness checks
-  - **Usage**: Causal inference results presentation
-
-- **`figures/model_logic_diagram.png/pdf`**
-  - **Purpose**: Model logic and variable relationships
-  - **Content**: Causal flow, variable interactions, model specifications
-  - **Usage**: Methodology explanation
-
----
-
-## 📚 Documentation Files
-
-### Project Documentation
-- **`README.md`**
-  - **Purpose**: Project overview and quick start guide
-  - **Content**: Objectives, methodology, key findings, file structure
-  - **Usage**: Project introduction and navigation
-
-- **`PROJECT_STATUS_SUMMARY.md`**
-  - **Purpose**: Comprehensive project status overview
-  - **Content**: Achievements, technical implementation, deliverables
-  - **Usage**: Project progress tracking and completion status
-
-- **`FILE_DIRECTORY.md`** (this file)
-  - **Purpose**: Complete file directory and usage guide
-  - **Content**: File descriptions, origins, usage instructions
-  - **Usage**: File navigation and understanding
-
-### Technical Documentation
-- **`docs/PROJECT_LOG.md`**
-  - **Purpose**: Detailed development log and methodology
-  - **Content**: Development history, technical decisions, findings
-  - **Usage**: Technical reference and methodology documentation
-
-- **`docs/QUICK_START.md`**
-  - **Purpose**: Quick start guide for resuming work
-  - **Content**: Commands, key files, analysis workflow
-  - **Usage**: Rapid project resumption
-
-### Analysis Reports
-- **`analysis/BEST_ML_MODEL_DETAILED_REPORT.md`**
-  - **Purpose**: Comprehensive technical report on best ML model
-  - **Content**: Methodology, results, interpretation, policy implications
-  - **Usage**: Detailed technical analysis and academic reference
-
-- **`analysis/BEST_MODEL_EXECUTIVE_SUMMARY.md`**
-  - **Purpose**: Executive summary of best model findings
-  - **Content**: Key findings, policy recommendations, technical achievements
-  - **Usage**: Executive briefing and policy reference
-
----
-
-## 🚀 Usage Instructions
-
-### Getting Started
-1. **Clone Repository**: `git clone https://github.com/emmanuelwunjc/thesis.git`
-2. **Navigate to Directory**: `cd thesis`
-3. **Install Dependencies**: `pip install pandas numpy matplotlib scikit-learn pyreadr`
-4. **Run Data Cleaning**: `python3 scripts/data_cleaning_for_ml.py`
-5. **Run ML Analysis**: `python3 scripts/simplified_ml_model_selection.py`
-
-### Running Specific Analyses
-- **Diabetes Analysis**: `python3 scripts/wrangle.py`
-- **Privacy Index**: `python3 scripts/build_privacy_index.py`
-- **Regression Analysis**: `python3 scripts/regression_analysis.py`
-- **Causal Inference**: `python3 scripts/causal_inference_analysis.py`
-- **Visualizations**: `python3 scripts/create_best_model_visualizations.py`
-
-### Viewing Results
-- **Reports**: Check `analysis/` directory for Markdown reports
-- **Visualizations**: Check `figures/` directory for PNG/PDF charts
-- **Data**: Check `analysis/` directory for CSV data files
-- **JSON Results**: Check `analysis/` directory for detailed results
-
----
-
-## 🔧 Technical Requirements
-
-### Software Dependencies
-- **Python**: 3.8+
-- **pandas**: Data manipulation
-- **numpy**: Numerical computing
-- **matplotlib**: Visualization
-- **scikit-learn**: Machine learning
-- **pyreadr**: R data file reading (optional)
-
-### System Requirements
-- **Memory**: 2GB+ RAM recommended
-- **Storage**: 100MB+ free space
-- **Processing**: Multi-core recommended for ML analysis
-
-### Data Requirements
-- **HINTS 7 Dataset**: Must be placed in `data/` directory
-- **File Format**: `.rda` format (R data file)
-- **Access**: Public dataset, no special permissions required
-
----
-
-## 📞 Support and Contact
+## 📞 **Support and Contact**
 
 **Repository**: https://github.com/emmanuelwunjc/thesis.git  
 **Analysis Date**: 2024-09-23  
