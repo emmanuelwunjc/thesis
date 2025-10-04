@@ -1,0 +1,269 @@
+{
+  "main_results": {
+    "coefficients": {
+      "const": NaN,
+      "diabetic": NaN,
+      "age_continuous": NaN,
+      "education_numeric": NaN,
+      "region_numeric": NaN,
+      "urban": NaN,
+      "has_insurance": NaN,
+      "received_treatment": NaN,
+      "stopped_treatment": NaN,
+      "male": NaN,
+      "race_numeric": NaN
+    },
+    "std_errors": {
+      "const": NaN,
+      "diabetic": NaN,
+      "age_continuous": NaN,
+      "education_numeric": NaN,
+      "region_numeric": NaN,
+      "urban": NaN,
+      "has_insurance": NaN,
+      "received_treatment": NaN,
+      "stopped_treatment": NaN,
+      "male": NaN,
+      "race_numeric": NaN
+    },
+    "t_statistics": {
+      "const": NaN,
+      "diabetic": NaN,
+      "age_continuous": NaN,
+      "education_numeric": NaN,
+      "region_numeric": NaN,
+      "urban": NaN,
+      "has_insurance": NaN,
+      "received_treatment": NaN,
+      "stopped_treatment": NaN,
+      "male": NaN,
+      "race_numeric": NaN
+    },
+    "p_values": {
+      "const": NaN,
+      "diabetic": NaN,
+      "age_continuous": NaN,
+      "education_numeric": NaN,
+      "region_numeric": NaN,
+      "urban": NaN,
+      "has_insurance": NaN,
+      "received_treatment": NaN,
+      "stopped_treatment": NaN,
+      "male": NaN,
+      "race_numeric": NaN
+    },
+    "r_squared": NaN,
+    "n_obs": 7132,
+    "mse": NaN
+  },
+  "interaction_results": {
+    "coefficients": {
+      "const": NaN,
+      "diabetic": NaN,
+      "age_continuous": NaN,
+      "education_numeric": NaN,
+      "region_numeric": NaN,
+      "urban": NaN,
+      "has_insurance": NaN,
+      "received_treatment": NaN,
+      "stopped_treatment": NaN,
+      "male": NaN,
+      "race_numeric": NaN,
+      "diabetic_age": NaN,
+      "diabetic_education": NaN
+    },
+    "std_errors": {
+      "const": NaN,
+      "diabetic": NaN,
+      "age_continuous": NaN,
+      "education_numeric": NaN,
+      "region_numeric": NaN,
+      "urban": NaN,
+      "has_insurance": NaN,
+      "received_treatment": NaN,
+      "stopped_treatment": NaN,
+      "male": NaN,
+      "race_numeric": NaN,
+      "diabetic_age": NaN,
+      "diabetic_education": NaN
+    },
+    "t_statistics": {
+      "const": NaN,
+      "diabetic": NaN,
+      "age_continuous": NaN,
+      "education_numeric": NaN,
+      "region_numeric": NaN,
+      "urban": NaN,
+      "has_insurance": NaN,
+      "received_treatment": NaN,
+      "stopped_treatment": NaN,
+      "male": NaN,
+      "race_numeric": NaN,
+      "diabetic_age": NaN,
+      "diabetic_education": NaN
+    },
+    "p_values": {
+      "const": NaN,
+      "diabetic": NaN,
+      "age_continuous": NaN,
+      "education_numeric": NaN,
+      "region_numeric": NaN,
+      "urban": NaN,
+      "has_insurance": NaN,
+      "received_treatment": NaN,
+      "stopped_treatment": NaN,
+      "male": NaN,
+      "race_numeric": NaN,
+      "diabetic_age": NaN,
+      "diabetic_education": NaN
+    },
+    "r_squared": NaN,
+    "n_obs": 7132,
+    "mse": NaN
+  },
+  "stratified_results": {
+    "diabetic_group": {
+      "coefficients": {
+        "const": NaN,
+        "age_continuous": NaN,
+        "education_numeric": NaN,
+        "region_numeric": NaN,
+        "urban": NaN,
+        "has_insurance": NaN,
+        "received_treatment": NaN,
+        "stopped_treatment": NaN,
+        "male": NaN,
+        "race_numeric": NaN
+      },
+      "std_errors": {
+        "const": NaN,
+        "age_continuous": NaN,
+        "education_numeric": NaN,
+        "region_numeric": NaN,
+        "urban": NaN,
+        "has_insurance": NaN,
+        "received_treatment": NaN,
+        "stopped_treatment": NaN,
+        "male": NaN,
+        "race_numeric": NaN
+      },
+      "t_statistics": {
+        "const": NaN,
+        "age_continuous": NaN,
+        "education_numeric": NaN,
+        "region_numeric": NaN,
+        "urban": NaN,
+        "has_insurance": NaN,
+        "received_treatment": NaN,
+        "stopped_treatment": NaN,
+        "male": NaN,
+        "race_numeric": NaN
+      },
+      "p_values": {
+        "const": NaN,
+        "age_continuous": NaN,
+        "education_numeric": NaN,
+        "region_numeric": NaN,
+        "urban": NaN,
+        "has_insurance": NaN,
+        "received_treatment": NaN,
+        "stopped_treatment": NaN,
+        "male": NaN,
+        "race_numeric": NaN
+      },
+      "r_squared": NaN,
+      "n_obs": 1502,
+      "mse": NaN
+    },
+    "non_diabetic_group": {
+      "coefficients": {
+        "const": NaN,
+        "age_continuous": NaN,
+        "education_numeric": NaN,
+        "region_numeric": NaN,
+        "urban": NaN,
+        "has_insurance": NaN,
+        "received_treatment": NaN,
+        "stopped_treatment": NaN,
+        "male": NaN,
+        "race_numeric": NaN
+      },
+      "std_errors": {
+        "const": NaN,
+        "age_continuous": NaN,
+        "education_numeric": NaN,
+        "region_numeric": NaN,
+        "urban": NaN,
+        "has_insurance": NaN,
+        "received_treatment": NaN,
+        "stopped_treatment": NaN,
+        "male": NaN,
+        "race_numeric": NaN
+      },
+      "t_statistics": {
+        "const": NaN,
+        "age_continuous": NaN,
+        "education_numeric": NaN,
+        "region_numeric": NaN,
+        "urban": NaN,
+        "has_insurance": NaN,
+        "received_treatment": NaN,
+        "stopped_treatment": NaN,
+        "male": NaN,
+        "race_numeric": NaN
+      },
+      "p_values": {
+        "const": NaN,
+        "age_continuous": NaN,
+        "education_numeric": NaN,
+        "region_numeric": NaN,
+        "urban": NaN,
+        "has_insurance": NaN,
+        "received_treatment": NaN,
+        "stopped_treatment": NaN,
+        "male": NaN,
+        "race_numeric": NaN
+      },
+      "r_squared": NaN,
+      "n_obs": 5630,
+      "mse": NaN
+    }
+  },
+  "ml_results": {
+    "Random Forest": {
+      "train_r2": 0.5991091431534974,
+      "test_r2": -0.09211485041636736,
+      "train_mse": 0.0031374077588188724,
+      "test_mse": 0.008668272589803034,
+      "train_mae": 0.04262964686085611,
+      "test_mae": 0.07515818565303463,
+      "feature_importance": {
+        "diabetic": 0.06181996503957507,
+        "age_continuous": 0.4654891757448983,
+        "education_numeric": 0.2171779539332005,
+        "region_numeric": 0.1621392847620069,
+        "urban": 0.0,
+        "has_insurance": 0.03171525677983619,
+        "received_treatment": 0.0,
+        "stopped_treatment": 0.0,
+        "male": 0.06165836374048304,
+        "race_numeric": 0.0
+      }
+    },
+    "Linear Regression": {
+      "error": "Negative values in data passed to `sample_weight`."
+    },
+    "Ridge Regression": {
+      "error": "array must not contain infs or NaNs"
+    },
+    "Lasso Regression": {
+      "error": "Coordinate descent iterations resulted in non-finite parameter values. The input data may contain large values and need to be preprocessed."
+    },
+    "Elastic Net": {
+      "error": "Coordinate descent iterations resulted in non-finite parameter values. The input data may contain large values and need to be preprocessed."
+    }
+  },
+  "analysis_date": "2024-09-23",
+  "dependent_variable": "privacy_caution_index",
+  "analysis_type": "privacy_as_dependent"
+}

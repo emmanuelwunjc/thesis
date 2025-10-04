@@ -1,0 +1,256 @@
+{
+  "top_combinations": [
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_Computer",
+        "OnlinePortal_PCP"
+      ],
+      "n_variables": 3,
+      "r2": 0.9999937882012169,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_SmWatch",
+        "UnderstandOnlineMedRec2"
+      ],
+      "n_variables": 3,
+      "r2": 0.9999937691014407,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_SmWatch",
+        "OnlinePortal_Cat"
+      ],
+      "n_variables": 3,
+      "r2": 0.9999936283700505,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_SmWatch",
+        "Electronic2_TestResults",
+        "OnlinePortal_PCP"
+      ],
+      "n_variables": 4,
+      "r2": 0.9999936189526324,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_Tablet",
+        "OnlinePortal_NoRec"
+      ],
+      "n_variables": 3,
+      "r2": 0.9999936106913169,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_Computer",
+        "OnlinePortal_NoRec"
+      ],
+      "n_variables": 3,
+      "r2": 0.9999936000094117,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_Computer",
+        "Electronic2_MessageDoc"
+      ],
+      "n_variables": 3,
+      "r2": 0.9999935964808907,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_SmWatch",
+        "UseDevice_Computer",
+        "OnlinePortal_PCP"
+      ],
+      "n_variables": 4,
+      "r2": 0.999993591073703,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_SmWatch",
+        "Electronic2_MadeAppts"
+      ],
+      "n_variables": 3,
+      "r2": 0.9999935506462448,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_SmWatch",
+        "UseDevice_Computer",
+        "OnlinePortal_Cat"
+      ],
+      "n_variables": 4,
+      "r2": 0.9999935147227691,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_SmWatch",
+        "RecordsOnline2_ViewResults",
+        "OnlinePortal_Hospital"
+      ],
+      "n_variables": 4,
+      "r2": 0.9999934218371613,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_Tablet",
+        "Electronic2_MessageDoc"
+      ],
+      "n_variables": 3,
+      "r2": 0.999993416779213,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_Computer",
+        "Electronic2_TestResults"
+      ],
+      "n_variables": 3,
+      "r2": 0.9999933853717626,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_Computer",
+        "OnlinePortal_Cat"
+      ],
+      "n_variables": 3,
+      "r2": 0.9999933811086348,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_SmWatch",
+        "UnderstandOnlineMedRec2",
+        "UseDevice_Computer",
+        "Electronic2_HealthInfo",
+        "Internet_Cell2"
+      ],
+      "n_variables": 6,
+      "r2": 0.9999933798923186,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "Electronic2_TestResults",
+        "OnlinePortal_Lab"
+      ],
+      "n_variables": 3,
+      "r2": 0.999993365838448,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_SmWatch",
+        "RecordsOnline2_ViewNotes"
+      ],
+      "n_variables": 3,
+      "r2": 0.9999933612019953,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_Computer",
+        "Electronic2_HealthInfo"
+      ],
+      "n_variables": 3,
+      "r2": 0.9999933404644072,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_Tablet",
+        "Electronic2_MadeAppts"
+      ],
+      "n_variables": 3,
+      "r2": 0.999993338260587,
+      "model": "Random Forest"
+    },
+    {
+      "variables": [
+        "privacy_caution_index",
+        "UseDevice_SmWatch",
+        "UnderstandOnlineMedRec2",
+        "UseDevice_Tablet",
+        "UseDevice_SmPhone"
+      ],
+      "n_variables": 5,
+      "r2": 0.9999933266273059,
+      "model": "Random Forest"
+    }
+  ],
+  "total_tested": 1200,
+  "promising_variables": [
+    "privacy_caution_index",
+    "UseDevice_SmWatch",
+    "UnderstandOnlineMedRec2",
+    "UseDevice_Computer",
+    "Electronic2_TestResults",
+    "UseDevice_Tablet",
+    "RecordsOnline2_ViewResults",
+    "RecordsOnline2_ViewNotes",
+    "Electronic2_MessageDoc",
+    "Electronic2_MadeAppts",
+    "Electronic2_HealthInfo",
+    "FreqWearDevTrackHealth2",
+    "AccessOnlineRecord3",
+    "Internet_HighSpeed2",
+    "WearableDevTrackHealth2",
+    "Internet_Cell2",
+    "WillingShareData_HCP2",
+    "UseDevice_SmPhone",
+    "OnlinePortal_OthHCP",
+    "OnlinePortal_Insurer",
+    "HCPEncourageOnlineRec2",
+    "OnlinePortal_PCP",
+    "OnlinePortal_NoRec",
+    "UsedHealthWellnessApps2",
+    "OnlinePortal_Pharmacy",
+    "OnlinePortal_Lab",
+    "SharedHealthDeviceInfo2",
+    "OfferedAccessHCP3",
+    "SeekCancerInfo",
+    "CancerLotOfEffort",
+    "CancerFrustrated",
+    "CancerTooHardUnderstand",
+    "CancerConcernedQuality",
+    "OnlinePortal_Hospital",
+    "OnlinePortal_Cat",
+    "LabShare2_ScientificRes",
+    "LabShare2_ForProfitCo2",
+    "LabShare2_LEAgencies"
+  ],
+  "analysis_date": "2024-09-23",
+  "analysis_type": "quick_high_r2_search"
+}
