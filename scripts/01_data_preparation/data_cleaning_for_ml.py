@@ -413,9 +413,16 @@ def create_data_quality_visualizations(quality_report: Dict, validation_report: 
     """Create visualizations for data quality analysis."""
     print("\n📊 Creating Data Quality Visualizations...")
     
-    # Set up the plotting (font config already set at module level)
+    # Force font configuration again (ensure it's applied)
+    plt.rcParams['font.sans-serif'] = ['DejaVu Sans', 'Arial', 'Helvetica', 'sans-serif']
+    plt.rcParams['axes.unicode_minus'] = False
+    plt.rcParams['figure.dpi'] = 300
+    plt.rcParams['font.family'] = 'sans-serif'
+    
+    # Set up the plotting
     fig, axes = plt.subplots(2, 3, figsize=(20, 12))
-    fig.suptitle('Data Quality Analysis for ML', fontsize=20, fontweight='bold', y=0.95)
+    fig.suptitle('Data Quality Analysis for ML', fontsize=20, fontweight='bold', y=0.95, 
+                 fontfamily='sans-serif')
     
     # Plot 1: Missing Values
     ax1 = axes[0, 0]
@@ -425,19 +432,29 @@ def create_data_quality_visualizations(quality_report: Dict, validation_report: 
     
     if len(missing_df) > 0:
         bars = ax1.barh(missing_df['Column'], missing_df['Missing_Percent'])
-        ax1.set_title('Missing Values by Column', fontsize=14, fontweight='bold')
-        ax1.set_xlabel('Missing Percentage', fontsize=12)
+        ax1.set_title('Missing Values by Column', fontsize=14, fontweight='bold', fontfamily='sans-serif')
+        ax1.set_xlabel('Missing Percentage', fontsize=12, fontfamily='sans-serif')
         ax1.tick_params(axis='y', labelsize=10)
         ax1.tick_params(axis='x', labelsize=10)
+        # Ensure tick labels use correct font
+        for label in ax1.get_xticklabels():
+            label.set_fontfamily('sans-serif')
+        for label in ax1.get_yticklabels():
+            label.set_fontfamily('sans-serif')
     else:
-        ax1.text(0.5, 0.5, 'No Missing Values', ha='center', va='center', fontsize=14)
-        ax1.set_title('Missing Values by Column', fontsize=14, fontweight='bold')
+        ax1.text(0.5, 0.5, 'No Missing Values', ha='center', va='center', fontsize=14, fontfamily='sans-serif')
+        ax1.set_title('Missing Values by Column', fontsize=14, fontweight='bold', fontfamily='sans-serif')
     
     # Plot 2: Data Types Distribution
     ax2 = axes[0, 1]
     dtypes_count = pd.Series(quality_report['dtypes']).value_counts()
-    ax2.pie(dtypes_count.values, labels=dtypes_count.index, autopct='%1.1f%%')
-    ax2.set_title('Data Types Distribution', fontsize=14, fontweight='bold')
+    # Convert dtype names to strings to avoid encoding issues
+    dtype_labels = [str(d) for d in dtypes_count.index]
+    ax2.pie(dtypes_count.values, labels=dtype_labels, autopct='%1.1f%%')
+    ax2.set_title('Data Types Distribution', fontsize=14, fontweight='bold', fontfamily='sans-serif')
+    # Set font for pie chart labels
+    for text in ax2.texts:
+        text.set_fontfamily('sans-serif')
     
     # Plot 3: Outliers
     ax3 = axes[0, 2]
@@ -448,16 +465,20 @@ def create_data_quality_visualizations(quality_report: Dict, validation_report: 
         
         if len(outlier_df) > 0:
             bars = ax3.barh(outlier_df['Column'], outlier_df['Outlier_Count'])
-            ax3.set_title('Outliers by Column', fontsize=14, fontweight='bold')
-            ax3.set_xlabel('Number of Outliers', fontsize=12)
+            ax3.set_title('Outliers by Column', fontsize=14, fontweight='bold', fontfamily='sans-serif')
+            ax3.set_xlabel('Number of Outliers', fontsize=12, fontfamily='sans-serif')
             ax3.tick_params(axis='y', labelsize=10)
             ax3.tick_params(axis='x', labelsize=10)
+            for label in ax3.get_xticklabels():
+                label.set_fontfamily('sans-serif')
+            for label in ax3.get_yticklabels():
+                label.set_fontfamily('sans-serif')
         else:
-            ax3.text(0.5, 0.5, 'No Significant Outliers', ha='center', va='center', fontsize=14)
-            ax3.set_title('Outliers by Column', fontsize=14, fontweight='bold')
+            ax3.text(0.5, 0.5, 'No Significant Outliers', ha='center', va='center', fontsize=14, fontfamily='sans-serif')
+            ax3.set_title('Outliers by Column', fontsize=14, fontweight='bold', fontfamily='sans-serif')
     else:
-        ax3.text(0.5, 0.5, 'No Numeric Columns', ha='center', va='center', fontsize=14)
-        ax3.set_title('Outliers by Column', fontsize=14, fontweight='bold')
+        ax3.text(0.5, 0.5, 'No Numeric Columns', ha='center', va='center', fontsize=14, fontfamily='sans-serif')
+        ax3.set_title('Outliers by Column', fontsize=14, fontweight='bold', fontfamily='sans-serif')
     
     # Plot 4: Target Variable Distribution
     ax4 = axes[1, 0]
@@ -470,21 +491,25 @@ def create_data_quality_visualizations(quality_report: Dict, validation_report: 
             stats_values = [target_stats.get('mean', 0), target_stats.get('50%', 0), 
                            target_stats.get('min', 0), target_stats.get('max', 0)]
             bars = ax4.bar(stats_names, stats_values, color=['blue', 'green', 'orange', 'red'])
-            ax4.set_title('Target Variable Statistics', fontsize=14, fontweight='bold')
-            ax4.set_ylabel('Value', fontsize=12)
+            ax4.set_title('Target Variable Statistics', fontsize=14, fontweight='bold', fontfamily='sans-serif')
+            ax4.set_ylabel('Value', fontsize=12, fontfamily='sans-serif')
             ax4.tick_params(axis='x', labelsize=10)
             ax4.tick_params(axis='y', labelsize=10)
+            for label in ax4.get_xticklabels():
+                label.set_fontfamily('sans-serif')
+            for label in ax4.get_yticklabels():
+                label.set_fontfamily('sans-serif')
             
             # Add value labels on bars
             for bar, value in zip(bars, stats_values):
                 ax4.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.01,
-                        f'{value:.3f}', ha='center', va='bottom', fontweight='bold')
+                        f'{value:.3f}', ha='center', va='bottom', fontweight='bold', fontfamily='sans-serif')
         else:
-            ax4.text(0.5, 0.5, 'Invalid Target Variable Data', ha='center', va='center', fontsize=14)
-            ax4.set_title('Target Variable Distribution', fontsize=14, fontweight='bold')
+            ax4.text(0.5, 0.5, 'Invalid Target Variable Data', ha='center', va='center', fontsize=14, fontfamily='sans-serif')
+            ax4.set_title('Target Variable Distribution', fontsize=14, fontweight='bold', fontfamily='sans-serif')
     else:
-        ax4.text(0.5, 0.5, 'No Target Variable', ha='center', va='center', fontsize=14)
-        ax4.set_title('Target Variable Distribution', fontsize=14, fontweight='bold')
+        ax4.text(0.5, 0.5, 'No Target Variable', ha='center', va='center', fontsize=14, fontfamily='sans-serif')
+        ax4.set_title('Target Variable Distribution', fontsize=14, fontweight='bold', fontfamily='sans-serif')
     
     # Plot 5: Diabetes Distribution
     ax5 = axes[1, 1]
@@ -495,13 +520,15 @@ def create_data_quality_visualizations(quality_report: Dict, validation_report: 
             values = list(diabetes_dist.values())
             ax5.pie(values, labels=labels, autopct='%1.1f%%', 
                     colors=['lightblue', 'lightcoral'])
-            ax5.set_title('Diabetes Distribution', fontsize=14, fontweight='bold')
+            ax5.set_title('Diabetes Distribution', fontsize=14, fontweight='bold', fontfamily='sans-serif')
+            for text in ax5.texts:
+                text.set_fontfamily('sans-serif')
         else:
-            ax5.text(0.5, 0.5, 'No Diabetes Data', ha='center', va='center', fontsize=14)
-            ax5.set_title('Diabetes Distribution', fontsize=14, fontweight='bold')
+            ax5.text(0.5, 0.5, 'No Diabetes Data', ha='center', va='center', fontsize=14, fontfamily='sans-serif')
+            ax5.set_title('Diabetes Distribution', fontsize=14, fontweight='bold', fontfamily='sans-serif')
     else:
-        ax5.text(0.5, 0.5, 'No Diabetes Data', ha='center', va='center', fontsize=14)
-        ax5.set_title('Diabetes Distribution', fontsize=14, fontweight='bold')
+        ax5.text(0.5, 0.5, 'No Diabetes Data', ha='center', va='center', fontsize=14, fontfamily='sans-serif')
+        ax5.set_title('Diabetes Distribution', fontsize=14, fontweight='bold', fontfamily='sans-serif')
     
     # Plot 6: Data Quality Summary
     ax6 = axes[1, 2]
@@ -517,22 +544,30 @@ def create_data_quality_visualizations(quality_report: Dict, validation_report: 
     metrics_values = [m[1] for m in quality_metrics]
     
     bars = ax6.bar(metrics_names, metrics_values, color=['blue', 'green', 'orange', 'red', 'purple'])
-    ax6.set_title('Data Quality Summary', fontsize=14, fontweight='bold')
-    ax6.set_ylabel('Count', fontsize=12)
+    ax6.set_title('Data Quality Summary', fontsize=14, fontweight='bold', fontfamily='sans-serif')
+    ax6.set_ylabel('Count', fontsize=12, fontfamily='sans-serif')
     ax6.tick_params(axis='x', labelsize=10, rotation=45)
     ax6.tick_params(axis='y', labelsize=10)
+    for label in ax6.get_xticklabels():
+        label.set_fontfamily('sans-serif')
+    for label in ax6.get_yticklabels():
+        label.set_fontfamily('sans-serif')
     
     # Add value labels on bars
     for bar, value in zip(bars, metrics_values):
         ax6.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.1,
-                str(value), ha='center', va='bottom', fontweight='bold')
+                str(value), ha='center', va='bottom', fontweight='bold', fontfamily='sans-serif')
     
     plt.tight_layout(rect=[0, 0.03, 1, 0.95])
     
     # Save plots
-    output_path = Path(__file__).parent.parent / "figures" / "data_quality_analysis.png"
+    repo_root = Path(__file__).parent.parent.parent
+    output_path = repo_root / "figures" / "data_quality_analysis.png"
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     plt.savefig(output_path, dpi=300, bbox_inches='tight', facecolor='white', edgecolor='none')
-    pdf_path = Path(__file__).parent.parent / "figures" / "data_quality_analysis.pdf"
+    
+    pdf_path = repo_root / "figures" / "pdf_versions" / "data_quality_analysis.pdf"
+    pdf_path.parent.mkdir(parents=True, exist_ok=True)
     plt.savefig(pdf_path, dpi=300, bbox_inches='tight', facecolor='white', edgecolor='none')
     
     plt.close(fig)
