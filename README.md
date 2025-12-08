@@ -224,6 +224,8 @@ python scripts/03_machine_learning/multi_chronic_disease_analysis.py
 
 ## 📊 Repository Statistics
 
+*Statistics are automatically updated after each commit. See [`docs/guides/AUTO_UPDATE_DOCS.md`](docs/guides/AUTO_UPDATE_DOCS.md) for details.*
+
 ### Scripts (33 total)
 - **01 Data Preparation**: 4 scripts
 - **02 Regression**: 5 scripts
@@ -235,7 +237,7 @@ python scripts/03_machine_learning/multi_chronic_disease_analysis.py
 ### Analysis Outputs
 - **Results**: 19 JSON/TEX files
 - **Summaries (English)**: 11 documents
-- **Summaries (Chinese)**: 7 documents
+- **Summmaries (Chinese)**: 7 documents
 - **Data Files**: 4 CSV files
 
 ### Figures
@@ -245,6 +247,20 @@ python scripts/03_machine_learning/multi_chronic_disease_analysis.py
 
 *Last Updated: 2025-12-08 14:08:22*
 
+---
+
+## 🔄 Auto-Update Documentation
+
+This repository includes an **automatic documentation update system** that keeps README and navigation guides in sync with the repository structure.
+
+**How it works**:
+- ✅ **Automatic**: Updates after each commit (git hook)
+- ✅ **Manual**: Run `python3 scripts/utils/update_documentation.py` anytime
+- ✅ **What it updates**: File counts, statistics, file listings
+
+**See**: [`docs/guides/AUTO_UPDATE_DOCS.md`](docs/guides/AUTO_UPDATE_DOCS.md) for complete guide.
+
+---
 
 ## ✅ Project Status
 
@@ -256,6 +272,7 @@ python scripts/03_machine_learning/multi_chronic_disease_analysis.py
 - [x] Multi-condition analysis completed
 - [x] Documentation organized
 - [x] Repository reorganized
+- [x] Auto-update documentation system implemented
 
 ---
 
@@ -270,4 +287,5 @@ python scripts/03_machine_learning/multi_chronic_disease_analysis.py
 ---
 
 *Last Updated: 2024*  
-*Repository Status: Organized and documented*
+*Repository Status: Organized and documented*  
+*Auto-Update: Active*
