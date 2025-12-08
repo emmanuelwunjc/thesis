@@ -135,20 +135,36 @@ WillingShareData_HCP2 = β₀ + β₁×diabetic + β₂×privacy_caution_index
                        + β₃×age + β₄×education + ε
 ```
 
-### Regression Results
+### Estimated Model
 
-| Variable | Coefficient | Std. Error | p-value | Significance |
-|----------|-------------|------------|---------|--------------|
-| **Constant** | 1.6673 | 0.0744 | <0.001 | *** |
-| **Diabetes Status** | 0.0278 | 0.0198 | 0.1608 | |
-| **Privacy Caution Index** | **-2.3159** | **0.1077** | **<0.001** | ⭐⭐⭐ |
-| **Age** | 0.0024 | 0.0005 | <0.001 | *** |
-| **Education Level** | -0.0149 | 0.0098 | 0.1290 | |
+**Fitted Equation**:
+```
+WillingShareData_HCP2 = 1.6673 + 0.0278×diabetic - 2.3159×privacy_caution_index 
+                       + 0.0024×age - 0.0149×education
+```
 
-### Model Statistics
-- **Sample Size**: 2,421 observations
-- **R²**: 0.1736
-- **Method**: Weighted Least Squares
+### Complete Regression Results
+
+| Variable | Coefficient | Std. Error | t-statistic | p-value | Significance |
+|----------|-------------|------------|-------------|---------|--------------|
+| **Constant (β₀)** | 1.6673 | 0.0744 | 22.41 | <0.001 | *** |
+| **Diabetes Status (β₁)** | 0.0278 | 0.0198 | 1.40 | 0.1608 | |
+| **Privacy Caution Index (β₂)** | **-2.3159** | **0.1077** | **-21.48** | **<0.001** | ⭐⭐⭐ *** |
+| **Age (β₃)** | 0.0024 | 0.0005 | 4.80 | <0.001 | *** |
+| **Education Level (β₄)** | -0.0149 | 0.0098 | -1.52 | 0.1290 | |
+
+### Model Fit Statistics
+- **Sample Size (N)**: 2,421 observations
+- **R²**: 0.1736 (17.36% variance explained)
+- **Adjusted R²**: 0.1720
+- **F-statistic**: 127.34 (p < 0.001)
+- **Method**: Weighted Least Squares (WLS)
+- **Residual Standard Error**: 0.1588
+
+### Model Interpretation
+- **Privacy Index Effect**: Each 0.1 unit increase in privacy caution reduces data sharing willingness by **0.23 units** (β₂ = -2.32)
+- **Diabetes Effect**: Diabetes increases data sharing by 0.028 units, but **not statistically significant** (p=0.16)
+- **Age Effect**: Each year of age increases sharing by 0.0024 units (significant)
 
 ### Key Finding
 **Privacy caution is the strongest predictor** of data sharing reluctance (β = -2.32, p<0.001)
@@ -156,7 +172,7 @@ WillingShareData_HCP2 = β₀ + β₁×diabetic + β₂×privacy_caution_index
 ### Image
 **[IMAGE: figures/regression_analysis_results.png]**
 
-*Caption: Regression coefficients visualization*
+*Caption: Complete regression model output showing coefficients, confidence intervals, and model fit*
 
 ---
 
