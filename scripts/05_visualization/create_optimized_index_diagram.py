@@ -131,5 +131,11 @@ results_text = "Results: Diabetic Group (0.476) vs Non-Diabetic Group (0.467) | 
 ax.text(9, 5.3, results_text, ha='center', va='center', fontsize=13, fontweight='bold')
 
 plt.tight_layout()
-plt.savefig('privacy_index_construction_diagram_optimized.png', dpi=300, bbox_inches='tight')
-print("Optimized Privacy Index Construction Diagram saved!")
+
+# Save figure with correct path
+from pathlib import Path
+repo_root = Path(__file__).parent.parent.parent
+output_path = repo_root / 'figures' / 'privacy_index_construction_diagram_optimized.png'
+plt.savefig(output_path, dpi=300, bbox_inches='tight')
+print(f"✅ Optimized Privacy Index Construction Diagram saved: {output_path}")
+plt.close()

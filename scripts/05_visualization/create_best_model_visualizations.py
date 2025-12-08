@@ -24,12 +24,16 @@ sns.set_palette("husl")
 
 def load_cleaned_data() -> pd.DataFrame:
     """Load the cleaned ML data."""
+    repo_root = Path(__file__).parent.parent.parent
+    data_path = repo_root / 'analysis' / 'data' / 'ml_cleaned_data.csv'
+    
     try:
-        df = pd.read_csv('analysis/ml_cleaned_data.csv')
+        df = pd.read_csv(data_path)
         print(f"✅ Data loaded: {df.shape}")
         return df
     except FileNotFoundError:
-        print("❌ Cleaned data not found. Please run data_cleaning_for_ml.py first.")
+        print(f"❌ Cleaned data not found at {data_path}")
+        print("Please run data_cleaning_for_ml.py first.")
         return pd.DataFrame()
 
 def create_best_model_visualizations(df: pd.DataFrame) -> None:
@@ -212,12 +216,14 @@ def create_best_model_visualizations(df: pd.DataFrame) -> None:
     plt.tight_layout(rect=[0, 0.03, 1, 0.95], pad=3.0)
     
     # Save plots with high resolution
-    output_path = Path(__file__).parent.parent / "figures" / "best_ml_model_detailed_analysis.png"
+    repo_root = Path(__file__).parent.parent.parent
+    output_path = repo_root / "figures" / "best_ml_model_detailed_analysis.png"
     plt.savefig(output_path, dpi=300, bbox_inches='tight', facecolor='white', edgecolor='none', 
-                pad_inches=0.5, format='png')
-    pdf_path = Path(__file__).parent.parent / "figures" / "best_ml_model_detailed_analysis.pdf"
+                pad_inches=0.5)
+    pdf_path = repo_root / "figures" / "pdf_versions" / "best_ml_model_detailed_analysis.pdf"
+    pdf_path.parent.mkdir(parents=True, exist_ok=True)
     plt.savefig(pdf_path, dpi=300, bbox_inches='tight', facecolor='white', edgecolor='none',
-                pad_inches=0.5, format='pdf')
+                pad_inches=0.5)
     
     # Close the figure to free memory
     plt.close(fig)
@@ -290,9 +296,11 @@ def create_model_architecture_diagram() -> None:
             bbox=dict(boxstyle="round,pad=0.3", facecolor='lightgray', alpha=0.7))
     
     # Save the diagram
-    output_path = Path(__file__).parent.parent / "figures" / "best_model_architecture.png"
+    repo_root = Path(__file__).parent.parent.parent
+    output_path = repo_root / "figures" / "best_model_architecture.png"
     plt.savefig(output_path, dpi=300, bbox_inches='tight', facecolor='white', edgecolor='none')
-    pdf_path = Path(__file__).parent.parent / "figures" / "best_model_architecture.pdf"
+    pdf_path = repo_root / "figures" / "pdf_versions" / "best_model_architecture.pdf"
+    pdf_path.parent.mkdir(parents=True, exist_ok=True)
     plt.savefig(pdf_path, dpi=300, bbox_inches='tight', facecolor='white', edgecolor='none')
     
     plt.close(fig)

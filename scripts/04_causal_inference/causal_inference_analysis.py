@@ -489,10 +489,10 @@ def create_causal_visualizations(df: pd.DataFrame, results: Dict) -> None:
     # Save plots with high resolution
     output_path = Path(__file__).parent.parent / "figures" / "causal_inference_analysis.png"
     plt.savefig(output_path, dpi=300, bbox_inches='tight', facecolor='white', edgecolor='none', 
-                pad_inches=0.5, format='png')
+                pad_inches=0.5)
     pdf_path = Path(__file__).parent.parent / "figures" / "causal_inference_analysis.pdf"
     plt.savefig(pdf_path, dpi=300, bbox_inches='tight', facecolor='white', edgecolor='none',
-                pad_inches=0.5, format='pdf')
+                pad_inches=0.5)
     
     # Close the figure to free memory
     plt.close(fig)

@@ -1,86 +1,103 @@
+#!/usr/bin/env python3
+"""
+Age Distribution Plot: Compare age distributions between diabetic and full database.
+"""
+
 import json
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from pathlib import Path
+import sys
 
-# 设置中文字体
-plt.rcParams['font.sans-serif'] = ['Arial Unicode MS', 'SimHei', 'DejaVu Sans']
+# Add parent directory to path
+sys.path.append(str(Path(__file__).parent.parent.parent))
+
+# Set up matplotlib for English labels only
+plt.rcParams['font.sans-serif'] = ['DejaVu Sans', 'Arial', 'Helvetica']
 plt.rcParams['axes.unicode_minus'] = False
+plt.rcParams['figure.dpi'] = 300
 
-# 读取数据
-with open('diabetes_demographics_crosstabs.json', 'r') as f:
+# Get repository root
+repo_root = Path(__file__).parent.parent.parent
+
+# Read data
+json_path = repo_root / 'analysis' / 'results' / 'diabetes_demographics_crosstabs.json'
+with open(json_path, 'r', encoding='utf-8') as f:
     demo_data = json.load(f)
 
-# 提取年龄数据
+# Extract age data
 age_data = demo_data['crosstabs']['age']['count']
 
-# 过滤正常年龄范围 (18-100岁)
+# Filter normal age range (18-100 years)
 normal_ages = {}
 for age_str, counts in age_data.items():
     try:
         age = int(age_str)
-        if 18 <= age <= 100:  # 只保留18-100岁的数据
+        if 18 <= age <= 100:  # Only keep ages 18-100
             normal_ages[age] = counts
     except ValueError:
         continue
 
-# 按年龄排序
+# Sort by age
 ages = sorted(normal_ages.keys())
 diabetic_counts = [normal_ages[age]['Diabetic'] for age in ages]
 non_diabetic_counts = [normal_ages[age]['Non-Diabetic'] for age in ages]
 total_counts = [diabetic_counts[i] + non_diabetic_counts[i] for i in range(len(ages))]
 
-# 计算百分比
+# Calculate percentages
 diabetic_percentages = [count/sum(diabetic_counts)*100 for count in diabetic_counts]
 total_percentages = [count/sum(total_counts)*100 for count in total_counts]
 
-# 创建图表
+# Create chart
 fig, ax = plt.subplots(figsize=(14, 8))
 
-# 绘制柱状图
+# Draw bar chart
 width = 0.35
 x_pos = np.arange(len(ages))
 
 bars1 = ax.bar(x_pos - width/2, diabetic_percentages, width, 
-               label='糖尿病组', color='red', alpha=0.7, edgecolor='darkred')
+               label='Diabetic Group', color='#E74C3C', alpha=0.7, edgecolor='darkred')
 bars2 = ax.bar(x_pos + width/2, total_percentages, width, 
-               label='完整数据库', color='blue', alpha=0.7, edgecolor='darkblue')
+               label='Full Database', color='#3498DB', alpha=0.7, edgecolor='darkblue')
 
-# 设置标签和标题
-ax.set_xlabel('年龄 (岁)', fontsize=12, fontweight='bold')
-ax.set_ylabel('百分比 (%)', fontsize=12, fontweight='bold')
-ax.set_title('糖尿病组 vs 完整数据库年龄分布对比', fontsize=16, fontweight='bold', pad=20)
+# Set labels and title
+ax.set_xlabel('Age (years)', fontsize=12, fontweight='bold')
+ax.set_ylabel('Percentage (%)', fontsize=12, fontweight='bold')
+ax.set_title('Diabetic Group vs Full Database: Age Distribution Comparison', 
+             fontsize=16, fontweight='bold', pad=20)
 
-# 设置x轴标签 (每5年显示一个)
+# Set x-axis labels (show every 5 years)
 step = 5
 ax.set_xticks(x_pos[::step])
-ax.set_xticklabels(ages[::step], rotation=45)
+ax.set_xticklabels(ages[::step], rotation=45, ha='right')
 
-# 添加图例
+# Add legend
 ax.legend(fontsize=11, loc='upper right')
 
-# 添加网格
+# Add grid
 ax.grid(True, alpha=0.3, axis='y')
 
-# 调整布局
+# Adjust layout
 plt.tight_layout()
 
-# 保存图表
-plt.savefig('age_distribution_comparison.png', dpi=300, bbox_inches='tight')
-print("年龄分布对比图已保存为: age_distribution_comparison.png")
+# Save chart
+output_path = repo_root / 'figures' / 'age_distribution_comparison.png'
+plt.savefig(output_path, dpi=300, bbox_inches='tight')
+print(f"✅ Age distribution comparison plot saved: {output_path}")
 
-# 显示统计信息
-print(f"\n统计信息:")
-print(f"年龄范围: {min(ages)}-{max(ages)}岁")
-print(f"糖尿病组总人数: {sum(diabetic_counts):,}")
-print(f"完整数据库总人数: {sum(total_counts):,}")
-print(f"糖尿病组平均年龄: {np.average(ages, weights=diabetic_counts):.1f}岁")
-print(f"完整数据库平均年龄: {np.average(ages, weights=total_counts):.1f}岁")
+# Display statistics
+print(f"\nStatistics:")
+print(f"Age range: {min(ages)}-{max(ages)} years")
+print(f"Diabetic group total: {sum(diabetic_counts):,}")
+print(f"Full database total: {sum(total_counts):,}")
+print(f"Diabetic group mean age: {np.average(ages, weights=diabetic_counts):.1f} years")
+print(f"Full database mean age: {np.average(ages, weights=total_counts):.1f} years")
 
-# 找出峰值年龄
+# Find peak ages
 diabetic_peak_age = ages[np.argmax(diabetic_percentages)]
 total_peak_age = ages[np.argmax(total_percentages)]
-print(f"糖尿病组峰值年龄: {diabetic_peak_age}岁 ({max(diabetic_percentages):.2f}%)")
-print(f"完整数据库峰值年龄: {total_peak_age}岁 ({max(total_percentages):.2f}%)")
+print(f"Diabetic group peak age: {diabetic_peak_age} years ({max(diabetic_percentages):.2f}%)")
+print(f"Full database peak age: {total_peak_age} years ({max(total_percentages):.2f}%)")
 
-plt.show()
+plt.close()

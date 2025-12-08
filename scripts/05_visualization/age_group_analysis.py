@@ -1,19 +1,34 @@
+#!/usr/bin/env python3
+"""
+Age Group Analysis: Compare age distributions between diabetic and non-diabetic groups.
+"""
+
 import json
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from pathlib import Path
+import sys
 
-# 设置中文字体
-plt.rcParams['font.sans-serif'] = ['Arial Unicode MS', 'SimHei', 'DejaVu Sans']
+# Add parent directory to path
+sys.path.append(str(Path(__file__).parent.parent.parent))
+
+# Set up matplotlib for English labels only
+plt.rcParams['font.sans-serif'] = ['DejaVu Sans', 'Arial', 'Helvetica']
 plt.rcParams['axes.unicode_minus'] = False
+plt.rcParams['figure.dpi'] = 300
 
-# 读取数据
-with open('diabetes_demographics_crosstabs.json', 'r') as f:
+# Get repository root
+repo_root = Path(__file__).parent.parent.parent
+
+# Read data
+json_path = repo_root / 'analysis' / 'results' / 'diabetes_demographics_crosstabs.json'
+with open(json_path, 'r', encoding='utf-8') as f:
     demo_data = json.load(f)
 
 age_data = demo_data['crosstabs']['age']['count']
 
-# 定义年龄组
+# Define age groups
 def get_age_group(age):
     if age < 30:
         return '18-29'
@@ -30,7 +45,7 @@ def get_age_group(age):
     else:
         return '80+'
 
-# 按年龄组汇总数据
+# Aggregate data by age group
 age_groups = {}
 for age_str, counts in age_data.items():
     try:
@@ -44,62 +59,65 @@ for age_str, counts in age_data.items():
     except ValueError:
         continue
 
-# 准备数据
+# Prepare data
 groups = ['18-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80+']
 diabetic_counts = [age_groups[g]['diabetic'] for g in groups]
 non_diabetic_counts = [age_groups[g]['non_diabetic'] for g in groups]
 total_counts = [diabetic_counts[i] + non_diabetic_counts[i] for i in range(len(groups))]
 
-# 计算百分比
+# Calculate percentages
 diabetic_percentages = [count/sum(diabetic_counts)*100 for count in diabetic_counts]
 total_percentages = [count/sum(total_counts)*100 for count in total_counts]
 
-# 创建图表
+# Create charts
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
 
-# 左图：柱状图对比
+# Left plot: Bar chart comparison
 x_pos = np.arange(len(groups))
 width = 0.35
 
 bars1 = ax1.bar(x_pos - width/2, diabetic_percentages, width, 
-                label='糖尿病组', color='red', alpha=0.7, edgecolor='darkred')
+                label='Diabetic Group', color='#E74C3C', alpha=0.7, edgecolor='darkred')
 bars2 = ax1.bar(x_pos + width/2, total_percentages, width, 
-                label='完整数据库', color='blue', alpha=0.7, edgecolor='darkblue')
+                label='Full Database', color='#3498DB', alpha=0.7, edgecolor='darkblue')
 
-ax1.set_xlabel('年龄组', fontsize=12, fontweight='bold')
-ax1.set_ylabel('百分比 (%)', fontsize=12, fontweight='bold')
-ax1.set_title('年龄组分布对比 (柱状图)', fontsize=14, fontweight='bold')
+ax1.set_xlabel('Age Group', fontsize=12, fontweight='bold')
+ax1.set_ylabel('Percentage (%)', fontsize=12, fontweight='bold')
+ax1.set_title('Age Group Distribution Comparison (Bar Chart)', fontsize=14, fontweight='bold')
 ax1.set_xticks(x_pos)
-ax1.set_xticklabels(groups, rotation=45)
-ax1.legend()
+ax1.set_xticklabels(groups, rotation=45, ha='right')
+ax1.legend(fontsize=10)
 ax1.grid(True, alpha=0.3, axis='y')
 
-# 右图：折线图对比
-ax2.plot(groups, diabetic_percentages, 'o-', color='red', linewidth=2, 
-         markersize=6, label='糖尿病组', markerfacecolor='red', markeredgecolor='darkred')
-ax2.plot(groups, total_percentages, 's-', color='blue', linewidth=2, 
-         markersize=6, label='完整数据库', markerfacecolor='blue', markeredgecolor='darkblue')
+# Right plot: Line chart comparison
+ax2.plot(groups, diabetic_percentages, 'o-', color='#E74C3C', linewidth=2, 
+         markersize=6, label='Diabetic Group', markerfacecolor='#E74C3C', markeredgecolor='darkred')
+ax2.plot(groups, total_percentages, 's-', color='#3498DB', linewidth=2, 
+         markersize=6, label='Full Database', markerfacecolor='#3498DB', markeredgecolor='darkblue')
 
-ax2.set_xlabel('年龄组', fontsize=12, fontweight='bold')
-ax2.set_ylabel('百分比 (%)', fontsize=12, fontweight='bold')
-ax2.set_title('年龄组分布对比 (折线图)', fontsize=14, fontweight='bold')
+ax2.set_xlabel('Age Group', fontsize=12, fontweight='bold')
+ax2.set_ylabel('Percentage (%)', fontsize=12, fontweight='bold')
+ax2.set_title('Age Group Distribution Comparison (Line Chart)', fontsize=14, fontweight='bold')
 ax2.set_xticks(range(len(groups)))
-ax2.set_xticklabels(groups, rotation=45)
-ax2.legend()
+ax2.set_xticklabels(groups, rotation=45, ha='right')
+ax2.legend(fontsize=10)
 ax2.grid(True, alpha=0.3)
 
 plt.tight_layout()
-plt.savefig('age_group_comparison.png', dpi=300, bbox_inches='tight')
-print("年龄组对比图已保存为: age_group_comparison.png")
 
-# 打印详细统计
-print(f"\n年龄组分布统计:")
-print(f"{'年龄组':<8} {'糖尿病组':<12} {'完整数据库':<12} {'糖尿病占比':<10}")
-print("-" * 50)
+# Save figure
+output_path = repo_root / 'figures' / 'age_group_comparison.png'
+plt.savefig(output_path, dpi=300, bbox_inches='tight')
+print(f"✅ Age group comparison plot saved: {output_path}")
+
+# Print detailed statistics
+print(f"\nAge Group Distribution Statistics:")
+print(f"{'Age Group':<10} {'Diabetic':<12} {'Full Database':<15} {'Diabetic %':<12}")
+print("-" * 55)
 for i, group in enumerate(groups):
     diabetic_pct = diabetic_percentages[i]
     total_pct = total_percentages[i]
     diabetic_ratio = diabetic_counts[i] / total_counts[i] * 100 if total_counts[i] > 0 else 0
-    print(f"{group:<8} {diabetic_pct:>8.2f}%    {total_pct:>8.2f}%    {diabetic_ratio:>8.2f}%")
+    print(f"{group:<10} {diabetic_pct:>8.2f}%    {total_pct:>10.2f}%    {diabetic_ratio:>8.2f}%")
 
-plt.show()
+plt.close()

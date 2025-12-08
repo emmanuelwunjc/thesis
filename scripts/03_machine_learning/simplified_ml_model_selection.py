@@ -385,10 +385,10 @@ def create_ml_visualizations(results: Dict) -> None:
     # Save plots with high resolution
     output_path = Path(__file__).parent.parent / "figures" / "simplified_ml_model_selection_results.png"
     plt.savefig(output_path, dpi=300, bbox_inches='tight', facecolor='white', edgecolor='none', 
-                pad_inches=0.5, format='png')
+                pad_inches=0.5)
     pdf_path = Path(__file__).parent.parent / "figures" / "simplified_ml_model_selection_results.pdf"
     plt.savefig(pdf_path, dpi=300, bbox_inches='tight', facecolor='white', edgecolor='none',
-                pad_inches=0.5, format='pdf')
+                pad_inches=0.5)
     
     # Close the figure to free memory
     plt.close(fig)

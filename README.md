@@ -224,8 +224,6 @@ python scripts/03_machine_learning/multi_chronic_disease_analysis.py
 
 ## 📊 Repository Statistics
 
-*Statistics are automatically updated after each commit. See [`docs/guides/AUTO_UPDATE_DOCS.md`](docs/guides/AUTO_UPDATE_DOCS.md) for details.*
-
 ### Scripts (33 total)
 - **01 Data Preparation**: 4 scripts
 - **02 Regression**: 5 scripts
@@ -237,7 +235,7 @@ python scripts/03_machine_learning/multi_chronic_disease_analysis.py
 ### Analysis Outputs
 - **Results**: 19 JSON/TEX files
 - **Summaries (English)**: 11 documents
-- **Summmaries (Chinese)**: 7 documents
+- **Summaries (Chinese)**: 7 documents
 - **Data Files**: 4 CSV files
 
 ### Figures
@@ -245,7 +243,7 @@ python scripts/03_machine_learning/multi_chronic_disease_analysis.py
 - **PDF Files**: 12 files (in pdf_versions/)
 - **Total**: 40 visualizations
 
-*Last Updated: 2025-12-08 14:08:22*
+*Last Updated: 2025-12-08 14:22:31*
 
 ---
 

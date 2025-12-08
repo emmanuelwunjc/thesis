@@ -69,5 +69,11 @@ ax.text(0.5, 0.05, summary_text, ha='center', va='center', fontsize=10,
         transform=ax.transAxes)
 
 plt.tight_layout()
-plt.savefig('privacy_index_detailed_table_optimized.png', dpi=300, bbox_inches='tight')
-print("Optimized Detailed Index Table saved!")
+
+# Save figure with correct path
+from pathlib import Path
+repo_root = Path(__file__).parent.parent.parent
+output_path = repo_root / 'figures' / 'privacy_index_detailed_table_optimized.png'
+plt.savefig(output_path, dpi=300, bbox_inches='tight')
+print(f"✅ Optimized Detailed Index Table saved: {output_path}")
+plt.close()

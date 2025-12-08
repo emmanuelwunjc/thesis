@@ -257,12 +257,14 @@ def create_model_logic_diagram():
     ax.text(0.5, 0.5, '• Multiple Methods: Robustness checks across different approaches', fontsize=14)
     
     # Save the plot
-    output_path = Path(__file__).parent.parent / "figures" / "model_logic_diagram.png"
+    repo_root = Path(__file__).parent.parent.parent
+    output_path = repo_root / "figures" / "model_logic_diagram.png"
     plt.savefig(output_path, dpi=300, bbox_inches='tight', facecolor='white', edgecolor='none', 
-                pad_inches=0.5, format='png')
-    pdf_path = Path(__file__).parent.parent / "figures" / "model_logic_diagram.pdf"
+                pad_inches=0.5)
+    pdf_path = repo_root / "figures" / "pdf_versions" / "model_logic_diagram.pdf"
+    pdf_path.parent.mkdir(parents=True, exist_ok=True)
     plt.savefig(pdf_path, dpi=300, bbox_inches='tight', facecolor='white', edgecolor='none',
-                pad_inches=0.5, format='pdf')
+                pad_inches=0.5)
     
     plt.close(fig)
     
