@@ -11,7 +11,7 @@
 **Chronic Disease Management and Privacy Concerns in Healthcare Data Sharing**
 
 ### Subtitle
-A Machine Learning Analysis Using HINTS 7 Data
+A Multi-Method Regression and Causal Inference Analysis Using HINTS 7 Data
 
 ### Author Information
 **[Your Name]**  
@@ -127,37 +127,49 @@ Chronic diseases requiring daily monitoring (diabetes, hypertension, heart condi
 
 ---
 
-## Slide 6: Methodology Overview
+## Slide 6: Methodology Overview - 7 Core Models
 
-### Multi-Method Approach
+### Multi-Method Approach: 7 Statistical Models
 
-**1. Regression Analysis** (6 Models)
-- Main model: Direct diabetes effect
-- Interaction model: Diabetes × Privacy interaction
-- Stratified model: Separate analyses by diabetes status
-- Mediation model: Diabetes → Privacy → Sharing
-- Multiple outcomes: Separate privacy and sharing models
-- Severity model: Diabetes severity effects
+**1. Main Regression Model** ⭐
+- Direct effect: Diabetes → Data Sharing Willingness
+- Controls: Privacy Index, Age, Education, Demographics
+- **Result**: Privacy is strongest predictor (-2.32, p<0.001)
 
-**2. Machine Learning Model Selection**
-- **1,020 model configurations** tested
-- **4 algorithms**: Random Forest, Linear, Ridge, Lasso
-- **255 feature combinations** (3-6 features)
-- **Core constraint**: Diabetes and privacy always included
+**2. Interaction Model** ⭐
+- Diabetes × Privacy Index interaction
+- **Result**: Significant interaction (0.49, p=0.038)
+- Shows diabetes moderates privacy-sharing relationship
 
-**3. Causal Inference Methods**
-- Propensity Score Matching (PSM)
-- Instrumental Variables (IV)
-- Regression Discontinuity Design (RDD)
-- Difference-in-Differences (DiD)
+**3. Mediation Model**
+- Pathway: Diabetes → Privacy Index → Data Sharing
+- Tests indirect effect through privacy concerns
+- **Result**: Privacy mediates diabetes effect
 
-**4. Multi-Condition Analysis**
-- Replicated analysis across **5 chronic diseases**
+**4. Instrumental Variables (IV)**
+- Instrument: Age > 65 (Medicare eligibility)
+- Two-stage least squares
+- **Result**: Large causal effect (0.285, p<0.001)
+
+**5. Difference-in-Differences (DiD)**
+- Treatment: Diabetes status
+- Time: Age/Region variation
+- **Result**: Panel DiD effect (0.021)
+
+**6. Regression Discontinuity Design (RDD)**
+- Running variable: Age - 65
+- Treatment: Age ≥ 65 (Medicare eligibility)
+- **Result**: Discontinuity effect at age 65
+
+**7. Propensity Score Matching (PSM)**
+- Matches diabetic/non-diabetic on observables
+- Controls for selection bias
+- **Result**: Small effect (0.0025, non-significant)
 
 ### Image
 **[IMAGE: figures/model_logic_diagram.png]**
 
-*Caption: Model logic and variable relationships*
+*Caption: Complete model logic showing all 7 models and their variable relationships*
 
 ---
 
@@ -257,97 +269,100 @@ The diabetes findings are **representative** of the broader chronic disease patt
 
 ---
 
-## Slide 10: Machine Learning Results
+## Slide 10: Core Model Results Summary
 
-### Best Model Specification
+### Main Regression Model Results ⭐
 
-**Algorithm**: Random Forest Regressor
-- **Features**: 6 core variables
-- **Performance**: R² = -0.1239, MSE = 0.0403, MAE = 0.1588
+| Variable | Coefficient | p-value | Interpretation |
+|----------|-------------|---------|----------------|
+| **Privacy Caution Index** | **-2.3159** | **<0.001** | ⭐⭐⭐ **Strongest predictor** |
+| **Diabetes Status** | 0.0278 | 0.1608 | Small positive, not significant |
+| **Age** | 0.0024 | <0.001 | Significant positive effect |
+| **Education** | -0.0149 | 0.1290 | Not significant |
 
-### Feature Importance Ranking
-| Rank | Feature | Importance | Role |
-|------|---------|------------|------|
-| 1 | Privacy Caution Index | 0.35 | Strongest predictor |
-| 2 | Age | 0.25 | Second most important |
-| 3 | **Diabetes Status** | **0.20** | ⭐ Core variable confirmed |
-| 4 | Insurance Status | 0.10 | Socioeconomic factor |
-| 5 | Region | 0.05 | Geographic factor |
-| 6 | Gender | 0.05 | Demographic factor |
+**Model Performance**:
+- **R²**: 0.1736
+- **Sample**: 2,421 observations
+- **Method**: Weighted Least Squares
 
-### Algorithm Comparison
-| Algorithm | R² | Performance |
-|-----------|----|-------------|
-| **Random Forest** | -0.1239 | ⭐ Best |
-| Linear Regression | -0.1456 | Moderate |
-| Ridge Regression | -0.1423 | Good |
-| Lasso Regression | -0.1489 | Lower |
+### Interaction Model Results ⭐
 
-### Methodological Innovation
-- **First exhaustive search** in chronic disease privacy research
-- **1,020 configurations** tested automatically
-- **Reduces subjective bias**
+| Variable | Coefficient | p-value | Interpretation |
+|----------|-------------|---------|----------------|
+| **Privacy Index** | -2.4409 | <0.001 | Strong negative effect |
+| **Diabetes × Privacy** | **0.4896** | **0.038** | ⭐ **Significant interaction** |
+| **Diabetes Status** | -0.1712 | 0.081 | Marginal significance |
+
+**Key Finding**: Diabetes **moderates** the privacy-sharing relationship. Diabetic patients show different privacy-sharing trade-offs.
+
+### Multiple Outcomes Model (Most Significant) ⭐⭐⭐
+
+| Outcome | Diabetes Effect | p-value | Interpretation |
+|---------|----------------|---------|----------------|
+| **Privacy Index** | -0.0061 | 0.012 | Diabetics less privacy-concerned |
+| **Data Sharing** | +0.0551 | 0.011 | Diabetics more willing to share |
+
+**This is the most significant finding** - shows diabetes affects both privacy concerns AND sharing behavior.
 
 ### Images
-**[IMAGE: figures/best_ml_model_detailed_analysis.png]**
+**[IMAGE: figures/regression_analysis_results.png]**
 
-*Caption: Complete ML analysis showing feature importance, distributions, and performance*
+*Caption: Regression coefficients from main and interaction models*
 
-**[IMAGE: figures/best_model_architecture.png]**
+**[IMAGE: figures/model_logic_diagram.png]**
 
-*Caption: Random Forest model architecture and data flow*
-
-**[IMAGE: figures/ml_model_selection_results.png]**
-
-*Caption: Algorithm comparison and feature count impact*
+*Caption: Complete model logic showing all 7 models*
 
 ---
 
-## Slide 11: Causal Inference Results
+## Slide 11: Causal Inference Results - 4 Methods
 
-### Multiple Causal Inference Methods
+### Robustness Check: Multiple Causal Inference Approaches
 
-### 1. Propensity Score Matching (PSM)
-- **Estimate**: 0.0025 (SE: 0.0033)
-- **Interpretation**: Small, non-significant effect
-- **Controls for**: Observable confounders
-
-### 2. Instrumental Variables (IV) ⭐
+### 1. Instrumental Variables (IV) ⭐⭐⭐
 - **Instrument**: Age > 65 (Medicare eligibility)
-- **Estimate**: 0.2850 (SE: 0.0010)
-- **F-statistic**: 58.40 (strong instrument)
+- **First Stage F-statistic**: 58.40 (strong instrument)
+- **Causal Effect**: 0.2850 (SE: 0.0010, p<0.001)
 - **Interpretation**: Large, highly significant causal effect
+- **Method**: Two-stage least squares
+
+### 2. Difference-in-Differences (DiD) ⭐
+- **Panel DiD Estimate**: 0.0209
+- **Panel-only Sample**: 0.0341 (N = 451)
+- **R²**: 0.0229
+- **Interpretation**: Positive treatment effect
+- **Innovation**: First true panel DiD in diabetes privacy research
 
 ### 3. Regression Discontinuity Design (RDD)
-- **Discontinuity**: Age 65 (Medicare eligibility)
-- **Estimate**: -0.0084 (SE: 0.0023)
-- **Interpretation**: Negative effect at Medicare eligibility
+- **Running Variable**: Age - 65
+- **Treatment**: Age ≥ 65 (Medicare eligibility)
+- **Discontinuity Effect**: -0.0084 (SE: 0.0023, p<0.001)
+- **Interpretation**: Negative effect at Medicare eligibility threshold
 
-### 4. Difference-in-Differences (DiD)
-- **Panel DiD**: 0.0209 (R² = 0.0229)
-- **Panel-only**: 0.0341 (N = 451)
-- **First application** of true panel DiD to diabetes privacy research
+### 4. Propensity Score Matching (PSM)
+- **Estimate**: 0.0025 (SE: 0.0033)
+- **Interpretation**: Small, non-significant effect
+- **Controls for**: Observable confounders through matching
 
-### Summary Table
+### Summary Table: Causal Effect Estimates
 | Method | Estimate | SE | p-value | Interpretation |
 |--------|----------|----|---------|----------------|
+| **IV (Age>65)** | **0.2850** | **0.0010** | **<0.001** | ⭐⭐⭐ **Large, significant** |
+| **DiD (Panel)** | 0.0209 | - | - | Positive effect |
+| **RDD (Age 65)** | -0.0084 | 0.0023 | <0.001 | Negative at threshold |
 | **PSM** | 0.0025 | 0.0033 | >0.05 | Small, non-significant |
-| **IV** | 0.2850 | 0.0010 | <0.001 | ⭐ Large, significant |
-| **RDD** | -0.0084 | 0.0023 | <0.001 | Negative at age 65 |
-| **DiD** | 0.0209 | - | - | Panel effect |
+
+### Key Insight
+**IV method shows largest causal effect**, suggesting strong causal relationship when using Medicare eligibility as instrument.
 
 ### Images
 **[IMAGE: figures/causal_inference_analysis.png]**
 
-*Caption: Causal inference results from PSM, IV, and RDD methods*
+*Caption: Causal inference results from all 4 methods (PSM, IV, RDD, DiD)*
 
-**[IMAGE: figures/panel_difference_in_differences_analysis.png]**
+**[IMAGE: figures/model_logic_diagram.png]**
 
-*Caption: Panel difference-in-differences analysis results*
-
-**[IMAGE: figures/true_difference_in_differences_analysis.png]**
-
-*Caption: True panel difference-in-differences analysis*
+*Caption: Model logic showing causal inference methods (Models 4-7)*
 
 ---
 
@@ -481,20 +496,20 @@ More Willing to Share, Less Privacy-Concerned
 
 ### Methodological Contributions
 
-**1. Automated Model Selection**
-- Reduces subjective bias
-- **1,020 configurations** tested exhaustively
-- Ensures optimal model identification
+**1. Comprehensive Model Suite**
+- **7 distinct statistical models** (Main, Interaction, Mediation, IV, DiD, RDD, PSM)
+- Each model addresses different research questions
+- Robustness checks across multiple approaches
 
-**2. Multi-Condition Analysis**
+**2. Multiple Causal Inference Methods**
+- **4 causal inference methods** (PSM, IV, RDD, DiD)
+- First application of true panel DiD to diabetes privacy research
+- IV method provides strongest causal evidence
+
+**3. Multi-Condition Analysis**
 - Validates generalizability
-- Replicates findings across 5 conditions
+- Replicates findings across 5 chronic conditions
 - Strengthens theoretical contribution
-
-**3. Multiple Causal Inference Methods**
-- PSM, IV, RDD, DiD comparison
-- Robustness checks across approaches
-- First application of true panel DiD
 
 ### Empirical Contributions
 
@@ -552,9 +567,9 @@ More Willing to Share, Less Privacy-Concerned
 4. ✅ **Policy implications** apply to chronic disease management broadly
 
 ### Key Numbers
+- **7 statistical models** tested (Main, Interaction, Mediation, IV, DiD, RDD, PSM)
 - **5 chronic diseases** analyzed
 - **2,574 patients** across all conditions
-- **1,020 ML models** tested
 - **4 causal inference methods** applied
 - **All conditions** show significant effects (p < 0.01)
 
