@@ -64,9 +64,25 @@ def load_hints_data() -> pd.DataFrame:
 
 def load_data_with_r() -> pd.DataFrame:
     """Load data using R script fallback."""
-    r_script = """
+    # Try multiple possible paths
+    possible_paths = [
+        'data/raw/hints7_public copy.rda',
+        'data/hints7_public copy.rda',
+    ]
+    
+    data_path = None
+    for path in possible_paths:
+        if Path(path).exists():
+            data_path = path
+            break
+    
+    if data_path is None:
+        print("❌ Data file not found")
+        return pd.DataFrame()
+    
+    r_script = f"""
     library(haven)
-    load('data/hints7_public copy.rda')
+    load('{data_path}')
     df <- get(ls()[1])
     
     # Select key variables for ML analysis
