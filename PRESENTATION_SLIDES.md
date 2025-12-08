@@ -149,7 +149,7 @@ WillingShareData_HCP2 = 1.6673 + 0.0278×diabetic - 2.3159×privacy_caution_inde
 |----------|-------------|------------|-------------|---------|--------------|
 | **Constant (β₀)** | 1.6673 | 0.0744 | 22.41 | <0.001 | *** |
 | **Diabetes Status (β₁)** | 0.0278 | 0.0198 | 1.40 | 0.1608 | |
-| **Privacy Caution Index (β₂)** | **-2.3159** | **0.1077** | **-21.48** | **<0.001** | ⭐⭐⭐ *** |
+| **Privacy Caution Index (β₂)** | **-2.3159** | **0.1077** | **-21.48** | **<0.001** | *** |
 | **Age (β₃)** | 0.0024 | 0.0005 | 4.80 | <0.001 | *** |
 | **Education Level (β₄)** | -0.0149 | 0.0098 | -1.52 | 0.1290 | |
 
@@ -194,7 +194,7 @@ WillingShareData_HCP2 = β₀ + β₁×diabetic + β₂×privacy_caution_index
 | **Constant** | 1.7200 | 0.0786 | <0.001 | *** |
 | **Diabetes Status** | -0.1712 | 0.0981 | 0.0810 | † |
 | **Privacy Caution Index** | -2.4409 | 0.1234 | <0.001 | *** |
-| **Diabetes × Privacy Index** | **0.4896** | **0.2363** | **0.0383** | ⭐ * |
+| **Diabetes × Privacy Index** | **0.4896** | **0.2363** | **0.0383** |  * |
 | **Age** | 0.0023 | 0.0005 | <0.001 | *** |
 | **Education Level** | -0.0144 | 0.0098 | 0.1415 | |
 
@@ -235,13 +235,13 @@ WillingShareData_HCP2 = β₀ + β₁×diabetic + β₂×age + β₃×education 
 
 | Outcome | Coefficient | p-value | Interpretation |
 |---------|-------------|---------|----------------|
-| **Privacy Index** | **-0.0061** | **0.012** | ⭐ Diabetics less privacy-concerned |
-| **Data Sharing** | **+0.0551** | **0.011** | ⭐ Diabetics more willing to share |
+| **Privacy Index** | **-0.0061** | **0.012** | Diabetics less privacy-concerned |
+| **Data Sharing** | **+0.0551** | **0.011** | Diabetics more willing to share |
 
 ### Key Findings
-1. ✅ **Diabetes → Privacy**: Diabetes patients are **less privacy-concerned** (p=0.012)
-2. ✅ **Diabetes → Sharing**: Diabetes patients are **more willing to share data** (p=0.011)
-3. ✅ **Consistent pattern**: Both effects are significant and in expected directions
+1.  **Diabetes → Privacy**: Diabetes patients are **less privacy-concerned** (p=0.012)
+2.  **Diabetes → Sharing**: Diabetes patients are **more willing to share data** (p=0.011)
+3.  **Consistent pattern**: Both effects are significant and in expected directions
 
 ### Interpretation
 Diabetes patients **weigh privacy benefits differently**:
@@ -331,7 +331,7 @@ WillingShareData_HCP2 = β₀ + β₁×(Age ≥ 65) + β₂×(Age - 65) + β₃�
 ### Summary Table
 | Method | Estimate | p-value | Interpretation |
 |--------|----------|---------|----------------|
-| **IV (Age>65)** | **0.2850** | **<0.001** | ⭐⭐⭐ Large, significant |
+| **IV (Age>65)** | **0.2850** | **<0.001** |  Large, significant |
 | **DiD (Panel)** | 0.0209 | - | Positive effect |
 | **RDD (Age 65)** | -0.0084 | <0.001 | Negative at threshold |
 | **PSM** | 0.0025 | >0.05 | Small, non-significant |
@@ -356,16 +356,16 @@ WillingShareData_HCP2 = β₀ + β₁×(Age ≥ 65) + β₂×(Age - 65) + β₃�
 | Condition | Cases | Willingness Effect | Odds Ratio | p-value | Privacy Difference |
 |-----------|-------|-------------------|------------|---------|-------------------|
 | **Diabetes** | 472 | +7.15% | 1.53 | 0.0010 | -0.0042 |
-| **Hypertension** | 900 | +7.05% | 1.50 | <0.0001 | -0.0086 ⭐ |
+| **Hypertension** | 900 | +7.05% | 1.50 | <0.0001 | -0.0086  |
 | **Heart Condition** | 197 | +12.64% | 2.38 | <0.0001 | -0.0073 |
 | **Depression** | 693 | +6.16% | 1.43 | 0.0011 | -0.0164 |
 | **Lung Disease** | 312 | +7.10% | 1.53 | 0.0061 | -0.0101 |
 
 ### Key Insights
-- ✅ **All conditions**: More willing to share (all p < 0.01)
-- ✅ **All conditions**: Less privacy-concerned (consistent direction)
-- ✅ **Similar effect sizes** (OR: 1.43-2.38)
-- ✅ **Not diabetes-specific** - applies to chronic disease management broadly
+-  **All conditions**: More willing to share (all p < 0.01)
+-  **All conditions**: Less privacy-concerned (consistent direction)
+-  **Similar effect sizes** (OR: 1.43-2.38)
+-  **Not diabetes-specific** - applies to chronic disease management broadly
 
 ### Interpretation
 The diabetes findings are **representative** of the broader chronic disease pattern, not unique. Findings apply to **any chronic condition requiring daily tracking**.
@@ -542,11 +542,11 @@ More Willing to Share, Less Privacy-Concerned
 
 ### Main Conclusions
 
-1. ✅ **Chronic disease patients** (not just diabetes) show different privacy-sharing trade-offs
-2. ✅ **Privacy concerns** are the strongest predictor of data sharing reluctance (β = -2.32, p<0.001)
-3. ✅ **Causal evidence** from IV method shows large effect (β = 0.285, p<0.001)
-4. ✅ **Pattern is generalizable** across 5 chronic diseases requiring daily tracking
-5. ✅ **Policy implications** apply to chronic disease management broadly
+1.  **Chronic disease patients** (not just diabetes) show different privacy-sharing trade-offs
+2.  **Privacy concerns** are the strongest predictor of data sharing reluctance (β = -2.32, p<0.001)
+3.  **Causal evidence** from IV method shows large effect (β = 0.285, p<0.001)
+4.  **Pattern is generalizable** across 5 chronic diseases requiring daily tracking
+5.  **Policy implications** apply to chronic disease management broadly
 
 ### Key Numbers
 - **7 statistical models** tested (Main, Interaction, Mediation, IV, DiD, RDD, PSM)
