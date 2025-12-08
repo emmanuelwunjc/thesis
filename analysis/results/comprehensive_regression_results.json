@@ -1,0 +1,299 @@
+{
+  "model_1": {
+    "n_obs": 6600,
+    "n_vars": 4,
+    "coefficients": {
+      "const": 0.5677036234123434,
+      "diabetic": -0.04203293825785548,
+      "age": 0.000656402601780843,
+      "education_numeric": -0.03233583802148476,
+      "diabetic_age_interaction": 0.0005977570106630945
+    },
+    "std_errors": {
+      "const": 0.005631443721959348,
+      "diabetic": 0.008881395347449743,
+      "age": 6.171733965745851e-05,
+      "education_numeric": 0.0010229080059889675,
+      "diabetic_age_interaction": 0.0001420905471788867
+    },
+    "t_statistics": {
+      "const": 100.80960610484841,
+      "diabetic": -4.732695326970786,
+      "age": 10.635626963572742,
+      "education_numeric": -31.611677523456116,
+      "diabetic_age_interaction": 4.20687387395687
+    },
+    "p_values": {
+      "const": 0.0,
+      "diabetic": 2.2617891761722575e-06,
+      "age": 0.0,
+      "education_numeric": 0.0,
+      "diabetic_age_interaction": 2.6235912746752632e-05
+    },
+    "r_squared": 0.16852414934475057,
+    "weighted": true
+  },
+  "model_2": {
+    "diabetic_group": {
+      "n_obs": 448,
+      "n_vars": 3,
+      "coefficients": {
+        "const": 1.7673239266951053,
+        "privacy_caution_index": -2.079814511630139,
+        "age": 0.0021879254975055704,
+        "education_numeric": -0.05184175635423361
+      },
+      "std_errors": {
+        "const": 0.14204461283276248,
+        "privacy_caution_index": 0.20449373956319755,
+        "age": 0.001079242289893088,
+        "education_numeric": 0.01878396630528961
+      },
+      "t_statistics": {
+        "const": 12.442034171164803,
+        "privacy_caution_index": -10.170553465708347,
+        "age": 2.027279247667649,
+        "education_numeric": -2.7598940240664107
+      },
+      "p_values": {
+        "const": 0.0,
+        "privacy_caution_index": 0.0,
+        "age": 0.04323076111588553,
+        "education_numeric": 0.006021263276641431
+      },
+      "r_squared": 0.18041542298341662,
+      "weighted": true
+    },
+    "non_diabetic_group": {
+      "n_obs": 1973,
+      "n_vars": 3,
+      "coefficients": {
+        "const": 1.651713619061685,
+        "privacy_caution_index": -2.4053776426738294,
+        "age": 0.0023374177009321986,
+        "education_numeric": -0.00255893532439655
+      },
+      "std_errors": {
+        "const": 0.08625280989714129,
+        "privacy_caution_index": 0.1260611107268231,
+        "age": 0.000515142246886086,
+        "education_numeric": 0.01140829401583682
+      },
+      "t_statistics": {
+        "const": 19.14967896154799,
+        "privacy_caution_index": -19.081044334809405,
+        "age": 4.537421877280188,
+        "education_numeric": -0.224304819006617
+      },
+      "p_values": {
+        "const": 0.0,
+        "privacy_caution_index": 0.0,
+        "age": 6.0380230053613815e-06,
+        "education_numeric": 0.822543398927317
+      },
+      "r_squared": 0.17282065201521168,
+      "weighted": true
+    }
+  },
+  "model_3": {
+    "n_obs": 2421,
+    "n_vars": 5,
+    "coefficients": {
+      "const": 1.7551303503182154,
+      "diabetic": 0.012193576376836698,
+      "privacy_caution_index": -2.410548991617579,
+      "diabetic_privacy_interaction": 0.33073447998750266,
+      "diabetic_age_interaction": 0.0021879254975056576,
+      "diabetic_education_interaction": -0.051841756354228226
+    },
+    "std_errors": {
+      "const": 0.050356436477256704,
+      "diabetic": 0.15981777535928948,
+      "privacy_caution_index": 0.12027293002296278,
+      "diabetic_privacy_interaction": 0.24929332639565477,
+      "diabetic_age_interaction": 0.0011524292670385776,
+      "diabetic_education_interaction": 0.0200577689773688
+    },
+    "t_statistics": {
+      "const": 34.85414125979533,
+      "diabetic": 0.07629674702594301,
+      "privacy_caution_index": -20.04232366466296,
+      "diabetic_privacy_interaction": 1.326688061687589,
+      "diabetic_age_interaction": 1.8985334372217195,
+      "diabetic_education_interaction": -2.584622268444777
+    },
+    "p_values": {
+      "const": 0.0,
+      "diabetic": 0.9391893335962549,
+      "privacy_caution_index": 0.0,
+      "diabetic_privacy_interaction": 0.18473732394538112,
+      "diabetic_age_interaction": 0.057744947289796844,
+      "diabetic_education_interaction": 0.00980673878226579
+    },
+    "r_squared": 0.16927415739552987,
+    "weighted": true
+  },
+  "model_4": {
+    "step1": {
+      "n_obs": 6600,
+      "n_vars": 3,
+      "coefficients": {
+        "const": 0.5619805527661274,
+        "diabetic": -0.006068044417397017,
+        "age": 0.0007688447169718176,
+        "education_numeric": -0.032384907135240795
+      },
+      "std_errors": {
+        "const": 0.005471566647189292,
+        "diabetic": 0.0024097942586130145,
+        "age": 5.569980305820791e-05,
+        "education_numeric": 0.0010241353467904774
+      },
+      "t_statistics": {
+        "const": 102.70925842689188,
+        "diabetic": -2.5180757219039736,
+        "age": 13.803365088532766,
+        "education_numeric": -31.62170628787628
+      },
+      "p_values": {
+        "const": 0.0,
+        "diabetic": 0.011823275490960183,
+        "age": 0.0,
+        "education_numeric": 0.0
+      },
+      "r_squared": 0.1665752943897938,
+      "weighted": true
+    },
+    "step2": {
+      "n_obs": 2421,
+      "n_vars": 4,
+      "coefficients": {
+        "const": 1.667259680560746,
+        "diabetic": 0.027831856880344924,
+        "privacy_caution_index": -2.3159199068292216,
+        "age": 0.002388315452765323,
+        "education_numeric": -0.014910970860825762
+      },
+      "std_errors": {
+        "const": 0.07438760367222452,
+        "diabetic": 0.019840286086313552,
+        "privacy_caution_index": 0.10774712413449343,
+        "age": 0.00046431090171615986,
+        "education_numeric": 0.00981965795966477
+      },
+      "t_statistics": {
+        "const": 22.413138725468606,
+        "diabetic": 1.4027951391055902,
+        "privacy_caution_index": -21.49402989112188,
+        "age": 5.143785002544126,
+        "education_numeric": -1.5184816947875446
+      },
+      "p_values": {
+        "const": 0.0,
+        "diabetic": 0.16080642540177514,
+        "privacy_caution_index": 0.0,
+        "age": 2.9089147624006273e-07,
+        "education_numeric": 0.1290238500540124
+      },
+      "r_squared": 0.17361730431146927,
+      "weighted": true
+    },
+    "mediation_effect": 0.014053104861773677
+  },
+  "model_5": {
+    "privacy_caution_index": {
+      "n_obs": 6600,
+      "n_vars": 3,
+      "coefficients": {
+        "const": 0.5619805527661274,
+        "diabetic": -0.006068044417397017,
+        "age": 0.0007688447169718176,
+        "education_numeric": -0.032384907135240795
+      },
+      "std_errors": {
+        "const": 0.005471566647189292,
+        "diabetic": 0.0024097942586130145,
+        "age": 5.569980305820791e-05,
+        "education_numeric": 0.0010241353467904774
+      },
+      "t_statistics": {
+        "const": 102.70925842689188,
+        "diabetic": -2.5180757219039736,
+        "age": 13.803365088532766,
+        "education_numeric": -31.62170628787628
+      },
+      "p_values": {
+        "const": 0.0,
+        "diabetic": 0.011823275490960183,
+        "age": 0.0,
+        "education_numeric": 0.0
+      },
+      "r_squared": 0.1665752943897938,
+      "weighted": true
+    },
+    "WillingShareData_HCP2.1": {
+      "n_obs": 2421,
+      "n_vars": 3,
+      "coefficients": {
+        "const": 0.45255602164684283,
+        "diabetic": 0.055119273374179954,
+        "age": 0.0022263139087905916,
+        "education_numeric": 0.045235652820444554
+      },
+      "std_errors": {
+        "const": 0.05278250108698614,
+        "diabetic": 0.021605462963051946,
+        "age": 0.0005065918749328983,
+        "education_numeric": 0.01027097655058144
+      },
+      "t_statistics": {
+        "const": 8.573978351291569,
+        "diabetic": 2.5511729819648314,
+        "age": 4.394689332681229,
+        "education_numeric": 4.404221214766941
+      },
+      "p_values": {
+        "const": 0.0,
+        "diabetic": 0.010797209211658165,
+        "age": 1.1572245571356277e-05,
+        "education_numeric": 1.1078866252178798e-05
+      },
+      "r_squared": 0.02062186450894321,
+      "weighted": true
+    }
+  },
+  "model_6": {
+    "n_obs": 2421,
+    "n_vars": 4,
+    "coefficients": {
+      "const": 1.6691386857944002,
+      "diabetes_severity": 0.01788470651493078,
+      "privacy_caution_index": -2.317163563590715,
+      "age": 0.0023579709829517985,
+      "education_numeric": -0.014892312498197051
+    },
+    "std_errors": {
+      "const": 0.0742809425887017,
+      "diabetes_severity": 0.012650895912776397,
+      "privacy_caution_index": 0.10769076924494328,
+      "age": 0.0004692788246029275,
+      "education_numeric": 0.00982013777451044
+    },
+    "t_statistics": {
+      "const": 22.470618002743006,
+      "diabetes_severity": 1.413710668259364,
+      "privacy_caution_index": -21.516826185170178,
+      "age": 5.024669470110774,
+      "education_numeric": -1.5165074910509055
+    },
+    "p_values": {
+      "const": 0.0,
+      "diabetes_severity": 0.15757570581420577,
+      "privacy_caution_index": 0.0,
+      "age": 5.412030246176869e-07,
+      "education_numeric": 0.12952190127044916
+    },
+    "r_squared": 0.17361906703880448,
+    "weighted": true
+  }
+}

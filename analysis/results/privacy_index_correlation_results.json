@@ -1,0 +1,251 @@
+{
+  "dependent_variable": {
+    "variable": "WillingShareData_HCP2",
+    "total_observations": 7278,
+    "missing_count": "0",
+    "non_missing_count": 7278,
+    "unique_values": [
+      "Inapplicable, coded 2 in WearableDevTrackHealth2",
+      "Yes",
+      "Question answered in error (Commission Error)",
+      "No",
+      "Missing data (Filter Missing)",
+      "Missing data (Web partial - Question Never Seen)",
+      "Missing data (Not Ascertained)"
+    ],
+    "value_counts": {
+      "Inapplicable, coded 2 in WearableDevTrackHealth2": 3849,
+      "Yes": 2026,
+      "Question answered in error (Commission Error)": 652,
+      "No": 636,
+      "Missing data (Filter Missing)": 91,
+      "Missing data (Not Ascertained)": 13,
+      "Missing data (Web partial - Question Never Seen)": 11
+    },
+    "is_binary": false,
+    "is_multi_nominal": true,
+    "binary_recoding": {
+      "Yes": 1,
+      "No": 0
+    }
+  },
+  "privacy_index_scale": {
+    "current_scale": "0-1",
+    "min": 0.2327380952380952,
+    "max": 0.7797619047619048,
+    "mean": 0.47162060482340773,
+    "std": 0.08831328782165539,
+    "median": 0.4684523809523809,
+    "q25": 0.4095238095238095,
+    "q75": 0.5297619047619048,
+    "scale_1_5": {
+      "min": 1.9309523809523808,
+      "max": 4.119047619047619,
+      "mean": 2.8864824192936314,
+      "std": 0.35325315128662155
+    },
+    "scale_1_7": {
+      "min": 2.3964285714285714,
+      "max": 5.678571428571429,
+      "mean": 3.8297236289404464,
+      "std": 0.5298797269299322
+    }
+  },
+  "correlation_within_index": {
+    "correlation_matrix": {
+      "subindex_sharing": {
+        "subindex_sharing": 1.0,
+        "subindex_portals": 0.1750030150576728,
+        "subindex_devices": 0.1085603133856803,
+        "subindex_trust": 0.07066048579316944,
+        "subindex_social": 0.01979909558197963,
+        "subindex_other": NaN
+      },
+      "subindex_portals": {
+        "subindex_sharing": 0.1750030150576728,
+        "subindex_portals": 1.0,
+        "subindex_devices": 0.2707354844568303,
+        "subindex_trust": 0.14635415951859476,
+        "subindex_social": 0.1407286506648367,
+        "subindex_other": NaN
+      },
+      "subindex_devices": {
+        "subindex_sharing": 0.1085603133856803,
+        "subindex_portals": 0.2707354844568303,
+        "subindex_devices": 1.0,
+        "subindex_trust": 0.12621613981256014,
+        "subindex_social": 0.34471836167917463,
+        "subindex_other": NaN
+      },
+      "subindex_trust": {
+        "subindex_sharing": 0.07066048579316944,
+        "subindex_portals": 0.14635415951859476,
+        "subindex_devices": 0.12621613981256014,
+        "subindex_trust": 1.0,
+        "subindex_social": 0.01895510039732229,
+        "subindex_other": NaN
+      },
+      "subindex_social": {
+        "subindex_sharing": 0.01979909558197963,
+        "subindex_portals": 0.1407286506648367,
+        "subindex_devices": 0.34471836167917463,
+        "subindex_trust": 0.01895510039732229,
+        "subindex_social": 1.0,
+        "subindex_other": NaN
+      },
+      "subindex_other": {
+        "subindex_sharing": NaN,
+        "subindex_portals": NaN,
+        "subindex_devices": NaN,
+        "subindex_trust": NaN,
+        "subindex_social": NaN,
+        "subindex_other": NaN
+      }
+    },
+    "pairwise_correlations": {
+      "subindex_sharing vs subindex_portals": {
+        "pearson_r": 0.1750030150576731,
+        "pearson_p": 3.815646993181679e-51,
+        "spearman_r": 0.1579671154739874,
+        "spearman_p": 6.983539630801801e-42,
+        "n": 7278
+      },
+      "subindex_sharing vs subindex_devices": {
+        "pearson_r": 0.10856031338568037,
+        "pearson_p": 1.5828484423787493e-20,
+        "spearman_r": 0.12282592531722325,
+        "spearman_p": 7.254335645449756e-26,
+        "n": 7278
+      },
+      "subindex_sharing vs subindex_trust": {
+        "pearson_r": 0.07066048579316951,
+        "pearson_p": 1.5931869191746602e-09,
+        "spearman_r": 0.07447150737402829,
+        "spearman_p": 2.004497048547249e-10,
+        "n": 7278
+      },
+      "subindex_sharing vs subindex_social": {
+        "pearson_r": 0.019799095581979457,
+        "pearson_p": 0.09122711072751297,
+        "spearman_r": 0.013151587330225603,
+        "spearman_p": 0.2619332699547744,
+        "n": 7278
+      },
+      "subindex_sharing vs subindex_other": {
+        "pearson_r": NaN,
+        "pearson_p": NaN,
+        "spearman_r": NaN,
+        "spearman_p": NaN,
+        "n": 7278
+      },
+      "subindex_portals vs subindex_devices": {
+        "pearson_r": 0.2707354844568307,
+        "pearson_p": 1.8461819654722775e-122,
+        "spearman_r": 0.2724827780316369,
+        "spearman_p": 4.409673683057176e-124,
+        "n": 7278
+      },
+      "subindex_portals vs subindex_trust": {
+        "pearson_r": 0.14635415951859465,
+        "pearson_p": 3.918323144318136e-36,
+        "spearman_r": 0.13903298178152076,
+        "spearman_p": 9.65792918013666e-33,
+        "n": 7278
+      },
+      "subindex_portals vs subindex_social": {
+        "pearson_r": 0.14072865066483597,
+        "pearson_p": 1.6414375011892854e-33,
+        "spearman_r": 0.15012111082702934,
+        "spearman_p": 5.998324317330381e-38,
+        "n": 7278
+      },
+      "subindex_portals vs subindex_other": {
+        "pearson_r": NaN,
+        "pearson_p": NaN,
+        "spearman_r": NaN,
+        "spearman_p": NaN,
+        "n": 7278
+      },
+      "subindex_devices vs subindex_trust": {
+        "pearson_r": 0.12621613981255997,
+        "pearson_p": 3.1188004451639647e-27,
+        "spearman_r": 0.11698512477916333,
+        "spearman_p": 1.3387764434045706e-23,
+        "n": 7278
+      },
+      "subindex_devices vs subindex_social": {
+        "pearson_r": 0.34471836167917447,
+        "pearson_p": 3.621840990629329e-202,
+        "spearman_r": 0.31779735545540355,
+        "spearman_p": 1.7970705435681765e-170,
+        "n": 7278
+      },
+      "subindex_devices vs subindex_other": {
+        "pearson_r": NaN,
+        "pearson_p": NaN,
+        "spearman_r": NaN,
+        "spearman_p": NaN,
+        "n": 7278
+      },
+      "subindex_trust vs subindex_social": {
+        "pearson_r": 0.018955100397322337,
+        "pearson_p": 0.10588912426999153,
+        "spearman_r": 0.01356199627326322,
+        "spearman_p": 0.24733586556655499,
+        "n": 7278
+      },
+      "subindex_trust vs subindex_other": {
+        "pearson_r": NaN,
+        "pearson_p": NaN,
+        "spearman_r": NaN,
+        "spearman_p": NaN,
+        "n": 7278
+      },
+      "subindex_social vs subindex_other": {
+        "pearson_r": NaN,
+        "pearson_p": NaN,
+        "spearman_r": NaN,
+        "spearman_p": NaN,
+        "n": 7278
+      }
+    },
+    "n": 7278,
+    "subdimensions": [
+      "subindex_sharing",
+      "subindex_portals",
+      "subindex_devices",
+      "subindex_trust",
+      "subindex_social",
+      "subindex_other"
+    ]
+  },
+  "index_on_willingness": {
+    "point_biserial": {
+      "r": -0.4160947545749542,
+      "p": 5.723072272871409e-112
+    },
+    "pearson": {
+      "r": -0.4160947545749542,
+      "p": 5.723072272871409e-112
+    },
+    "spearman": {
+      "r": -0.4102440497531987,
+      "p": 1.3526994902951256e-108
+    },
+    "mean_by_group": {
+      "willing": 0.39755000470079443,
+      "not_willing": 0.47066206199460914,
+      "difference": -0.0731120572938147
+    },
+    "regression": {
+      "coefficient": -15.02086049759892,
+      "odds_ratio": 2.99587143752094e-07,
+      "p_value": 1.8108660851813232e-80,
+      "conf_int": {
+        "0": -16.570609171621115,
+        "1": -13.471111823576722
+      }
+    },
+    "n": 2662
+  }
+}

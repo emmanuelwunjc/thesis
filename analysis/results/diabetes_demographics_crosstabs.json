@@ -1,0 +1,898 @@
+{
+  "demographics": {
+    "age": "Age",
+    "education": "Education",
+    "region": "CENSREG",
+    "urban_rural": "RUC2003"
+  },
+  "crosstabs": {
+    "age": {
+      "count": {
+        "-4": {
+          "Diabetic": 1,
+          "Non-Diabetic": 3
+        },
+        "-7": {
+          "Diabetic": 23,
+          "Non-Diabetic": 459
+        },
+        "-9": {
+          "Diabetic": 31,
+          "Non-Diabetic": 96
+        },
+        "100": {
+          "Diabetic": 2,
+          "Non-Diabetic": 1
+        },
+        "102": {
+          "Diabetic": 0,
+          "Non-Diabetic": 1
+        },
+        "18": {
+          "Diabetic": 5,
+          "Non-Diabetic": 37
+        },
+        "19": {
+          "Diabetic": 2,
+          "Non-Diabetic": 20
+        },
+        "20": {
+          "Diabetic": 2,
+          "Non-Diabetic": 30
+        },
+        "21": {
+          "Diabetic": 1,
+          "Non-Diabetic": 34
+        },
+        "22": {
+          "Diabetic": 2,
+          "Non-Diabetic": 46
+        },
+        "23": {
+          "Diabetic": 1,
+          "Non-Diabetic": 44
+        },
+        "24": {
+          "Diabetic": 6,
+          "Non-Diabetic": 60
+        },
+        "25": {
+          "Diabetic": 3,
+          "Non-Diabetic": 61
+        },
+        "26": {
+          "Diabetic": 6,
+          "Non-Diabetic": 67
+        },
+        "27": {
+          "Diabetic": 4,
+          "Non-Diabetic": 75
+        },
+        "28": {
+          "Diabetic": 4,
+          "Non-Diabetic": 74
+        },
+        "29": {
+          "Diabetic": 4,
+          "Non-Diabetic": 63
+        },
+        "30": {
+          "Diabetic": 6,
+          "Non-Diabetic": 80
+        },
+        "31": {
+          "Diabetic": 2,
+          "Non-Diabetic": 82
+        },
+        "32": {
+          "Diabetic": 6,
+          "Non-Diabetic": 85
+        },
+        "33": {
+          "Diabetic": 6,
+          "Non-Diabetic": 73
+        },
+        "34": {
+          "Diabetic": 8,
+          "Non-Diabetic": 81
+        },
+        "35": {
+          "Diabetic": 15,
+          "Non-Diabetic": 96
+        },
+        "36": {
+          "Diabetic": 6,
+          "Non-Diabetic": 89
+        },
+        "37": {
+          "Diabetic": 8,
+          "Non-Diabetic": 83
+        },
+        "38": {
+          "Diabetic": 12,
+          "Non-Diabetic": 61
+        },
+        "39": {
+          "Diabetic": 12,
+          "Non-Diabetic": 89
+        },
+        "40": {
+          "Diabetic": 12,
+          "Non-Diabetic": 95
+        },
+        "41": {
+          "Diabetic": 8,
+          "Non-Diabetic": 72
+        },
+        "42": {
+          "Diabetic": 17,
+          "Non-Diabetic": 76
+        },
+        "43": {
+          "Diabetic": 19,
+          "Non-Diabetic": 76
+        },
+        "44": {
+          "Diabetic": 9,
+          "Non-Diabetic": 65
+        },
+        "45": {
+          "Diabetic": 17,
+          "Non-Diabetic": 88
+        },
+        "46": {
+          "Diabetic": 17,
+          "Non-Diabetic": 65
+        },
+        "47": {
+          "Diabetic": 8,
+          "Non-Diabetic": 63
+        },
+        "48": {
+          "Diabetic": 13,
+          "Non-Diabetic": 71
+        },
+        "49": {
+          "Diabetic": 19,
+          "Non-Diabetic": 74
+        },
+        "50": {
+          "Diabetic": 16,
+          "Non-Diabetic": 84
+        },
+        "51": {
+          "Diabetic": 15,
+          "Non-Diabetic": 70
+        },
+        "52": {
+          "Diabetic": 23,
+          "Non-Diabetic": 70
+        },
+        "53": {
+          "Diabetic": 23,
+          "Non-Diabetic": 91
+        },
+        "54": {
+          "Diabetic": 26,
+          "Non-Diabetic": 92
+        },
+        "55": {
+          "Diabetic": 28,
+          "Non-Diabetic": 74
+        },
+        "56": {
+          "Diabetic": 23,
+          "Non-Diabetic": 79
+        },
+        "57": {
+          "Diabetic": 20,
+          "Non-Diabetic": 71
+        },
+        "58": {
+          "Diabetic": 31,
+          "Non-Diabetic": 76
+        },
+        "59": {
+          "Diabetic": 32,
+          "Non-Diabetic": 73
+        },
+        "60": {
+          "Diabetic": 33,
+          "Non-Diabetic": 95
+        },
+        "61": {
+          "Diabetic": 31,
+          "Non-Diabetic": 100
+        },
+        "62": {
+          "Diabetic": 36,
+          "Non-Diabetic": 116
+        },
+        "63": {
+          "Diabetic": 47,
+          "Non-Diabetic": 94
+        },
+        "64": {
+          "Diabetic": 46,
+          "Non-Diabetic": 113
+        },
+        "65": {
+          "Diabetic": 42,
+          "Non-Diabetic": 115
+        },
+        "66": {
+          "Diabetic": 41,
+          "Non-Diabetic": 86
+        },
+        "67": {
+          "Diabetic": 47,
+          "Non-Diabetic": 119
+        },
+        "68": {
+          "Diabetic": 53,
+          "Non-Diabetic": 115
+        },
+        "69": {
+          "Diabetic": 42,
+          "Non-Diabetic": 111
+        },
+        "70": {
+          "Diabetic": 47,
+          "Non-Diabetic": 121
+        },
+        "71": {
+          "Diabetic": 37,
+          "Non-Diabetic": 87
+        },
+        "72": {
+          "Diabetic": 50,
+          "Non-Diabetic": 84
+        },
+        "73": {
+          "Diabetic": 32,
+          "Non-Diabetic": 78
+        },
+        "74": {
+          "Diabetic": 66,
+          "Non-Diabetic": 93
+        },
+        "75": {
+          "Diabetic": 51,
+          "Non-Diabetic": 84
+        },
+        "76": {
+          "Diabetic": 43,
+          "Non-Diabetic": 71
+        },
+        "77": {
+          "Diabetic": 35,
+          "Non-Diabetic": 61
+        },
+        "78": {
+          "Diabetic": 38,
+          "Non-Diabetic": 68
+        },
+        "79": {
+          "Diabetic": 19,
+          "Non-Diabetic": 61
+        },
+        "80": {
+          "Diabetic": 16,
+          "Non-Diabetic": 65
+        },
+        "81": {
+          "Diabetic": 22,
+          "Non-Diabetic": 41
+        },
+        "82": {
+          "Diabetic": 18,
+          "Non-Diabetic": 43
+        },
+        "83": {
+          "Diabetic": 15,
+          "Non-Diabetic": 28
+        },
+        "84": {
+          "Diabetic": 6,
+          "Non-Diabetic": 26
+        },
+        "85": {
+          "Diabetic": 12,
+          "Non-Diabetic": 32
+        },
+        "86": {
+          "Diabetic": 13,
+          "Non-Diabetic": 26
+        },
+        "87": {
+          "Diabetic": 8,
+          "Non-Diabetic": 17
+        },
+        "88": {
+          "Diabetic": 6,
+          "Non-Diabetic": 16
+        },
+        "89": {
+          "Diabetic": 9,
+          "Non-Diabetic": 11
+        },
+        "90": {
+          "Diabetic": 6,
+          "Non-Diabetic": 17
+        },
+        "91": {
+          "Diabetic": 3,
+          "Non-Diabetic": 5
+        },
+        "92": {
+          "Diabetic": 3,
+          "Non-Diabetic": 8
+        },
+        "93": {
+          "Diabetic": 2,
+          "Non-Diabetic": 7
+        },
+        "94": {
+          "Diabetic": 4,
+          "Non-Diabetic": 3
+        },
+        "95": {
+          "Diabetic": 0,
+          "Non-Diabetic": 5
+        },
+        "96": {
+          "Diabetic": 0,
+          "Non-Diabetic": 4
+        },
+        "97": {
+          "Diabetic": 0,
+          "Non-Diabetic": 2
+        },
+        "98": {
+          "Diabetic": 1,
+          "Non-Diabetic": 1
+        }
+      },
+      "percent_by_col": {
+        "-4": {
+          "Diabetic": 0.25,
+          "Non-Diabetic": 0.75
+        },
+        "-7": {
+          "Diabetic": 0.0477,
+          "Non-Diabetic": 0.9523
+        },
+        "-9": {
+          "Diabetic": 0.2441,
+          "Non-Diabetic": 0.7559
+        },
+        "100": {
+          "Diabetic": 0.6667,
+          "Non-Diabetic": 0.3333
+        },
+        "102": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "18": {
+          "Diabetic": 0.119,
+          "Non-Diabetic": 0.881
+        },
+        "19": {
+          "Diabetic": 0.0909,
+          "Non-Diabetic": 0.9091
+        },
+        "20": {
+          "Diabetic": 0.0625,
+          "Non-Diabetic": 0.9375
+        },
+        "21": {
+          "Diabetic": 0.0286,
+          "Non-Diabetic": 0.9714
+        },
+        "22": {
+          "Diabetic": 0.0417,
+          "Non-Diabetic": 0.9583
+        },
+        "23": {
+          "Diabetic": 0.0222,
+          "Non-Diabetic": 0.9778
+        },
+        "24": {
+          "Diabetic": 0.0909,
+          "Non-Diabetic": 0.9091
+        },
+        "25": {
+          "Diabetic": 0.0469,
+          "Non-Diabetic": 0.9531
+        },
+        "26": {
+          "Diabetic": 0.0822,
+          "Non-Diabetic": 0.9178
+        },
+        "27": {
+          "Diabetic": 0.0506,
+          "Non-Diabetic": 0.9494
+        },
+        "28": {
+          "Diabetic": 0.0513,
+          "Non-Diabetic": 0.9487
+        },
+        "29": {
+          "Diabetic": 0.0597,
+          "Non-Diabetic": 0.9403
+        },
+        "30": {
+          "Diabetic": 0.0698,
+          "Non-Diabetic": 0.9302
+        },
+        "31": {
+          "Diabetic": 0.0238,
+          "Non-Diabetic": 0.9762
+        },
+        "32": {
+          "Diabetic": 0.0659,
+          "Non-Diabetic": 0.9341
+        },
+        "33": {
+          "Diabetic": 0.0759,
+          "Non-Diabetic": 0.9241
+        },
+        "34": {
+          "Diabetic": 0.0899,
+          "Non-Diabetic": 0.9101
+        },
+        "35": {
+          "Diabetic": 0.1351,
+          "Non-Diabetic": 0.8649
+        },
+        "36": {
+          "Diabetic": 0.0632,
+          "Non-Diabetic": 0.9368
+        },
+        "37": {
+          "Diabetic": 0.0879,
+          "Non-Diabetic": 0.9121
+        },
+        "38": {
+          "Diabetic": 0.1644,
+          "Non-Diabetic": 0.8356
+        },
+        "39": {
+          "Diabetic": 0.1188,
+          "Non-Diabetic": 0.8812
+        },
+        "40": {
+          "Diabetic": 0.1121,
+          "Non-Diabetic": 0.8879
+        },
+        "41": {
+          "Diabetic": 0.1,
+          "Non-Diabetic": 0.9
+        },
+        "42": {
+          "Diabetic": 0.1828,
+          "Non-Diabetic": 0.8172
+        },
+        "43": {
+          "Diabetic": 0.2,
+          "Non-Diabetic": 0.8
+        },
+        "44": {
+          "Diabetic": 0.1216,
+          "Non-Diabetic": 0.8784
+        },
+        "45": {
+          "Diabetic": 0.1619,
+          "Non-Diabetic": 0.8381
+        },
+        "46": {
+          "Diabetic": 0.2073,
+          "Non-Diabetic": 0.7927
+        },
+        "47": {
+          "Diabetic": 0.1127,
+          "Non-Diabetic": 0.8873
+        },
+        "48": {
+          "Diabetic": 0.1548,
+          "Non-Diabetic": 0.8452
+        },
+        "49": {
+          "Diabetic": 0.2043,
+          "Non-Diabetic": 0.7957
+        },
+        "50": {
+          "Diabetic": 0.16,
+          "Non-Diabetic": 0.84
+        },
+        "51": {
+          "Diabetic": 0.1765,
+          "Non-Diabetic": 0.8235
+        },
+        "52": {
+          "Diabetic": 0.2473,
+          "Non-Diabetic": 0.7527
+        },
+        "53": {
+          "Diabetic": 0.2018,
+          "Non-Diabetic": 0.7982
+        },
+        "54": {
+          "Diabetic": 0.2203,
+          "Non-Diabetic": 0.7797
+        },
+        "55": {
+          "Diabetic": 0.2745,
+          "Non-Diabetic": 0.7255
+        },
+        "56": {
+          "Diabetic": 0.2255,
+          "Non-Diabetic": 0.7745
+        },
+        "57": {
+          "Diabetic": 0.2198,
+          "Non-Diabetic": 0.7802
+        },
+        "58": {
+          "Diabetic": 0.2897,
+          "Non-Diabetic": 0.7103
+        },
+        "59": {
+          "Diabetic": 0.3048,
+          "Non-Diabetic": 0.6952
+        },
+        "60": {
+          "Diabetic": 0.2578,
+          "Non-Diabetic": 0.7422
+        },
+        "61": {
+          "Diabetic": 0.2366,
+          "Non-Diabetic": 0.7634
+        },
+        "62": {
+          "Diabetic": 0.2368,
+          "Non-Diabetic": 0.7632
+        },
+        "63": {
+          "Diabetic": 0.3333,
+          "Non-Diabetic": 0.6667
+        },
+        "64": {
+          "Diabetic": 0.2893,
+          "Non-Diabetic": 0.7107
+        },
+        "65": {
+          "Diabetic": 0.2675,
+          "Non-Diabetic": 0.7325
+        },
+        "66": {
+          "Diabetic": 0.3228,
+          "Non-Diabetic": 0.6772
+        },
+        "67": {
+          "Diabetic": 0.2831,
+          "Non-Diabetic": 0.7169
+        },
+        "68": {
+          "Diabetic": 0.3155,
+          "Non-Diabetic": 0.6845
+        },
+        "69": {
+          "Diabetic": 0.2745,
+          "Non-Diabetic": 0.7255
+        },
+        "70": {
+          "Diabetic": 0.2798,
+          "Non-Diabetic": 0.7202
+        },
+        "71": {
+          "Diabetic": 0.2984,
+          "Non-Diabetic": 0.7016
+        },
+        "72": {
+          "Diabetic": 0.3731,
+          "Non-Diabetic": 0.6269
+        },
+        "73": {
+          "Diabetic": 0.2909,
+          "Non-Diabetic": 0.7091
+        },
+        "74": {
+          "Diabetic": 0.4151,
+          "Non-Diabetic": 0.5849
+        },
+        "75": {
+          "Diabetic": 0.3778,
+          "Non-Diabetic": 0.6222
+        },
+        "76": {
+          "Diabetic": 0.3772,
+          "Non-Diabetic": 0.6228
+        },
+        "77": {
+          "Diabetic": 0.3646,
+          "Non-Diabetic": 0.6354
+        },
+        "78": {
+          "Diabetic": 0.3585,
+          "Non-Diabetic": 0.6415
+        },
+        "79": {
+          "Diabetic": 0.2375,
+          "Non-Diabetic": 0.7625
+        },
+        "80": {
+          "Diabetic": 0.1975,
+          "Non-Diabetic": 0.8025
+        },
+        "81": {
+          "Diabetic": 0.3492,
+          "Non-Diabetic": 0.6508
+        },
+        "82": {
+          "Diabetic": 0.2951,
+          "Non-Diabetic": 0.7049
+        },
+        "83": {
+          "Diabetic": 0.3488,
+          "Non-Diabetic": 0.6512
+        },
+        "84": {
+          "Diabetic": 0.1875,
+          "Non-Diabetic": 0.8125
+        },
+        "85": {
+          "Diabetic": 0.2727,
+          "Non-Diabetic": 0.7273
+        },
+        "86": {
+          "Diabetic": 0.3333,
+          "Non-Diabetic": 0.6667
+        },
+        "87": {
+          "Diabetic": 0.32,
+          "Non-Diabetic": 0.68
+        },
+        "88": {
+          "Diabetic": 0.2727,
+          "Non-Diabetic": 0.7273
+        },
+        "89": {
+          "Diabetic": 0.45,
+          "Non-Diabetic": 0.55
+        },
+        "90": {
+          "Diabetic": 0.2609,
+          "Non-Diabetic": 0.7391
+        },
+        "91": {
+          "Diabetic": 0.375,
+          "Non-Diabetic": 0.625
+        },
+        "92": {
+          "Diabetic": 0.2727,
+          "Non-Diabetic": 0.7273
+        },
+        "93": {
+          "Diabetic": 0.2222,
+          "Non-Diabetic": 0.7778
+        },
+        "94": {
+          "Diabetic": 0.5714,
+          "Non-Diabetic": 0.4286
+        },
+        "95": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "96": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "97": {
+          "Diabetic": 0.0,
+          "Non-Diabetic": 1.0
+        },
+        "98": {
+          "Diabetic": 0.5,
+          "Non-Diabetic": 0.5
+        }
+      }
+    },
+    "education": {
+      "count": {
+        "12 years or completed high school": {
+          "Diabetic": 269,
+          "Non-Diabetic": 852
+        },
+        "8 through 11 years": {
+          "Diabetic": 104,
+          "Non-Diabetic": 194
+        },
+        "College graduate": {
+          "Diabetic": 353,
+          "Non-Diabetic": 1510
+        },
+        "Less than 8 years": {
+          "Diabetic": 59,
+          "Non-Diabetic": 86
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 29,
+          "Non-Diabetic": 68
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 23,
+          "Non-Diabetic": 463
+        },
+        "Post high school training other than college (vocational or technical)": {
+          "Diabetic": 140,
+          "Non-Diabetic": 356
+        },
+        "Postgraduate": {
+          "Diabetic": 200,
+          "Non-Diabetic": 1127
+        },
+        "Some college": {
+          "Diabetic": 357,
+          "Non-Diabetic": 1088
+        }
+      },
+      "percent_by_col": {
+        "12 years or completed high school": {
+          "Diabetic": 0.24,
+          "Non-Diabetic": 0.76
+        },
+        "8 through 11 years": {
+          "Diabetic": 0.349,
+          "Non-Diabetic": 0.651
+        },
+        "College graduate": {
+          "Diabetic": 0.1895,
+          "Non-Diabetic": 0.8105
+        },
+        "Less than 8 years": {
+          "Diabetic": 0.4069,
+          "Non-Diabetic": 0.5931
+        },
+        "Missing data (Not Ascertained)": {
+          "Diabetic": 0.299,
+          "Non-Diabetic": 0.701
+        },
+        "Missing data (Web partial - Question Never Seen)": {
+          "Diabetic": 0.0473,
+          "Non-Diabetic": 0.9527
+        },
+        "Post high school training other than college (vocational or technical)": {
+          "Diabetic": 0.2823,
+          "Non-Diabetic": 0.7177
+        },
+        "Postgraduate": {
+          "Diabetic": 0.1507,
+          "Non-Diabetic": 0.8493
+        },
+        "Some college": {
+          "Diabetic": 0.2471,
+          "Non-Diabetic": 0.7529
+        }
+      }
+    },
+    "region": {
+      "count": {
+        "Midwest": {
+          "Diabetic": 246,
+          "Non-Diabetic": 974
+        },
+        "Northeast": {
+          "Diabetic": 202,
+          "Non-Diabetic": 861
+        },
+        "South": {
+          "Diabetic": 752,
+          "Non-Diabetic": 2573
+        },
+        "West": {
+          "Diabetic": 334,
+          "Non-Diabetic": 1336
+        }
+      },
+      "percent_by_col": {
+        "Midwest": {
+          "Diabetic": 0.2016,
+          "Non-Diabetic": 0.7984
+        },
+        "Northeast": {
+          "Diabetic": 0.19,
+          "Non-Diabetic": 0.81
+        },
+        "South": {
+          "Diabetic": 0.2262,
+          "Non-Diabetic": 0.7738
+        },
+        "West": {
+          "Diabetic": 0.2,
+          "Non-Diabetic": 0.8
+        }
+      }
+    },
+    "urban_rural": {
+      "count": {
+        "County in metro area of 250,000 to 1 million population": {
+          "Diabetic": 280,
+          "Non-Diabetic": 1102
+        },
+        "County in metro area of fewer than 250,000 population": {
+          "Diabetic": 113,
+          "Non-Diabetic": 469
+        },
+        "County in metro area with 1 million population or more": {
+          "Diabetic": 896,
+          "Non-Diabetic": 3346
+        },
+        "Nonmetro county completely rural or less than 2,500 urban population, adjacent t": {
+          "Diabetic": 19,
+          "Non-Diabetic": 39
+        },
+        "Nonmetro county completely rural or less than 2,500 urban population, not adjace": {
+          "Diabetic": 7,
+          "Non-Diabetic": 37
+        },
+        "Nonmetro county with urban population of 2,500-19,999, adjacent to a metro area": {
+          "Diabetic": 72,
+          "Non-Diabetic": 256
+        },
+        "Nonmetro county with urban population of 2,500-19,999, not adjacent to a metro a": {
+          "Diabetic": 43,
+          "Non-Diabetic": 146
+        },
+        "Nonmetro county with urban population of 20,000 or more, adjacent to a metro are": {
+          "Diabetic": 75,
+          "Non-Diabetic": 248
+        },
+        "Nonmetro county with urban population of 20,000 or more, not adjacent to a metro": {
+          "Diabetic": 29,
+          "Non-Diabetic": 101
+        }
+      },
+      "percent_by_col": {
+        "County in metro area of 250,000 to 1 million population": {
+          "Diabetic": 0.2026,
+          "Non-Diabetic": 0.7974
+        },
+        "County in metro area of fewer than 250,000 population": {
+          "Diabetic": 0.1942,
+          "Non-Diabetic": 0.8058
+        },
+        "County in metro area with 1 million population or more": {
+          "Diabetic": 0.2112,
+          "Non-Diabetic": 0.7888
+        },
+        "Nonmetro county completely rural or less than 2,500 urban population, adjacent t": {
+          "Diabetic": 0.3276,
+          "Non-Diabetic": 0.6724
+        },
+        "Nonmetro county completely rural or less than 2,500 urban population, not adjace": {
+          "Diabetic": 0.1591,
+          "Non-Diabetic": 0.8409
+        },
+        "Nonmetro county with urban population of 2,500-19,999, adjacent to a metro area": {
+          "Diabetic": 0.2195,
+          "Non-Diabetic": 0.7805
+        },
+        "Nonmetro county with urban population of 2,500-19,999, not adjacent to a metro a": {
+          "Diabetic": 0.2275,
+          "Non-Diabetic": 0.7725
+        },
+        "Nonmetro county with urban population of 20,000 or more, adjacent to a metro are": {
+          "Diabetic": 0.2322,
+          "Non-Diabetic": 0.7678
+        },
+        "Nonmetro county with urban population of 20,000 or more, not adjacent to a metro": {
+          "Diabetic": 0.2231,
+          "Non-Diabetic": 0.7769
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "did_model": {
+    "coefficients": {
+      "diabetic": -0.033206149152014655,
+      "post_period": -0.05821728921397266,
+      "age": -0.001615315740388708,
+      "education": 0.09994437018033896,
+      "has_insurance": 0.0717251230568458,
+      "region_numeric": 0.0028510945378175693,
+      "diabetic_post": 0.04554000423434734
+    },
+    "intercept": -0.003820065109079951,
+    "r_squared": 0.0227047572007687,
+    "sample_size": 7278
+  },
+  "did_estimate": 0.04554000423434734,
+  "monthly_did": {
+    "estimate": 0.05280137072846656,
+    "r_squared": 0.02100420903084599,
+    "sample_size": 7278
+  },
+  "quarterly_did": {
+    "estimate": 0.0782301643192948,
+    "r_squared": 0.020447902774036186,
+    "sample_size": 7278
+  },
+  "privacy_did": {
+    "estimate": 0.0,
+    "r_squared": 1.0,
+    "sample_size": 7278
+  }
+}

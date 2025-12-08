@@ -1,0 +1,386 @@
+{
+  "conditions_info": {
+    "Diabetes": {
+      "variable": "MedConditions_Diabetes",
+      "tracking_required": true,
+      "tracking_type": "Blood glucose, medication, diet, activity",
+      "rationale": "Requires continuous monitoring and data logging",
+      "n_cases": 1534,
+      "n_total": 7278,
+      "prevalence": 0.21077219016213244,
+      "available": true
+    },
+    "Hypertension": {
+      "variable": "MedConditions_HighBP",
+      "tracking_required": true,
+      "tracking_type": "Blood pressure, medication adherence",
+      "rationale": "Requires regular BP monitoring and medication tracking",
+      "n_cases": 2963,
+      "n_total": 7278,
+      "prevalence": 0.4071173399285518,
+      "available": true
+    },
+    "Heart Condition": {
+      "variable": "MedConditions_HeartCondition",
+      "tracking_required": true,
+      "tracking_type": "Heart rate, symptoms, medication, activity",
+      "rationale": "May require continuous monitoring depending on condition",
+      "n_cases": 727,
+      "n_total": 7278,
+      "prevalence": 0.09989007969222313,
+      "available": true
+    },
+    "Depression": {
+      "variable": "MedConditions_Depression",
+      "tracking_required": true,
+      "tracking_type": "Mood tracking, medication adherence, symptoms",
+      "rationale": "Mood tracking apps and medication logging are common",
+      "n_cases": 1866,
+      "n_total": 7278,
+      "prevalence": 0.2563891178895301,
+      "available": true
+    },
+    "Lung Disease": {
+      "variable": "MedConditions_LungDisease",
+      "tracking_required": true,
+      "tracking_type": "Symptom tracking, medication, oxygen levels",
+      "rationale": "Symptom monitoring and medication tracking required",
+      "n_cases": 920,
+      "n_total": 7278,
+      "prevalence": 0.12640835394339103,
+      "available": true
+    }
+  },
+  "individual_results": {
+    "Diabetes": {
+      "condition": "Diabetes",
+      "sample_size": 2662,
+      "n_with_condition": 472,
+      "n_without_condition": 2190,
+      "correlations": {
+        "condition_privacy": {
+          "r": -0.02159346434464512,
+          "p": 0.2654026904311853
+        },
+        "condition_willingness": {
+          "r": 0.06405195256797996,
+          "p": 0.0009444351507618847
+        },
+        "privacy_willingness": {
+          "r": -0.4160947545749542,
+          "p": 5.723072272871409e-112
+        }
+      },
+      "mean_comparisons": {
+        "privacy_index": {
+          "with_condition": 0.41153273809523805,
+          "without_condition": 0.4157689171559034,
+          "difference": -0.004236179060665368
+        },
+        "willingness": {
+          "with_condition": 0.8199152542372882,
+          "without_condition": 0.7484018264840183,
+          "difference": 0.07151342775326985
+        }
+      },
+      "regression_privacy": {
+        "coefficient": -0.004236179060665485,
+        "p_value": 0.2654026904311795,
+        "r_squared": 0.0004662777024037057
+      },
+      "regression_willingness": {
+        "coefficient": 0.42566666694854965,
+        "odds_ratio": 1.5306104870258042,
+        "p_value": 0.0010138183193955572,
+        "pseudo_r_squared": 0.003924389371807169
+      },
+      "regression_interaction": {
+        "condition_coef": -0.5604309744804682,
+        "privacy_coef": -15.698349127539155,
+        "interaction_coef": 2.462720849706397,
+        "interaction_p": 0.2045609103405357,
+        "pseudo_r_squared": 0.17104866864942736
+      }
+    },
+    "Hypertension": {
+      "condition": "Hypertension",
+      "sample_size": 2662,
+      "n_with_condition": 900,
+      "n_without_condition": 1762,
+      "correlations": {
+        "condition_privacy": {
+          "r": -0.05413941795399391,
+          "p": 0.005205445246089048
+        },
+        "condition_willingness": {
+          "r": 0.07826303421506142,
+          "p": 5.294019411366652e-05
+        },
+        "privacy_willingness": {
+          "r": -0.4160947545749542,
+          "p": 5.723072272871409e-112
+        }
+      },
+      "mean_comparisons": {
+        "privacy_index": {
+          "with_condition": 0.4093419312169312,
+          "without_condition": 0.41791693692232856,
+          "difference": -0.008575005705397376
+        },
+        "willingness": {
+          "with_condition": 0.8077777777777778,
+          "without_condition": 0.7372304199772985,
+          "difference": 0.07054735780047927
+        }
+      },
+      "regression_privacy": {
+        "coefficient": -0.008575005705397216,
+        "p_value": 0.0052054452460889074,
+        "r_squared": 0.002931076576397129
+      },
+      "regression_willingness": {
+        "coefficient": 0.4040119204513743,
+        "odds_ratio": 1.497821801563674,
+        "p_value": 5.747245286223949e-05,
+        "pseudo_r_squared": 0.00571493060846151
+      },
+      "regression_interaction": {
+        "condition_coef": -2.3080557968463795,
+        "privacy_coef": -17.520172276394142,
+        "interaction_coef": 6.135209476713048,
+        "interaction_p": 0.00012076150329194517,
+        "pseudo_r_squared": 0.175276464755851
+      }
+    },
+    "Heart Condition": {
+      "condition": "Heart Condition",
+      "sample_size": 2662,
+      "n_with_condition": 197,
+      "n_without_condition": 2465,
+      "correlations": {
+        "condition_privacy": {
+          "r": -0.025665146118429974,
+          "p": 0.18557666075363952
+        },
+        "condition_willingness": {
+          "r": 0.07762592883834821,
+          "p": 6.0912894187980485e-05
+        },
+        "privacy_willingness": {
+          "r": -0.4160947545749542,
+          "p": 5.723072272871409e-112
+        }
+      },
+      "mean_comparisons": {
+        "privacy_index": {
+          "with_condition": 0.40821549431955517,
+          "without_condition": 0.4155614314691394,
+          "difference": -0.007345937149584203
+        },
+        "willingness": {
+          "with_condition": 0.8781725888324873,
+          "without_condition": 0.7517241379310344,
+          "difference": 0.12644845090145285
+        }
+      },
+      "regression_privacy": {
+        "coefficient": -0.007345937149584028,
+        "p_value": 0.1855766607536411,
+        "r_squared": 0.0006586997252806537
+      },
+      "regression_willingness": {
+        "coefficient": 0.8674088203767994,
+        "odds_ratio": 2.380733944954128,
+        "p_value": 9.861707368403067e-05,
+        "pseudo_r_squared": 0.006272447453748553
+      },
+      "regression_interaction": {
+        "condition_coef": -0.2599261740184111,
+        "privacy_coef": -15.468616713027199,
+        "interaction_coef": 2.8918710671077146,
+        "interaction_p": 0.32768353603929334,
+        "pseudo_r_squared": 0.1733459722225743
+      }
+    },
+    "Depression": {
+      "condition": "Depression",
+      "sample_size": 2662,
+      "n_with_condition": 693,
+      "n_without_condition": 1969,
+      "correlations": {
+        "condition_privacy": {
+          "r": -0.09617324568463599,
+          "p": 6.653508523001578e-07
+        },
+        "condition_willingness": {
+          "r": 0.06337942430238938,
+          "p": 0.0010686963296531603
+        },
+        "privacy_willingness": {
+          "r": -0.4160947545749542,
+          "p": 5.723072272871409e-112
+        }
+      },
+      "mean_comparisons": {
+        "privacy_index": {
+          "with_condition": 0.40287140108568675,
+          "without_condition": 0.41929278821736915,
+          "difference": -0.016421387131682397
+        },
+        "willingness": {
+          "with_condition": 0.8066378066378066,
+          "without_condition": 0.7450482478415439,
+          "difference": 0.06158955879626271
+        }
+      },
+      "regression_privacy": {
+        "coefficient": -0.016421387131682445,
+        "p_value": 6.653508523000563e-07,
+        "r_squared": 0.009249293185517482
+      },
+      "regression_willingness": {
+        "coefficient": 0.355935014752935,
+        "odds_ratio": 1.4275147778489958,
+        "p_value": 0.0011165235873712646,
+        "pseudo_r_squared": 0.003771140463822986
+      },
+      "regression_interaction": {
+        "condition_coef": -1.1625949085161498,
+        "privacy_coef": -15.817622287931526,
+        "interaction_coef": 3.120711762657896,
+        "interaction_p": 0.07326519466559633,
+        "pseudo_r_squared": 0.16739380273065552
+      }
+    },
+    "Lung Disease": {
+      "condition": "Lung Disease",
+      "sample_size": 2662,
+      "n_with_condition": 312,
+      "n_without_condition": 2350,
+      "correlations": {
+        "condition_privacy": {
+          "r": -0.043491565941432574,
+          "p": 0.024836480456000808
+        },
+        "condition_willingness": {
+          "r": 0.053521409019719565,
+          "p": 0.0057431403614058235
+        },
+        "privacy_willingness": {
+          "r": -0.4160947545749542,
+          "p": 5.723072272871409e-112
+        }
+      },
+      "mean_comparisons": {
+        "privacy_index": {
+          "with_condition": 0.406074481074481,
+          "without_condition": 0.41620516717325223,
+          "difference": -0.010130686098771213
+        },
+        "willingness": {
+          "with_condition": 0.8237179487179487,
+          "without_condition": 0.7527659574468085,
+          "difference": 0.07095199127114016
+        }
+      },
+      "regression_privacy": {
+        "coefficient": -0.01013068609877113,
+        "p_value": 0.024836480456003174,
+        "r_squared": 0.001891516308037522
+      },
+      "regression_willingness": {
+        "coefficient": 0.4283239623548744,
+        "odds_ratio": 1.5346831800195275,
+        "p_value": 0.006063062130691964,
+        "pseudo_r_squared": 0.002764901120226204
+      },
+      "regression_interaction": {
+        "condition_coef": 0.9567200432344954,
+        "privacy_coef": -14.90783031045278,
+        "interaction_coef": -1.2337010843166714,
+        "interaction_p": 0.6458651541623113,
+        "pseudo_r_squared": 0.16727564163102937
+      }
+    }
+  },
+  "comparison": {
+    "summary_table": [
+      {
+        "condition": "Diabetes",
+        "n_cases": 472,
+        "prevalence": "17.7%",
+        "privacy_diff": -0.004236179060665368,
+        "willingness_diff": 0.07151342775326985,
+        "privacy_corr_p": 0.2654026904311853,
+        "willingness_corr_p": 0.0009444351507618847,
+        "willingness_coef": 0.42566666694854965,
+        "willingness_p": 0.0010138183193955572,
+        "willingness_OR": 1.5306104870258042,
+        "interaction_p": 0.2045609103405357
+      },
+      {
+        "condition": "Hypertension",
+        "n_cases": 900,
+        "prevalence": "33.8%",
+        "privacy_diff": -0.008575005705397376,
+        "willingness_diff": 0.07054735780047927,
+        "privacy_corr_p": 0.005205445246089048,
+        "willingness_corr_p": 5.294019411366652e-05,
+        "willingness_coef": 0.4040119204513743,
+        "willingness_p": 5.747245286223949e-05,
+        "willingness_OR": 1.497821801563674,
+        "interaction_p": 0.00012076150329194517
+      },
+      {
+        "condition": "Heart Condition",
+        "n_cases": 197,
+        "prevalence": "7.4%",
+        "privacy_diff": -0.007345937149584203,
+        "willingness_diff": 0.12644845090145285,
+        "privacy_corr_p": 0.18557666075363952,
+        "willingness_corr_p": 6.0912894187980485e-05,
+        "willingness_coef": 0.8674088203767994,
+        "willingness_p": 9.861707368403067e-05,
+        "willingness_OR": 2.380733944954128,
+        "interaction_p": 0.32768353603929334
+      },
+      {
+        "condition": "Depression",
+        "n_cases": 693,
+        "prevalence": "26.0%",
+        "privacy_diff": -0.016421387131682397,
+        "willingness_diff": 0.06158955879626271,
+        "privacy_corr_p": 6.653508523001578e-07,
+        "willingness_corr_p": 0.0010686963296531603,
+        "willingness_coef": 0.355935014752935,
+        "willingness_p": 0.0011165235873712646,
+        "willingness_OR": 1.4275147778489958,
+        "interaction_p": 0.07326519466559633
+      },
+      {
+        "condition": "Lung Disease",
+        "n_cases": 312,
+        "prevalence": "11.7%",
+        "privacy_diff": -0.010130686098771213,
+        "willingness_diff": 0.07095199127114016,
+        "privacy_corr_p": 0.024836480456000808,
+        "willingness_corr_p": 0.0057431403614058235,
+        "willingness_coef": 0.4283239623548744,
+        "willingness_p": 0.006063062130691964,
+        "willingness_OR": 1.5346831800195275,
+        "interaction_p": 0.6458651541623113
+      }
+    ],
+    "key_findings": {
+      "significant_conditions": [
+        "Diabetes",
+        "Hypertension",
+        "Heart Condition",
+        "Depression",
+        "Lung Disease"
+      ],
+      "total_conditions_tested": 5,
+      "generalizability": true
+    }
+  }
+}

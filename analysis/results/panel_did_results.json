@@ -1,0 +1,36 @@
+{
+  "panel_did_model": {
+    "coefficients": {
+      "diabetic": -0.03317517526644038,
+      "post_period": -0.054595689075553046,
+      "panel_member": -0.014848953420085133,
+      "age": -0.0016163474011520761,
+      "education": 0.1001125414577581,
+      "has_insurance": 0.07138249411682901,
+      "region_numeric": 0.002818812482212727,
+      "diabetic_post": 0.04040976848925471,
+      "diabetic_panel": 0.02090790583797501,
+      "post_panel": -0.014848953420085112,
+      "diabetic_post_panel": 0.02090790583797501
+    },
+    "intercept": -0.003963532201832098,
+    "r_squared": 0.02289544424422063,
+    "sample_size": 7278
+  },
+  "panel_did_estimate": 0.02090790583797501,
+  "panel_only_did": {
+    "estimate": 0.0340668757142359,
+    "r_squared": 0.055184757684413444,
+    "sample_size": 451
+  },
+  "non_panel_did": {
+    "estimate": 0.04061725223219425,
+    "r_squared": 0.021032592789453464,
+    "sample_size": 6827
+  },
+  "privacy_panel_did": {
+    "estimate": 0.0,
+    "r_squared": 1.0,
+    "sample_size": 7278
+  }
+}
