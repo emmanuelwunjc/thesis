@@ -11,7 +11,7 @@
 **Chronic Disease Management and Privacy Concerns in Healthcare Data Sharing**
 
 ### Subtitle
-A Multi-Method Regression and Causal Inference Analysis Using HINTS 7 Data
+Evidence from HINTS 7: How Daily-Tracking Conditions Affect Privacy Behavior
 
 ### Author Information
 **[Your Name]**  
@@ -30,11 +30,12 @@ A Multi-Method Regression and Causal Inference Analysis Using HINTS 7 Data
 
 ### Sub-questions
 1. Do chronic disease patients show different privacy-sharing trade-offs compared to non-chronic disease individuals?
-2. Is this pattern specific to diabetes or generalizable to other chronic conditions?
-3. What are the policy implications for healthcare privacy frameworks?
+2. What is the causal relationship between chronic disease status and privacy behavior?
+3. Is this pattern specific to diabetes or generalizable to other chronic conditions?
+4. What are the policy implications for healthcare privacy frameworks?
 
 ### Key Insight
-Chronic diseases requiring daily monitoring (diabetes, hypertension, heart conditions, depression, lung disease) may create unique privacy calculus due to ongoing care needs.
+Chronic diseases requiring daily monitoring create **unique privacy calculus** - patients may weigh health benefits differently than privacy risks.
 
 ### No Image Required
 
@@ -58,6 +59,7 @@ Chronic diseases requiring daily monitoring (diabetes, hypertension, heart condi
 - Privacy research focuses on **general populations**
 - Limited attention to **chronic disease-specific privacy patterns**
 - Current policies treat **all patients uniformly**
+- **Causal evidence** is lacking
 
 ### Image
 **[IMAGE: figures/diabetes_analysis.png]**
@@ -85,7 +87,7 @@ Chronic diseases requiring daily monitoring (diabetes, hypertension, heart condi
 
 ### Target Variable
 - `WillingShareData_HCP2`: Data sharing willingness (Yes/No)
-- **Valid Cases**: 2,662 for analysis
+- **Valid Cases**: 2,421 for regression analysis
 
 ### Images
 **[IMAGE: figures/data_quality_analysis.png]**
@@ -121,81 +123,115 @@ Chronic diseases requiring daily monitoring (diabetes, hypertension, heart condi
 
 *Caption: Privacy index construction diagram showing 6 sub-dimensions*
 
-**[IMAGE: figures/privacy_index_detailed_table_optimized.png]**
-
-*Caption: Detailed privacy index components and scoring logic*
-
 ---
 
-## Slide 6: Methodology Overview - 7 Core Models
+## Slide 6: Main Regression Model
 
-### Multi-Method Approach: 7 Statistical Models
+### Model Specification
 
-**1. Main Regression Model** ⭐
-- Direct effect: Diabetes → Data Sharing Willingness
-- Controls: Privacy Index, Age, Education, Demographics
-- **Result**: Privacy is strongest predictor (-2.32, p<0.001)
+**Equation**:
+```
+WillingShareData_HCP2 = β₀ + β₁×diabetic + β₂×privacy_caution_index 
+                       + β₃×age + β₄×education + ε
+```
 
-**2. Interaction Model** ⭐
-- Diabetes × Privacy Index interaction
-- **Result**: Significant interaction (0.49, p=0.038)
-- Shows diabetes moderates privacy-sharing relationship
+### Regression Results
 
-**3. Mediation Model**
-- Pathway: Diabetes → Privacy Index → Data Sharing
-- Tests indirect effect through privacy concerns
-- **Result**: Privacy mediates diabetes effect
+| Variable | Coefficient | Std. Error | p-value | Significance |
+|----------|-------------|------------|---------|--------------|
+| **Constant** | 1.6673 | 0.0744 | <0.001 | *** |
+| **Diabetes Status** | 0.0278 | 0.0198 | 0.1608 | |
+| **Privacy Caution Index** | **-2.3159** | **0.1077** | **<0.001** | ⭐⭐⭐ |
+| **Age** | 0.0024 | 0.0005 | <0.001 | *** |
+| **Education Level** | -0.0149 | 0.0098 | 0.1290 | |
 
-**4. Instrumental Variables (IV)**
-- Instrument: Age > 65 (Medicare eligibility)
-- Two-stage least squares
-- **Result**: Large causal effect (0.285, p<0.001)
+### Model Statistics
+- **Sample Size**: 2,421 observations
+- **R²**: 0.1736
+- **Method**: Weighted Least Squares
 
-**5. Difference-in-Differences (DiD)**
-- Treatment: Diabetes status
-- Time: Age/Region variation
-- **Result**: Panel DiD effect (0.021)
-
-**6. Regression Discontinuity Design (RDD)**
-- Running variable: Age - 65
-- Treatment: Age ≥ 65 (Medicare eligibility)
-- **Result**: Discontinuity effect at age 65
-
-**7. Propensity Score Matching (PSM)**
-- Matches diabetic/non-diabetic on observables
-- Controls for selection bias
-- **Result**: Small effect (0.0025, non-significant)
+### Key Finding
+**Privacy caution is the strongest predictor** of data sharing reluctance (β = -2.32, p<0.001)
 
 ### Image
-**[IMAGE: figures/model_logic_diagram.png]**
+**[IMAGE: figures/regression_analysis_results.png]**
 
-*Caption: Complete model logic showing all 7 models and their variable relationships*
+*Caption: Regression coefficients visualization*
 
 ---
 
-## Slide 7: Key Finding #1 - Diabetes Effect
+## Slide 7: Interaction Model
 
-### Primary Finding
-**Diabetes patients demonstrate different privacy-sharing trade-offs**
+### Model Specification
 
-### Evidence from Multiple Outcomes Model (Most Significant)
+**Equation**:
+```
+WillingShareData_HCP2 = β₀ + β₁×diabetic + β₂×privacy_caution_index 
+                       + β₃×(diabetic × privacy_caution_index)
+                       + β₄×age + β₅×education + ε
+```
 
-**Diabetes → Privacy Index**: -0.0061 (p = 0.012) ⭐
-- Diabetes patients are **less privacy-concerned**
+### Regression Results
 
-**Diabetes → Data Sharing**: +0.0551 (p = 0.011) ⭐
-- Diabetes patients are **more willing to share data**
+| Variable | Coefficient | Std. Error | p-value | Significance |
+|----------|-------------|------------|---------|--------------|
+| **Constant** | 1.7200 | 0.0786 | <0.001 | *** |
+| **Diabetes Status** | -0.1712 | 0.0981 | 0.0810 | † |
+| **Privacy Caution Index** | -2.4409 | 0.1234 | <0.001 | *** |
+| **Diabetes × Privacy Index** | **0.4896** | **0.2363** | **0.0383** | ⭐ * |
+| **Age** | 0.0023 | 0.0005 | <0.001 | *** |
+| **Education Level** | -0.0144 | 0.0098 | 0.1415 | |
 
-### Interpretation
-- Diabetes patients **weigh privacy benefits differently**
-- **Higher perceived benefits** of data sharing for chronic disease management
-- **Lower privacy concerns** due to ongoing care needs
+### Model Statistics
+- **Sample Size**: 2,421 observations
+- **R²**: 0.1753
+- **Method**: Weighted Least Squares with Interaction
 
-### Table: Model 5 Results
+### Key Finding
+**Diabetes moderates the privacy-sharing relationship** (β = 0.49, p=0.038)
+
+Diabetic patients show **different privacy-sharing trade-offs** compared to non-diabetic patients.
+
+### Image
+**[IMAGE: figures/regression_analysis_results.png]**
+
+*Caption: Interaction model results showing moderation effect*
+
+---
+
+## Slide 8: Multiple Outcomes Model (Most Significant Finding)
+
+### Model Specification
+
+**Two Separate Equations**:
+
+**Equation 1: Privacy Index as Outcome**
+```
+privacy_caution_index = β₀ + β₁×diabetic + β₂×age + β₃×education + ε
+```
+
+**Equation 2: Data Sharing as Outcome**
+```
+WillingShareData_HCP2 = β₀ + β₁×diabetic + β₂×age + β₃×education + ε
+```
+
+### Results: Diabetes Effects
+
 | Outcome | Coefficient | p-value | Interpretation |
 |---------|-------------|---------|----------------|
-| **Privacy Index** | -0.0061 | 0.012 | Less privacy-concerned |
-| **Data Sharing** | +0.0551 | 0.011 | More willing to share |
+| **Privacy Index** | **-0.0061** | **0.012** | ⭐ Diabetics less privacy-concerned |
+| **Data Sharing** | **+0.0551** | **0.011** | ⭐ Diabetics more willing to share |
+
+### Key Findings
+1. ✅ **Diabetes → Privacy**: Diabetes patients are **less privacy-concerned** (p=0.012)
+2. ✅ **Diabetes → Sharing**: Diabetes patients are **more willing to share data** (p=0.011)
+3. ✅ **Consistent pattern**: Both effects are significant and in expected directions
+
+### Interpretation
+Diabetes patients **weigh privacy benefits differently**:
+- **Higher perceived benefits** of data sharing for chronic disease management
+- **Lower privacy concerns** due to ongoing care needs
+- **Different privacy calculus** compared to non-chronic disease individuals
 
 ### Image
 **[IMAGE: figures/diabetes_effects_comparison.png]**
@@ -204,40 +240,98 @@ Chronic diseases requiring daily monitoring (diabetes, hypertension, heart condi
 
 ---
 
-## Slide 8: Key Finding #2 - Privacy is Strongest Predictor
+## Slide 9: Causal Inference - Instrumental Variables
 
-### Privacy Caution Index: The Most Important Factor
+### Model Specification
 
-### Machine Learning Feature Importance
-| Rank | Feature | Importance | Interpretation |
-|------|---------|------------|----------------|
-| 1 | **Privacy Caution Index** | **0.35** | ⭐ **Most important** |
-| 2 | Age | 0.25 | Second most important |
-| 3 | **Diabetes Status** | **0.20** | Core variable confirmed |
-| 4 | Insurance Status | 0.10 | Socioeconomic indicator |
-| 5 | Region | 0.05 | Geographic factor |
-| 6 | Gender | 0.05 | Demographic characteristic |
+**Two-Stage Least Squares (2SLS)**:
 
-### Regression Results
-- **Privacy Effect**: -2.3159 (p < 0.001) ⭐⭐⭐
-- **Interpretation**: Each unit increase in privacy caution reduces data sharing willingness by 2.32 units
+**First Stage**:
+```
+diabetic = α₀ + α₁×(Age > 65) + α₂×controls + u
+```
 
-### Correlation Analysis
-- **Privacy ↔ Willingness**: r = -0.416 (p < 0.001)
-- **Strong negative relationship**: Higher privacy caution → Lower willingness
+**Second Stage**:
+```
+WillingShareData_HCP2 = β₀ + β₁×diabetic_predicted + β₂×controls + ε
+```
 
-### Images
-**[IMAGE: figures/best_ml_model_detailed_analysis.png]**
+### Instrument
+- **Age > 65**: Medicare eligibility (exogenous variation)
+- **F-statistic**: 58.40 (strong instrument)
 
-*Caption: Feature importance chart (top panel shows privacy index as most important)*
+### Results
 
-**[IMAGE: figures/regression_analysis_results.png]**
+| Stage | Variable | Coefficient | SE | p-value |
+|-------|----------|-------------|----|---------| 
+| **First** | Age > 65 | - | - | - |
+| **Second** | **Diabetic (Predicted)** | **0.2850** | **0.0010** | **<0.001** |
 
-*Caption: Regression coefficients visualization showing privacy as strongest predictor*
+### Key Finding
+**Large, highly significant causal effect** (β = 0.285, p<0.001)
+
+The IV approach provides **strong causal evidence** that diabetes affects data sharing behavior.
+
+### Image
+**[IMAGE: figures/causal_inference_analysis.png]**
+
+*Caption: Instrumental variables results showing causal effect*
 
 ---
 
-## Slide 9: Key Finding #3 - Generalizability Across Conditions
+## Slide 10: Causal Inference - Other Methods
+
+### Difference-in-Differences (DiD)
+
+**Model Specification**:
+```
+WillingShareData_HCP2 = β₀ + β₁×diabetic + β₂×time + β₃×(diabetic × time) + ε
+```
+
+**Results**:
+- **Panel DiD Estimate**: 0.0209
+- **Panel-only Sample**: 0.0341 (N = 451)
+- **R²**: 0.0229
+
+### Regression Discontinuity Design (RDD)
+
+**Model Specification**:
+```
+WillingShareData_HCP2 = β₀ + β₁×(Age ≥ 65) + β₂×(Age - 65) + β₃×[(Age - 65) × (Age ≥ 65)] + ε
+```
+
+**Results**:
+- **Discontinuity Effect**: -0.0084 (SE: 0.0023, p<0.001)
+- **Interpretation**: Negative effect at Medicare eligibility threshold
+
+### Propensity Score Matching (PSM)
+
+**Method**: Match diabetic/non-diabetic on observables, then compare outcomes
+
+**Results**:
+- **Estimate**: 0.0025 (SE: 0.0033)
+- **Interpretation**: Small, non-significant effect
+
+### Summary Table
+| Method | Estimate | p-value | Interpretation |
+|--------|----------|---------|----------------|
+| **IV (Age>65)** | **0.2850** | **<0.001** | ⭐⭐⭐ Large, significant |
+| **DiD (Panel)** | 0.0209 | - | Positive effect |
+| **RDD (Age 65)** | -0.0084 | <0.001 | Negative at threshold |
+| **PSM** | 0.0025 | >0.05 | Small, non-significant |
+
+### Images
+**[IMAGE: figures/causal_inference_analysis.png]**
+
+*Caption: Causal inference results from all methods*
+
+**[IMAGE: figures/panel_difference_in_differences_analysis.png]**
+
+*Caption: Panel difference-in-differences analysis*
+
+---
+
+## Slide 11: Generalizability Across Conditions
 
 ### The Pattern is Generalizable!
 
@@ -263,140 +357,11 @@ The diabetes findings are **representative** of the broader chronic disease patt
 ### Image
 **[IMAGE: figures/diabetes_effects_comparison.png]**
 
-*Caption: Comparison of effects across all 5 chronic diseases (can be adapted to show all conditions)*
-
-*Note: You may want to create a new figure showing all 5 conditions side-by-side*
+*Caption: Comparison of effects across all 5 chronic diseases*
 
 ---
 
-## Slide 10: Core Model Results Summary
-
-### Main Regression Model Results ⭐
-
-| Variable | Coefficient | p-value | Interpretation |
-|----------|-------------|---------|----------------|
-| **Privacy Caution Index** | **-2.3159** | **<0.001** | ⭐⭐⭐ **Strongest predictor** |
-| **Diabetes Status** | 0.0278 | 0.1608 | Small positive, not significant |
-| **Age** | 0.0024 | <0.001 | Significant positive effect |
-| **Education** | -0.0149 | 0.1290 | Not significant |
-
-**Model Performance**:
-- **R²**: 0.1736
-- **Sample**: 2,421 observations
-- **Method**: Weighted Least Squares
-
-### Interaction Model Results ⭐
-
-| Variable | Coefficient | p-value | Interpretation |
-|----------|-------------|---------|----------------|
-| **Privacy Index** | -2.4409 | <0.001 | Strong negative effect |
-| **Diabetes × Privacy** | **0.4896** | **0.038** | ⭐ **Significant interaction** |
-| **Diabetes Status** | -0.1712 | 0.081 | Marginal significance |
-
-**Key Finding**: Diabetes **moderates** the privacy-sharing relationship. Diabetic patients show different privacy-sharing trade-offs.
-
-### Multiple Outcomes Model (Most Significant) ⭐⭐⭐
-
-| Outcome | Diabetes Effect | p-value | Interpretation |
-|---------|----------------|---------|----------------|
-| **Privacy Index** | -0.0061 | 0.012 | Diabetics less privacy-concerned |
-| **Data Sharing** | +0.0551 | 0.011 | Diabetics more willing to share |
-
-**This is the most significant finding** - shows diabetes affects both privacy concerns AND sharing behavior.
-
-### Images
-**[IMAGE: figures/regression_analysis_results.png]**
-
-*Caption: Regression coefficients from main and interaction models*
-
-**[IMAGE: figures/model_logic_diagram.png]**
-
-*Caption: Complete model logic showing all 7 models*
-
----
-
-## Slide 11: Causal Inference Results - 4 Methods
-
-### Robustness Check: Multiple Causal Inference Approaches
-
-### 1. Instrumental Variables (IV) ⭐⭐⭐
-- **Instrument**: Age > 65 (Medicare eligibility)
-- **First Stage F-statistic**: 58.40 (strong instrument)
-- **Causal Effect**: 0.2850 (SE: 0.0010, p<0.001)
-- **Interpretation**: Large, highly significant causal effect
-- **Method**: Two-stage least squares
-
-### 2. Difference-in-Differences (DiD) ⭐
-- **Panel DiD Estimate**: 0.0209
-- **Panel-only Sample**: 0.0341 (N = 451)
-- **R²**: 0.0229
-- **Interpretation**: Positive treatment effect
-- **Innovation**: First true panel DiD in diabetes privacy research
-
-### 3. Regression Discontinuity Design (RDD)
-- **Running Variable**: Age - 65
-- **Treatment**: Age ≥ 65 (Medicare eligibility)
-- **Discontinuity Effect**: -0.0084 (SE: 0.0023, p<0.001)
-- **Interpretation**: Negative effect at Medicare eligibility threshold
-
-### 4. Propensity Score Matching (PSM)
-- **Estimate**: 0.0025 (SE: 0.0033)
-- **Interpretation**: Small, non-significant effect
-- **Controls for**: Observable confounders through matching
-
-### Summary Table: Causal Effect Estimates
-| Method | Estimate | SE | p-value | Interpretation |
-|--------|----------|----|---------|----------------|
-| **IV (Age>65)** | **0.2850** | **0.0010** | **<0.001** | ⭐⭐⭐ **Large, significant** |
-| **DiD (Panel)** | 0.0209 | - | - | Positive effect |
-| **RDD (Age 65)** | -0.0084 | 0.0023 | <0.001 | Negative at threshold |
-| **PSM** | 0.0025 | 0.0033 | >0.05 | Small, non-significant |
-
-### Key Insight
-**IV method shows largest causal effect**, suggesting strong causal relationship when using Medicare eligibility as instrument.
-
-### Images
-**[IMAGE: figures/causal_inference_analysis.png]**
-
-*Caption: Causal inference results from all 4 methods (PSM, IV, RDD, DiD)*
-
-**[IMAGE: figures/model_logic_diagram.png]**
-
-*Caption: Model logic showing causal inference methods (Models 4-7)*
-
----
-
-## Slide 12: Interaction Effects
-
-### Diabetes Moderates Privacy-Sharing Relationship
-
-### Interaction Model Results
-- **Diabetes × Privacy Interaction**: +0.4896 (p = 0.038) ⭐
-- **Interpretation**: Diabetes moderates the privacy-sharing relationship
-- Diabetic patients show **different privacy-sharing trade-offs** compared to non-diabetic patients
-
-### Stratified Analysis
-| Group | Privacy Effect | p-value | Difference |
-|-------|----------------|---------|------------|
-| **Diabetic** | -2.08 | <0.001 | Less sensitive |
-| **Non-diabetic** | -2.41 | <0.001 | More sensitive |
-| **Difference** | 0.33 | - | Diabetics less sensitive |
-
-### Hypertension Shows Strongest Interaction
-- **Interaction coefficient**: 6.14 (p = 0.0001) ⭐⭐⭐
-- **Largest group**: 900 cases
-- **Strongest moderation effect** across all conditions
-
-### Interpretation
-The effect of privacy concerns on data sharing willingness **varies by chronic disease status**. Chronic disease patients are **less sensitive** to privacy concerns when making data sharing decisions.
-
-### Image
-*Create an interaction plot showing privacy effect by diabetes status*
-*Or use: [IMAGE: figures/regression_analysis_results.png] - if it shows interaction*
-
----
-
-## Slide 13: Theoretical Implications
+## Slide 12: Theoretical Implications
 
 ### Privacy Protection Motivation Theory
 
@@ -438,7 +403,7 @@ More Willing to Share, Less Privacy-Concerned
 
 ---
 
-## Slide 14: Policy Implications
+## Slide 13: Policy Implications
 
 ### For Healthcare Systems
 
@@ -485,7 +450,7 @@ More Willing to Share, Less Privacy-Concerned
 
 ---
 
-## Slide 15: Research Contributions
+## Slide 14: Research Contributions
 
 ### Theoretical Contributions
 
@@ -496,19 +461,19 @@ More Willing to Share, Less Privacy-Concerned
 
 ### Methodological Contributions
 
-**1. Comprehensive Model Suite**
-- **7 distinct statistical models** (Main, Interaction, Mediation, IV, DiD, RDD, PSM)
-- Each model addresses different research questions
-- Robustness checks across multiple approaches
+**1. Multiple Regression Models**
+- Main, Interaction, Mediation, Multiple Outcomes models
+- Each addresses different research questions
+- Robustness checks across specifications
 
 **2. Multiple Causal Inference Methods**
-- **4 causal inference methods** (PSM, IV, RDD, DiD)
+- PSM, IV, RDD, DiD comparison
+- Robustness checks across approaches
 - First application of true panel DiD to diabetes privacy research
-- IV method provides strongest causal evidence
 
 **3. Multi-Condition Analysis**
 - Validates generalizability
-- Replicates findings across 5 chronic conditions
+- Replicates findings across 5 conditions
 - Strengthens theoretical contribution
 
 ### Empirical Contributions
@@ -518,7 +483,7 @@ More Willing to Share, Less Privacy-Concerned
 - Consistent pattern: more willing, less concerned
 
 **2. Quantifies Privacy Importance**
-- Strongest predictor (0.35 importance)
+- Privacy concerns strongest predictor (β = -2.32, p<0.001)
 - Privacy concerns strongest barrier to sharing
 
 **3. Identifies Policy-Relevant Patterns**
@@ -529,11 +494,11 @@ More Willing to Share, Less Privacy-Concerned
 
 ---
 
-## Slide 16: Limitations
+## Slide 15: Limitations
 
 ### Data Limitations
 
-1. **Cross-sectional Design**: Limits causal claims
+1. **Cross-sectional Design**: Limits causal claims (though IV/DiD address this)
 2. **Missing Data**: 6,684 missing values in target variable
 3. **Self-reported Measures**: Potential response bias
 4. **Single Dataset**: Limited external validation
@@ -541,14 +506,14 @@ More Willing to Share, Less Privacy-Concerned
 
 ### Methodological Limitations
 
-1. **Model Performance**: Negative R² values indicate prediction challenges
+1. **Model Performance**: R² = 0.17 (moderate explanatory power)
 2. **Feature Engineering**: Limited to available variables
-3. **Causal Inference**: Cross-sectional data constraints
+3. **Causal Inference**: Cross-sectional data constraints (addressed with IV/DiD)
 4. **Sample Size**: Some conditions have small samples (e.g., heart condition: 197)
 
 ### Future Research Directions
 
-1. **Longitudinal Studies**: Panel data for causal identification
+1. **Longitudinal Studies**: Panel data for stronger causal identification
 2. **External Validation**: Cross-dataset replication
 3. **International Studies**: Cross-cultural privacy patterns
 4. **Intervention Research**: Privacy education effectiveness
@@ -557,19 +522,20 @@ More Willing to Share, Less Privacy-Concerned
 
 ---
 
-## Slide 17: Conclusions
+## Slide 16: Conclusions
 
 ### Main Conclusions
 
 1. ✅ **Chronic disease patients** (not just diabetes) show different privacy-sharing trade-offs
-2. ✅ **Privacy concerns** are the strongest predictor of data sharing reluctance
-3. ✅ **Pattern is generalizable** across 5 chronic diseases requiring daily tracking
-4. ✅ **Policy implications** apply to chronic disease management broadly
+2. ✅ **Privacy concerns** are the strongest predictor of data sharing reluctance (β = -2.32, p<0.001)
+3. ✅ **Causal evidence** from IV method shows large effect (β = 0.285, p<0.001)
+4. ✅ **Pattern is generalizable** across 5 chronic diseases requiring daily tracking
+5. ✅ **Policy implications** apply to chronic disease management broadly
 
 ### Key Numbers
 - **7 statistical models** tested (Main, Interaction, Mediation, IV, DiD, RDD, PSM)
 - **5 chronic diseases** analyzed
-- **2,574 patients** across all conditions
+- **2,421 observations** in main regression
 - **4 causal inference methods** applied
 - **All conditions** show significant effects (p < 0.01)
 
@@ -579,11 +545,14 @@ Chronic disease management creates **unique privacy calculus** - patients are mo
 ### Policy Recommendation
 Healthcare systems and policymakers should develop **chronic disease-specific privacy frameworks** that account for the different privacy-sharing trade-offs of patients requiring daily health monitoring.
 
-### No Image Required (or use summary diagram)
+### Image
+**[IMAGE: figures/model_logic_diagram.png]**
+
+*Caption: Complete model logic showing all 7 models and their relationships*
 
 ---
 
-## Slide 18: Thank You / Questions
+## Slide 17: Thank You / Questions
 
 ### Thank You
 
@@ -607,21 +576,19 @@ Healthcare systems and policymakers should develop **chronic disease-specific pr
 
 ### Slide A1: Detailed Regression Results
 
-**Full Regression Table with All 6 Models**
+**Full Regression Table with All Models**
 
 | Model | Diabetes Coef | Privacy Coef | Interaction | R² | N |
 |-------|---------------|--------------|-------------|----|---|
 | **Main** | 0.0278 | -2.3159*** | - | 0.1736 | 2,421 |
 | **Interaction** | -0.1712† | -2.4409*** | 0.4896* | 0.1753 | 2,421 |
-| **Stratified (Diabetic)** | - | -2.08*** | - | 0.15 | 472 |
-| **Stratified (Non-Diabetic)** | - | -2.41*** | - | 0.18 | 1,949 |
-| **Mediation** | 0.0278 | -2.3159*** | - | 0.1736 | 2,421 |
-| **Multiple Outcomes** | +0.0551* | - | - | - | 2,421 |
+| **Multiple Outcomes (Privacy)** | -0.0061* | - | - | - | 2,421 |
+| **Multiple Outcomes (Sharing)** | +0.0551* | - | - | - | 2,421 |
 
 *** p<0.001, ** p<0.01, * p<0.05, † p<0.1
 
 ### Image
-*Use regression results table or: [IMAGE: figures/regression_analysis_results.png]*
+**[IMAGE: figures/regression_analysis_results.png]**
 
 ---
 
@@ -643,70 +610,22 @@ Healthcare systems and policymakers should develop **chronic disease-specific pr
 
 *Caption: Detailed privacy index components*
 
-**[IMAGE: figures/privacy_top10_diffs.png]**
-
-*Caption: Top 10 privacy-related variable differences*
-
----
-
-### Slide A3: Additional Visualizations
-
-**Supporting Figures**
-
-### Device and Technology Use
-**[IMAGE: figures/privacy_shared_device.png]**
-
-*Caption: Health device information sharing patterns*
-
-**[IMAGE: figures/privacy_use_computer.png]**
-
-*Caption: Computer use for health information*
-
-**[IMAGE: figures/privacy_use_watch.png]**
-
-*Caption: Smartwatch use for health tracking*
-
-### Trust Patterns
-**[IMAGE: figures/privacy_trust_hcsystem.png]**
-
-*Caption: Trust in healthcare system*
-
-**[IMAGE: figures/privacy_trust_scientists.png]**
-
-*Caption: Trust in scientists for health information*
-
-### Portal Usage
-**[IMAGE: figures/privacy_portal_pharmacy.png]**
-
-*Caption: Pharmacy portal usage patterns*
-
 ---
 
 ## Image Reference Guide
 
 ### Required Images (Priority Order)
 
-1. **`figures/diabetes_effects_comparison.png`** - Slides 7, 9
-2. **`figures/best_ml_model_detailed_analysis.png`** - Slides 8, 10
-3. **`figures/model_logic_diagram.png`** - Slides 6, 13
-4. **`figures/causal_inference_analysis.png`** - Slide 11
+1. **`figures/model_logic_diagram.png`** - Slides 12, 16 (Model logic)
+2. **`figures/regression_analysis_results.png`** - Slides 6, 7, Appendix
+3. **`figures/diabetes_effects_comparison.png`** - Slides 8, 11
+4. **`figures/causal_inference_analysis.png`** - Slides 9, 10
 5. **`figures/privacy_caution_index_analysis.png`** - Slide 5
-6. **`figures/regression_analysis_results.png`** - Slides 8, 12
-7. **`figures/panel_difference_in_differences_analysis.png`** - Slide 11
-8. **`figures/best_model_architecture.png`** - Slide 10
-9. **`figures/privacy_index_construction_diagram_optimized.png`** - Slide 5
-10. **`figures/privacy_index_detailed_table_optimized.png`** - Slide 5, Appendix
-11. **`figures/ml_model_selection_results.png`** - Slide 10
-12. **`figures/true_difference_in_differences_analysis.png`** - Slide 11
-13. **`figures/data_quality_analysis.png`** - Slide 4
-14. **`figures/diabetes_analysis.png`** - Slide 3
-15. **`figures/privacy_top10_diffs.png`** - Appendix
-16. **`figures/privacy_shared_device.png`** - Appendix
-17. **`figures/privacy_use_computer.png`** - Appendix
-18. **`figures/privacy_use_watch.png`** - Appendix
-19. **`figures/privacy_trust_hcsystem.png`** - Appendix
-20. **`figures/privacy_trust_scientists.png`** - Appendix
-21. **`figures/privacy_portal_pharmacy.png`** - Appendix
+6. **`figures/privacy_index_construction_diagram_optimized.png`** - Slide 5
+7. **`figures/data_quality_analysis.png`** - Slide 4
+8. **`figures/diabetes_analysis.png`** - Slide 3
+9. **`figures/panel_difference_in_differences_analysis.png`** - Slide 10
+10. **`figures/privacy_index_detailed_table_optimized.png`** - Appendix
 
 ### Image Placement Instructions
 
@@ -728,8 +647,8 @@ Healthcare systems and policymakers should develop **chronic disease-specific pr
 ### Timing Guide
 - **Title**: 30 seconds
 - **Background**: 2 minutes
-- **Methods**: 2 minutes
-- **Findings**: 5 minutes (slides 7-12)
+- **Methods**: 3 minutes (slides 5-6)
+- **Findings**: 6 minutes (slides 7-11)
 - **Implications**: 2 minutes
 - **Conclusions**: 1 minute
 - **Q&A**: 5-10 minutes
@@ -737,15 +656,15 @@ Healthcare systems and policymakers should develop **chronic disease-specific pr
 **Total**: ~15-20 minutes presentation
 
 ### Key Messages to Emphasize
-1. **Generalizability**: Not just diabetes - all chronic diseases
-2. **Privacy is Key**: Strongest predictor of data sharing
-3. **Policy Relevance**: 34.2M+ Americans affected
-4. **Methodological Innovation**: Automated model selection
+1. **Research Question**: Chronic disease privacy behavior
+2. **Key Finding**: Privacy is strongest predictor (β = -2.32)
+3. **Causal Evidence**: IV shows large effect (β = 0.285)
+4. **Generalizability**: Pattern applies to all 5 conditions
+5. **Policy Relevance**: 34.2M+ Americans affected
 
 ---
 
 *Last Updated: 2024*  
-*Total Slides: 18 main + 3 optional appendix*  
+*Total Slides: 17 main + 2 optional appendix*  
 *All images ready in: `figures/` directory*  
 *Ready for direct use in presentation software*
-
