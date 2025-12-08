@@ -22,13 +22,39 @@ from typing import Dict, List, Tuple, Optional
 import warnings
 warnings.filterwarnings('ignore')
 
+# Set up matplotlib for English labels only (fix encoding issues)
+plt.rcParams['font.sans-serif'] = ['DejaVu Sans', 'Arial', 'Helvetica']
+plt.rcParams['axes.unicode_minus'] = False
+plt.rcParams['figure.dpi'] = 300
+
 def load_hints_data() -> pd.DataFrame:
     """Load HINTS 7 data using R fallback."""
     print("📊 Loading HINTS 7 data...")
     
     try:
         import pyreadr
-        result = pyreadr.read_r('data/hints7_public copy.rda')
+        # Try multiple possible paths
+        possible_paths = [
+            'data/raw/hints7_public copy.rda',
+            'data/hints7_public copy.rda',
+            Path(__file__).parent.parent.parent / 'data' / 'raw' / 'hints7_public copy.rda',
+            Path(__file__).parent.parent.parent / 'data' / 'hints7_public copy.rda',
+        ]
+        
+        data_path = None
+        for path in possible_paths:
+            if isinstance(path, str):
+                path_obj = Path(path)
+            else:
+                path_obj = path
+            if path_obj.exists():
+                data_path = str(path_obj)
+                break
+        
+        if data_path is None:
+            raise FileNotFoundError(f"Data file not found. Tried: {possible_paths}")
+        
+        result = pyreadr.read_r(data_path)
         df = result[list(result.keys())[0]]
         print(f"✅ Data loaded: {df.shape}")
         return df
@@ -371,7 +397,7 @@ def create_data_quality_visualizations(quality_report: Dict, validation_report: 
     """Create visualizations for data quality analysis."""
     print("\n📊 Creating Data Quality Visualizations...")
     
-    # Set up the plotting
+    # Set up the plotting (font config already set at module level)
     fig, axes = plt.subplots(2, 3, figsize=(20, 12))
     fig.suptitle('Data Quality Analysis for ML', fontsize=20, fontweight='bold', y=0.95)
     
