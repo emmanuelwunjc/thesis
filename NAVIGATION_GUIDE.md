@@ -195,3 +195,74 @@ python scripts/05_visualization/plot_privacy_index.py
 *Last Updated: 2024*  
 *Repository Structure: Organized by function and type*
 
+
+
+## 📁 Current File Structure
+
+### `/scripts/` - Analysis Scripts
+
+#### `01_data_preparation/` (4 scripts)
+- `build_privacy_index.py`
+- `data_cleaning_for_ml.py`
+- `prepare_regression_data.py`
+- `wrangle.py`
+
+#### `02_regression/` (5 scripts)
+- `comprehensive_privacy_analysis.py`
+- `comprehensive_regression_analysis.py`
+- `privacy_as_dependent_analysis.py`
+- `privacy_index_correlation_analysis.py`
+- `regression_analysis.py`
+
+#### `03_machine_learning/` (5 scripts)
+- `exhaustive_variable_search.py`
+- `ml_model_selection.py`
+- `multi_chronic_disease_analysis.py`
+- `quick_high_r2_search.py`
+- `simplified_ml_model_selection.py`
+
+#### `04_causal_inference/` (4 scripts)
+- `causal_inference_analysis.py`
+- `difference_in_differences_analysis.py`
+- `panel_difference_in_differences_analysis.py`
+- `true_difference_in_differences_analysis.py`
+
+#### `05_visualization/` (10 scripts)
+- `age_distribution_plot.py`
+- `age_group_analysis.py`
+- `create_best_model_visualizations.py`
+- `create_detailed_index_table.py`
+- `create_index_diagram.py`
+- `create_model_logic_diagram.py`
+- `create_optimized_detailed_table.py`
+- `create_optimized_index_diagram.py`
+- `plot_privacy_diffs.py`
+- `plot_privacy_index.py`
+
+#### `utils/` (5 scripts)
+- `display_regression_results.py`
+- `explore_data.py`
+- `generate_latex_tables.py`
+- `update_documentation.py`
+- `visualize_data.py`
+
+### `/analysis/` - Analysis Outputs
+
+#### `results/` (18 JSON files)
+- `age_band_analyses.json`
+- `causal_inference_results.json`
+- `comprehensive_regression_results.json`
+- `data_quality_report.json`
+- `diabetes_demographics_crosstabs.json`
+- ... and 13 more
+
+#### `summaries/english/` (11 summaries)
+- `BEST_ML_MODEL_DETAILED_REPORT.md`
+- `BEST_MODEL_EXECUTIVE_SUMMARY.md`
+- `CAUSAL_INFERENCE_SUMMARY.md`
+- `CHRONIC_DISEASE_ANALYSIS_SUMMARY.md`
+- `DATA_ANALYSIS_DECISIONS.md`
+- ... and 6 more
+
+
+*Last Updated: 2025-12-08 14:08:22*

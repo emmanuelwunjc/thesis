@@ -222,6 +222,30 @@ python scripts/03_machine_learning/multi_chronic_disease_analysis.py
 
 ---
 
+## 📊 Repository Statistics
+
+### Scripts (33 total)
+- **01 Data Preparation**: 4 scripts
+- **02 Regression**: 5 scripts
+- **03 Machine Learning**: 5 scripts
+- **04 Causal Inference**: 4 scripts
+- **05 Visualization**: 10 scripts
+- **Utils**: 5 scripts
+
+### Analysis Outputs
+- **Results**: 19 JSON/TEX files
+- **Summaries (English)**: 11 documents
+- **Summaries (Chinese)**: 7 documents
+- **Data Files**: 4 CSV files
+
+### Figures
+- **PNG Files**: 28 files
+- **PDF Files**: 12 files (in pdf_versions/)
+- **Total**: 40 visualizations
+
+*Last Updated: 2025-12-08 14:08:22*
+
+
 ## ✅ Project Status
 
 - [x] Data cleaning completed
