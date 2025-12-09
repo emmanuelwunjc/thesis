@@ -180,33 +180,58 @@ WillingShareData_HCP2 = 1.6673 + 0.0278×diabetic - 2.3159×privacy_caution_inde
 
 ### Model Specification
 
-**Equation**:
+**Equation** (Linear Probability Model):
 ```
-WillingShareData_HCP2 = β₀ + β₁×diabetic + β₂×privacy_caution_index 
-                       + β₃×(diabetic × privacy_caution_index)
-                       + β₄×age + β₅×education + ε
+P(WillingShareData_HCP2 = 1) = β₀ + β₁×diabetic + β₂×privacy_caution_index 
+                              + β₃×(diabetic × privacy_caution_index)
+                              + β₄×age + β₅×education + ε
 ```
+
+**Note**: This is a Linear Probability Model (LPM) where the dependent variable is binary (0/1). Coefficients represent **changes in probability**, not changes in the outcome value.
 
 ### Regression Results
 
-| Variable | Coefficient | Std. Error | p-value | Significance |
-|----------|-------------|------------|---------|--------------|
-| **Constant** | 1.7200 | 0.0786 | <0.001 | *** |
-| **Diabetes Status** | -0.1712 | 0.0981 | 0.0810 | † |
-| **Privacy Caution Index** | -2.4409 | 0.1234 | <0.001 | *** |
-| **Diabetes × Privacy Index** | **0.4896** | **0.2363** | **0.0383** |  * |
-| **Age** | 0.0023 | 0.0005 | <0.001 | *** |
-| **Education Level** | -0.0144 | 0.0098 | 0.1415 | |
+| Variable | Coefficient | Std. Error | p-value | Significance | Interpretation |
+|----------|-------------|------------|---------|--------------|----------------|
+| **Constant** | 1.7200 | 0.0786 | <0.001 | *** | Baseline probability (non-diabetic, privacy=0) |
+| **Diabetes Status** | -0.1712 | 0.0981 | 0.0810 | † | Direct diabetes effect (marginal) |
+| **Privacy Caution Index** | -2.4409 | 0.1234 | <0.001 | *** | Privacy effect for non-diabetics |
+| **Diabetes × Privacy Index** | **0.4896** | **0.2363** | **0.0383** | * | **Moderation effect** |
+| **Age** | 0.0023 | 0.0005 | <0.001 | *** | Age effect |
+| **Education Level** | -0.0144 | 0.0098 | 0.1415 | | Education effect (not significant) |
 
 ### Model Statistics
 - **Sample Size**: 2,421 observations
 - **R²**: 0.1753
-- **Method**: Weighted Least Squares with Interaction
+- **Method**: Weighted Least Squares with Interaction (Linear Probability Model)
+
+### Interpretation of Coefficients
+
+**For Binary Dependent Variable (0/1)**:
+- Coefficients represent **changes in probability** (percentage points)
+- β = change in P(Y=1) for a one-unit change in X
+
+**Specific Interpretations**:
+
+1. **Privacy Index Effect (Non-Diabetics)**:
+   - β₂ = -2.4409 means: For non-diabetics, each 0.1 unit increase in privacy index **decreases probability of sharing by 0.244** (24.4 percentage points)
+
+2. **Privacy Index Effect (Diabetics)**:
+   - Total effect = β₂ + β₃ = -2.4409 + 0.4896 = **-1.9513**
+   - For diabetics, each 0.1 unit increase in privacy index **decreases probability of sharing by 0.195** (19.5 percentage points)
+   - **Diabetics are less sensitive to privacy concerns** (smaller negative effect)
+
+3. **Interaction Effect**:
+   - β₃ = 0.4896 means: The privacy effect is **0.49 percentage points less negative** for diabetics compared to non-diabetics
+   - This is the **moderation effect** - diabetes moderates how privacy concerns affect sharing
+
+4. **Diabetes Direct Effect**:
+   - β₁ = -0.1712 means: At privacy index = 0, diabetics have **17.12 percentage points lower** probability of sharing (but this is marginal, p=0.081)
 
 ### Key Finding
 **Diabetes moderates the privacy-sharing relationship** (β = 0.49, p=0.038)
 
-Diabetic patients show **different privacy-sharing trade-offs** compared to non-diabetic patients.
+Diabetic patients show **different privacy-sharing trade-offs** compared to non-diabetic patients - they are **less sensitive to privacy concerns** when making data sharing decisions.
 
 ### Image
 **[IMAGE: figures/regression_analysis_results.png]**
