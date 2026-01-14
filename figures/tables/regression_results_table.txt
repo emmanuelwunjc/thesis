@@ -1,0 +1,15 @@
+TABLE 2: MAIN REGRESSION MODEL RESULTS
+
+Dependent Variable: WillingShareData_HCP2 (Data sharing willingness, binary: 0/1)
+Sample Size: 2,421 observations
+Method: Weighted Least Squares Regression
+R²: 0.1736
+
+Variable	Coefficient	Std. Error	t-statistic	p-value	Significance
+Constant	1.6673	0.0744	22.41	<0.001	***
+Diabetes Status	0.0278	0.0198	1.40	0.1608	
+Privacy Caution Index	-2.3159	0.1077	-21.49	<0.001	***
+Age	0.0024	0.0005	5.14	<0.001	***
+Education Level	-0.0149	0.0098	-1.52	0.1290	
+
+Significance levels: *** p<0.001, ** p<0.01, * p<0.05, † p<0.1

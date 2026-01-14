@@ -1,0 +1,7 @@
+TABLE 4: AGE GROUP SUBGROUP ANALYSIS
+
+Age Group	Sample Size	Diabetes Coefficient	Privacy Coefficient	R²
+18-35 years	577	-0.0475 (p=0.466)	-2.8936 (p<0.001)	0.1996
+36-50 years	637	0.0558 (p=0.175)	-2.6580 (p<0.001)	0.1915
+51-65 years	649	0.0164 (p=0.627)	-2.3663 (p<0.001)	0.1667
+65+ years	546	0.0112 (p=0.728)	-1.6398 (p<0.001)	0.1297

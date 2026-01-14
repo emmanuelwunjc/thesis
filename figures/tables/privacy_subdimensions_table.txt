@@ -1,0 +1,10 @@
+TABLE 5: PRIVACY CAUTION INDEX SUB-DIMENSIONS
+
+Sub-dimension	Diabetic Mean (SD)	Non-Diabetic Mean (SD)	Difference
+Sharing Willingness	0.49 (0.14)	0.54 (0.12)	-0.04
+Portal Usage	0.61 (0.24)	0.62 (0.23)	-0.01
+Device Usage	0.42 (0.28)	0.34 (0.26)	+0.08
+Trust Levels	0.28 (0.17)	0.27 (0.16)	+0.01
+Social Media	0.56 (0.10)	0.54 (0.09)	+0.02
+Other Privacy	0.50 (0.00)	0.50 (0.00)	0.00
+Overall Index	0.48 (0.10)	0.47 (0.09)	+0.01

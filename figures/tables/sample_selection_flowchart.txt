@@ -1,0 +1,26 @@
+Step	Description	Sample Size	Exclusion Criteria	Remaining Observations
+1	Full HINTS 7 Sample	7,278	None (original dataset)	7,278
+2	Merge with Privacy Index	7,278	Missing HHID or privacy index data	~7,200
+3	Filter WillingShareData_HCP2	~7,200	Exclude "Inapplicable", "Commission Error", and other non-Yes/No responses	2,662
+4	Remove Missing Key Variables	2,662	Missing values in: diabetic, privacy_caution_index, age, education	2,421
+5	Final Regression Analysis Sample	2,421	Complete cases for all regression variables	2,421
+
+Detailed Exclusion Information:
+Step 1: Original HINTS 7 Public Dataset (2022) with 7,278 adults aged 18 and older
+Step 2: Inner join with privacy caution index data (some observations may not have privacy index calculated)
+Step 3: Keep only valid responses to data sharing willingness question (Yes=1, No=0)
+  - Excluded: "Inapplicable, coded 2 in WearableDevTrackHealth2" (3,849 cases, 52.9%)
+  - Excluded: "Question answered in error (Commission Error)" (652 cases, 9.0%)
+  - Excluded: Various missing data codes (115 cases, 1.6%)
+  - Kept: Yes responses (2,026 cases, 26.8%) and No responses (636 cases, 8.4%)
+Step 4: Remove observations with missing values in key independent variables (diabetic, privacy_caution_index, age, education, region, etc.)
+Step 5: Final sample for regression analysis with complete data for all variables
+
+Final Sample Characteristics:
+- Total observations: 2,421
+- Diabetic patients: ~510 (21.1% of final sample)
+- Non-diabetic patients: ~1,911 (78.9% of final sample)
+- Mean age: 58.3 years
+- Gender: Female 52.1%, Male 47.9%
+- With insurance: 85.3%
+- Education: 45.2% have some college education or higher

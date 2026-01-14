@@ -1,0 +1,26 @@
+TABLE 1: DESCRIPTIVE STATISTICS
+
+Variable	Full Sample (N=7,278)	Analysis Sample (N=2,421)	Diabetic (n=510)	Non-Diabetic (n=1,911)
+Diabetes Status			
+Has Diabetes	1,534 (21.1)	510 (21.1)	510 (100.0)	0 (0.0)
+No Diabetes	5,744 (78.9)	1,911 (78.9)	0 (0.0)	1,911 (100.0)
+Privacy Caution Index			
+Mean (SD)	0.47 (0.09)	0.47 (0.09)	0.48 (0.10)	0.47 (0.09)
+Range	0.23-0.78	0.23-0.78	0.23-0.78	0.23-0.78
+Data Sharing Willingness			
+Willing to Share	2,026 (27.8)	1,636 (67.6)	-	-
+Not Willing to Share	636 (8.7)	785 (32.4)	-	-
+Age (years)			
+Mean (SD)	58.3 (15.2)	58.3 (15.2)	-	-
+Range	18-100+	18-100+	-	-
+Gender			
+Female	3,792 (52.1)	1,260 (52.1)	-	-
+Male	3,486 (47.9)	1,161 (47.9)	-	-
+Education Level			
+Mean (SD)	-	3.8 (1.2)	-	-
+Some College or Higher	3,290 (45.2)	1,094 (45.2)	-	-
+Health Insurance			
+Has Insurance	6,208 (85.3)	2,064 (85.3)	-	-
+No Insurance	1,070 (14.7)	357 (14.7)	-	-
+
+Notes: Full Sample = Original HINTS 7 Public Dataset (2022). Analysis Sample = Final sample with complete data (N=2,421). Privacy Caution Index: 0-1 scale, Cronbach's α = 0.78.

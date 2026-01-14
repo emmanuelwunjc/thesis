@@ -1,0 +1,107 @@
+================================================================================
+REGRESSION EQUATIONS: HINTS 7 Diabetes Privacy Study
+================================================================================
+
+1. MAIN REGRESSION MODEL
+================================================================================
+
+Model Specification:
+
+Y = β₀ + β₁(diabetic) + β₂(privacy_caution_index) + β₃(age_continuous) 
+  + β₄(education_numeric) + β₅(region_numeric) + β₆(urban) + β₇(has_insurance) 
+  + β₈(male) + ε
+
+Where:
+- Y = WillingShareData_HCP2 (Data sharing willingness, binary: 0/1)
+- diabetic = Diabetes status (0 = No diabetes, 1 = Has diabetes)
+- privacy_caution_index = Privacy caution index (0-1 scale, continuous)
+- age_continuous = Age in years (continuous)
+- education_numeric = Education level (1-6, ordinal)
+- region_numeric = Census region (1-4, categorical)
+- urban = Urban/rural status (0 = Rural, 1 = Urban)
+- has_insurance = Health insurance status (0 = No, 1 = Yes)
+- male = Gender indicator (0 = Female, 1 = Male)
+- β₀ = Intercept
+- β₁ to β₈ = Regression coefficients
+- ε = Error term
+
+Key Results:
+- Sample Size: 2,421 observations
+- R²: 0.1736
+- Diabetes Effect (β₁): 0.0278 (p = 0.1608, not significant)
+- Privacy Effect (β₂): -2.3159 (p < 0.001, highly significant)
+- Age Effect (β₃): 0.0024 (p < 0.001, highly significant)
+
+Interpretation:
+The main model examines the direct effects of diabetes status and privacy concerns on data sharing willingness, controlling for demographic and socioeconomic factors. Privacy caution is the strongest predictor, with each unit increase reducing sharing willingness by 2.32 units. Diabetes shows a small positive effect but is not statistically significant.
+
+
+2. INTERACTION MODEL
+================================================================================
+
+Model Specification:
+
+Y = β₀ 
+  + β₁(diabetic) 
+  + β₂(privacy_caution_index) 
+  + β₃(diabetic × privacy_caution_index) 
+  + β₄(age_continuous) 
+  + β₅(education_numeric) 
+  + β₆(region_numeric) 
+  + β₇(urban) 
+  + β₈(has_insurance) 
+  + β₉(male) 
+  + ε
+
+Where:
+- Y = WillingShareData_HCP2 (Data sharing willingness, binary: 0/1)
+- diabetic = Diabetes status (0 = No diabetes, 1 = Has diabetes)
+- privacy_caution_index = Privacy caution index (0-1 scale, continuous)
+- diabetic × privacy_caution_index = Interaction term (moderation effect)
+- age_continuous = Age in years (continuous)
+- education_numeric = Education level (1-6, ordinal)
+- region_numeric = Census region (1-4, categorical)
+- urban = Urban/rural status (0 = Rural, 1 = Urban)
+- has_insurance = Health insurance status (0 = No, 1 = Yes)
+- male = Gender indicator (0 = Female, 1 = Male)
+- β₀ = Intercept
+- β₁ to β₉ = Regression coefficients
+- ε = Error term
+
+Key Results:
+- Sample Size: 2,421 observations
+- R²: 0.1753
+- Diabetes Effect (β₁): -0.1712 (p = 0.0810, marginally significant)
+- Privacy Effect (β₂): -2.4409 (p < 0.001, highly significant)
+- Interaction Effect (β₃): 0.4896 (p = 0.0383, significant)
+- Age Effect (β₄): 0.0023 (p < 0.001, highly significant)
+
+Interpretation:
+The interaction model examines whether diabetes moderates the relationship between privacy concerns and data sharing willingness. The significant interaction term (β₃ = 0.4896, p = 0.0383) indicates that diabetic patients show different privacy-sharing trade-offs compared to non-diabetic patients. Specifically, the negative effect of privacy caution on sharing willingness is moderated by diabetes status, suggesting that diabetic patients may weigh privacy and sharing benefits differently than non-diabetic individuals.
+
+
+================================================================================
+MODEL COMPARISON
+================================================================================
+
+Main Model vs. Interaction Model:
+- The interaction model adds one additional term: diabetic × privacy_caution_index
+- R² increases from 0.1736 to 0.1753 (marginal improvement)
+- The interaction effect is statistically significant (p = 0.0383)
+- This suggests that diabetes moderates the privacy-sharing relationship
+
+Key Difference:
+- Main Model: Assumes diabetes effect is constant across all privacy concern levels
+- Interaction Model: Allows diabetes effect to vary by privacy concern level
+
+================================================================================
+NOTES
+================================================================================
+
+- Both models use weighted least squares regression
+- Dependent variable: Binary (0/1) willingness to share data
+- All models control for demographic and socioeconomic factors
+- Sample: HINTS 7 Public Dataset (2022), 2,421 valid observations
+- Significance levels: *** p<0.001, ** p<0.01, * p<0.05, † p<0.1
+
+================================================================================

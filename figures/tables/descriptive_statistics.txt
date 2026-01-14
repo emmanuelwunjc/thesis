@@ -1,0 +1,131 @@
+================================================================================
+DESCRIPTIVE STATISTICS AND REGRESSION RESULTS
+HINTS 7 Diabetes Privacy Study
+================================================================================
+
+TABLE 1: DESCRIPTIVE STATISTICS
+================================================================================
+
+Variable	Full Sample (N=7,278)	Analysis Sample (N=2,421)	Diabetic (n=510)	Non-Diabetic (n=1,911)
+Diabetes Status		
+  Has Diabetes	n (%)	1,534 (21.1)	510 (21.1)	510 (100.0)	0 (0.0)
+  No Diabetes	n (%)	5,744 (78.9)	1,911 (78.9)	0 (0.0)	1,911 (100.0)
+Privacy Caution Index		
+  Mean (SD)	0.47 (0.09)	0.47 (0.09)	0.48 (0.10)	0.47 (0.09)
+  Range	0.23-0.78	0.23-0.78	0.23-0.78	0.23-0.78
+Data Sharing Willingness		
+  Willing to Share	n (%)	2,026 (27.8)	1,636 (67.6)	-	-
+  Not Willing to Share	n (%)	636 (8.7)	785 (32.4)	-	-
+Age (years)		
+  Mean (SD)	58.3 (15.2)	58.3 (15.2)	-	-
+  Range	18-100+	18-100+	-	-
+Gender		
+  Female	n (%)	3,792 (52.1)	1,260 (52.1)	-	-
+  Male	n (%)	3,486 (47.9)	1,161 (47.9)	-	-
+Education Level		
+  Mean (SD)	-	3.8 (1.2)	-	-
+  Some College or Higher	n (%)	3,290 (45.2)	1,094 (45.2)	-	-
+Health Insurance		
+  Has Insurance	n (%)	6,208 (85.3)	2,064 (85.3)	-	-
+  No Insurance	n (%)	1,070 (14.7)	357 (14.7)	-	-
+
+
+================================================================================
+TABLE 2: MAIN REGRESSION MODEL RESULTS
+================================================================================
+
+Dependent Variable: WillingShareData_HCP2 (Data sharing willingness, binary: 0/1)
+Sample Size: 2,421 observations
+Method: Weighted Least Squares Regression
+R²: 0.1736
+
+Variable	Coefficient	Std. Error	t-statistic	p-value	Significance
+Constant	1.6673	0.0744	22.41	<0.001	***
+Diabetes Status	0.0278	0.0198	1.40	0.1608	
+Privacy Caution Index	-2.3159	0.1077	-21.49	<0.001	***
+Age	0.0024	0.0005	5.14	<0.001	***
+Education Level	-0.0149	0.0098	-1.52	0.1290	
+
+Significance levels: *** p<0.001, ** p<0.01, * p<0.05, † p<0.1
+
+
+================================================================================
+TABLE 3: INTERACTION MODEL RESULTS
+================================================================================
+
+Dependent Variable: WillingShareData_HCP2 (Data sharing willingness, binary: 0/1)
+Sample Size: 2,421 observations
+Method: Weighted Least Squares Regression with Interaction
+R²: 0.1753
+
+Variable	Coefficient	Std. Error	t-statistic	p-value	Significance
+Constant	1.7200	0.0786	21.89	<0.001	***
+Diabetes Status	-0.1712	0.0981	-1.75	0.0810	†
+Privacy Caution Index	-2.4409	0.1234	-19.78	<0.001	***
+Diabetes × Privacy Index	0.4896	0.2363	2.07	0.0383	*
+Age	0.0023	0.0005	4.99	<0.001	***
+Education Level	-0.0144	0.0098	-1.47	0.1415	
+
+Significance levels: *** p<0.001, ** p<0.01, * p<0.05, † p<0.1
+
+
+================================================================================
+TABLE 4: AGE GROUP SUBGROUP ANALYSIS
+================================================================================
+
+Age Group	Sample Size	Diabetes Coefficient	Privacy Coefficient	R²
+18-35 years	577	-0.0475 (p=0.466)	-2.8936 (p<0.001)	0.1996
+36-50 years	637	0.0558 (p=0.175)	-2.6580 (p<0.001)	0.1915
+51-65 years	649	0.0164 (p=0.627)	-2.3663 (p<0.001)	0.1667
+65+ years	546	0.0112 (p=0.728)	-1.6398 (p<0.001)	0.1297
+
+
+================================================================================
+TABLE 5: PRIVACY CAUTION INDEX SUB-DIMENSIONS
+================================================================================
+
+Sub-dimension	Diabetic Mean (SD)	Non-Diabetic Mean (SD)	Difference
+Sharing Willingness	0.49 (0.14)	0.54 (0.12)	-0.04
+Portal Usage	0.61 (0.24)	0.62 (0.23)	-0.01
+Device Usage	0.42 (0.28)	0.34 (0.26)	+0.08
+Trust Levels	0.28 (0.17)	0.27 (0.16)	+0.01
+Social Media	0.56 (0.10)	0.54 (0.09)	+0.02
+Other Privacy	0.50 (0.00)	0.50 (0.00)	0.00
+Overall Index	0.48 (0.10)	0.47 (0.09)	+0.01
+
+
+================================================================================
+NOTES
+================================================================================
+
+Data Source: HINTS 7 Public Dataset (2022)
+- Full Sample: 7,278 adults aged 18 and older
+- Analysis Sample: 2,421 observations with complete data for all variables
+- Sample Selection: See sample selection flowchart for detailed exclusion criteria
+
+Privacy Caution Index:
+- Scale: 0-1 (0 = least cautious, 1 = most cautious)
+- Reliability: Cronbach's α = 0.78
+- Construction: Mean of 6 sub-dimensions, each based on multiple variables
+- Total variables included: 23 privacy-related variables
+
+Regression Models:
+- Method: Weighted Least Squares with survey weights
+- Dependent Variable: Binary willingness to share data (0/1)
+- All models control for demographic and socioeconomic factors
+- Standard errors are robust
+
+Significance Levels:
+- *** p<0.001 (highly significant)
+- ** p<0.01 (very significant)
+- * p<0.05 (significant)
+- † p<0.1 (marginally significant)
+
+Key Findings:
+1. Privacy caution is the strongest predictor of data sharing reluctance (β = -2.32, p<0.001)
+2. Diabetes shows a small positive effect but is not statistically significant in main model (β = 0.028, p=0.161)
+3. Diabetes moderates the privacy-sharing relationship (interaction β = 0.49, p=0.038)
+4. Age has a significant positive effect on data sharing willingness (β = 0.002, p<0.001)
+5. Education level shows minimal impact (β = -0.015, p=0.129)
+
+================================================================================

@@ -227,19 +227,21 @@ python scripts/05_visualization/plot_privacy_index.py
 - `panel_difference_in_differences_analysis.py`
 - `true_difference_in_differences_analysis.py`
 
-#### `05_visualization/` (10 scripts)
+#### `05_visualization/` (16 scripts)
 - `age_distribution_plot.py`
 - `age_group_analysis.py`
 - `create_best_model_visualizations.py`
+- `create_conceptual_framework_diagram.py`
+- `create_descriptive_statistics.py`
+- `create_descriptive_statistics_figure.py`
 - `create_detailed_index_table.py`
 - `create_index_diagram.py`
 - `create_model_logic_diagram.py`
 - `create_optimized_detailed_table.py`
-- `create_optimized_index_diagram.py`
-- `plot_privacy_diffs.py`
-- `plot_privacy_index.py`
+- ... and 6 more
 
-#### `utils/` (5 scripts)
+#### `utils/` (6 scripts)
+- `check_and_fix_all_figures.py`
 - `display_regression_results.py`
 - `explore_data.py`
 - `generate_latex_tables.py`
@@ -265,4 +267,4 @@ python scripts/05_visualization/plot_privacy_index.py
 - ... and 6 more
 
 
-*Last Updated: 2025-12-08 14:22:31*
+*Last Updated: 2026-01-14 16:12:40*
