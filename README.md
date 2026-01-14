@@ -29,36 +29,45 @@
 ```
 thesis/
 ├── README.md                          # This file - main entry point
-├── NAVIGATION_GUIDE.md                 # Complete navigation guide
-├── THESIS_OUTLINE.md                   # Full thesis document
+├── NAVIGATION_GUIDE.md                # Complete navigation guide
+├── THESIS_OUTLINE.md                  # Full thesis document
+├── PRESENTATION_SLIDES.md             # Defense presentation
 │
-├── data/                               # All data files
-│   ├── raw/                           # Original HINTS 7 dataset
-│   ├── processed/                     # Cleaned/processed data
-│   └── intermediate/                   # Intermediate files
+├── submission/                        # 📤 JOURNAL SUBMISSION FILES
+│   ├── Wu_DataSharing_FINAL_SUBMIT.docx    # Identified version
+│   └── Wu_DataSharing_BLIND_REVIEW.docx    # Blind review version
 │
-├── scripts/                            # Analysis scripts (organized by function)
+├── data/                              # All data files
+│   └── raw/                           # Original HINTS 7 dataset
+│
+├── scripts/                           # Analysis scripts (organized by function)
 │   ├── 01_data_preparation/           # Data loading, cleaning, index building
-│   ├── 02_regression/                  # Regression analysis
+│   ├── 02_regression/                 # Regression analysis
 │   ├── 03_machine_learning/           # ML model selection
 │   ├── 04_causal_inference/           # Causal inference methods
 │   ├── 05_visualization/              # Plotting and visualization
 │   └── utils/                         # Utility functions
 │
-├── analysis/                            # Analysis outputs
-│   ├── results/                        # JSON results files
+├── analysis/                          # Analysis outputs
+│   ├── results/                       # JSON results files
 │   ├── summaries/                     # Markdown summaries
 │   │   ├── english/                   # English summaries
 │   │   └── chinese/                   # Chinese summaries
-│   └── data/                           # Processed CSV files
+│   └── data/                          # Processed CSV files
 │
-├── figures/                            # All visualizations
-│   └── [organized by analysis type]
+├── figures/                           # All visualizations
+│   ├── *.png                          # PNG figures
+│   ├── pdf_versions/                  # PDF versions
+│   └── tables/                        # Text tables
 │
-└── docs/                               # Documentation
-    ├── guides/                         # User guides
-    ├── methodology/                    # Methodology docs
-    └── references/                     # Reference materials
+├── docs/                              # Documentation
+│   ├── guides/                        # User guides
+│   ├── methodology/                   # Methodology docs
+│   └── hints_documentation/           # HINTS 7 official docs
+│
+└── archive/                           # Archived files
+    ├── old_docs/                      # Old documentation
+    └── submission_scripts/            # Scripts used for submission
 ```
 
 **See [`NAVIGATION_GUIDE.md`](NAVIGATION_GUIDE.md) for detailed directory structure and file locations.**
@@ -224,13 +233,14 @@ python scripts/03_machine_learning/multi_chronic_disease_analysis.py
 
 ## 📊 Repository Statistics
 
-### Scripts (33 total)
+### Scripts (35 total)
 - **01 Data Preparation**: 4 scripts
 - **02 Regression**: 5 scripts
 - **03 Machine Learning**: 5 scripts
 - **04 Causal Inference**: 4 scripts
-- **05 Visualization**: 10 scripts
-- **Utils**: 5 scripts
+- **05 Visualization**: 11 scripts
+- **Analysis**: 0 scripts
+- **Utils**: 6 scripts
 
 ### Analysis Outputs
 - **Results**: 19 JSON/TEX files
@@ -243,7 +253,7 @@ python scripts/03_machine_learning/multi_chronic_disease_analysis.py
 - **PDF Files**: 12 files (in pdf_versions/)
 - **Total**: 40 visualizations
 
-*Last Updated: 2025-12-08 14:22:31*
+*Last Updated: 2025-12-09 17:35:02*
 
 ---
 
@@ -271,6 +281,7 @@ This repository includes an **automatic documentation update system** that keeps
 - [x] Documentation organized
 - [x] Repository reorganized
 - [x] Auto-update documentation system implemented
+- [x] **Journal submission prepared** (January 2026)
 
 ---
 
@@ -284,6 +295,6 @@ This repository includes an **automatic documentation update system** that keeps
 
 ---
 
-*Last Updated: 2024*  
-*Repository Status: Organized and documented*  
+*Last Updated: January 2026*  
+*Repository Status: Organized and submission-ready*  
 *Auto-Update: Active*
